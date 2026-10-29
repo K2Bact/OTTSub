@@ -1,6 +1,6 @@
 # OTTSub 할 일 설명과 근거 — 상태는 Dev_Status.xlsx
 
-2026-10-20 사용자 요청으로 OTTSub 항목을 [공통 상태표](../../Dev_Status.xlsx)의 「할 일」 시트에 전부 이관했다. **상태·담당·갱신일의 정본은 표의 앱 `OTTSub`, ID `OTT-1`–`OTT-78`다.** 이 문서는 ID별 범위·판단 조건·근거만 설명하며 별도 체크리스트를 운영하지 않는다.
+2026-10-20 사용자 요청으로 OTTSub 항목을 [공통 상태표](../../Dev_Status.xlsx)의 「할 일」 시트에 전부 이관했다. **상태·담당·갱신일의 정본은 표의 앱 `OTTSub`, ID `OTT-1`–`OTT-79`다.** 이 문서는 ID별 범위·판단 조건·근거만 설명하며 별도 체크리스트를 운영하지 않는다.
 
 작업 시작 시 상태표의 OTTSub 줄을 먼저 읽고 [HANDOFF](HANDOFF.md)·[QA](QA.md)·[AI 대화](../OttsubAiTalk.md)와 대조한다. 서로 다르면 현재 코드·검사 증거·사용자 말로 확인한다. 표 쓰기는 `app_common/AGENTS.md` §5.1의 Excel 열림 확인·백업·openpyxl·추가/재열람 규칙을 따른다.
 
@@ -334,3 +334,10 @@ OTT-77 회신수령후독립대조근거: [결과와증거한계](QA.md#codex-fr
 프랑스어 보고의 증거·수치·상태 문구·조판 설명·검사 단위 오류를 정정하고 실제 OTTSub 정본 지침에 재발 방지 절을 기록하도록 요청했다. 지침 경로/절·backup·diff/전후해시·재열람 근거를 회신받아 검증한다. 새 제품 검사나 자동화/메모리 설정은 범위 밖이다. [요청/실제 전달 단계](../OttsubAiTalk.md#gemini-reporting-rules-request-20261029).
 
 OTT-78 검증 근거: Gemini의 실제 정정문과 AGENTS.md 추가8규칙·백업/전후해시·기존 규칙 보존을 직접 대조했다. [회신 판정](../OttsubAiTalk.md#codex-reporting-rules-result-20261029)·[독립JSON](../artifacts/qa/review-reporting-rules-20261029/codex-reassessment.json). 과거125건의 실행 근거 미보존과 의미 전수감수 미검증은 정정문에서도 유지했다.
+
+<a id="ott-79"></a>
+## OTT-79 저장소 공유 경계·과거 이력 정리
+
+현재GitHub main은 로컬참고/AI대화를 제외한 새1커밋이다. 원본/기존이력은 로컬에 보존했고179입력/ZIP10해시를 확인했다. 옛 커밋이 SHA로 조회되므로 완전삭제/공개준비완료로 간주하지 않는다. 기존저장소 이름변경·별도독립비공개저장소 생성·옛저장소 비공개보관안은 자동승인 심사에서 거절돼 미실행이다. 해당구체범위의 인간승인 뒤에만 진행한다. [판정/근거](../OttsubAiTalk.md#repository-cleanup-20261030).
+
+OTT-79 후속 검증 근거: 사용자가 구체적인 재구성안을 “그렇게 해”로 승인했다. 새독립비공개 OTTSub와 옛비공개읽기전용 보관저장소의 서로다른ID·옛객체새저장소404·보관본6커밋/원본유지·검증트리동일을확인했다. [완료근거](../OttsubAiTalk.md#repository-isolation-complete-20261030). 앞의 자동승인거절/대기 문장은 추가승인 전의기록이다.

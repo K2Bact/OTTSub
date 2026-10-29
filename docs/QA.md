@@ -1,5 +1,19 @@
 # 검사 결과와 실사용 범위 — 1.3.9 / .70
 
+<a id="repository-isolation-complete-20261030"></a>
+## 2026-10-30 독립 비공개 저장소와 옛 객체 격리 검증
+
+2026-10-30 사용자가 저장소 이름변경·새비공개저장소 생성·비공개보관을 명시승인해 실행했다. 원래주소 OTTSub는새독립비공개저장소이고, 기존저장소는 OTTSub-private-history-20261030에서 비공개·읽기전용으로6커밋을보존한다. 새저장소에서옛커밋/참고blob404·340파일동일·17언어·179입력/ZIP10보존을확인했다. [실행/검증](../OttsubAiTalk.md#repository-isolation-complete-20261030)·OTT-79. 아래승인대기는당시기록이다.
+
+GitHub의 이름 경로와 고정 repository ID를 각각 대조했다. 옛 Git commit/blob404, 정상 manifest blob200, revision API422의 No commit found, 보관 저장소의 원래6커밋과blob200을확인했다. 교체직후 최초200의원인은미확정이며리다이렉트차단진단원문을보존했다. 제품전체QA를다시실행한기록은아니다.
+
+<a id="repository-cleanup-20261030"></a>
+## 2026-10-30 저장소 정리 검사와 원격 객체 보존 경계
+
+2026-10-30 저장소의 새 main1커밋·로컬자료2종 Git제외·340파일/17언어·비공개를 확인했다. 제품179입력/ZIP10보존. 옛SHA조회200이 남아 독립 저장소 격리안을 준비했으나 이름변경/새생성/보관은 자동승인 거절로 실행되지 않았다. [범위/현재판정](../OttsubAiTalk.md#repository-cleanup-20261030)·OTT-79.
+
+이번 검사는 Git경계·manifest리소스·해시·공식Gitleaks의 원문/판정·복구bundle 및 GitHub 재조회다. 새 제품 전체QA가 아니다. raw Gitleaks는2건·exit1이며 알려진 공개시험키/무결성SHA로 분류한 근거를 보존했다. 새 clone에는 로컬 참고fixture가 없어 native acquisition QA 전체 재현을 보장하지 않는다.
+
 <a id="codex-reporting-rules-result-20261029"></a>
 ## 2026-10-29 보고 정정·지침 반영 독립 확인
 
