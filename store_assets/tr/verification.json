@@ -1,0 +1,88 @@
+{
+  "version": "1.3.5",
+  "locale": "tr",
+  "demoData": true,
+  "uploaded": false,
+  "packageSha256": "327f11d8b04b0058bf19618c5f2d97e1685f52548c3ca148efe4c858cf82102b",
+  "productSource": "Extracted upload ZIP; actual popup HTML/CSS/JS with simulated Chrome API and tracks",
+  "screenshots": [
+    {
+      "file": "screenshot1_dual_tr.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "7ba51a001c51924662d9dfab41dd9676f25506caa6e44ecb27c45c4d2d6267a9",
+      "ui": {
+        "language": "tr",
+        "direction": "ltr",
+        "version": "1.3.5",
+        "primary": "en",
+        "secondary": "tr",
+        "overflow": false,
+        "sync": "0.0s",
+        "slider": "0",
+        "blur": "none",
+        "hoverPause": true
+      },
+      "layout": {
+        "overflow": false,
+        "detailBottom": 645.921875,
+        "footerTop": 741,
+        "textOverflow": []
+      },
+      "pageErrors": []
+    },
+    {
+      "file": "screenshot2_sync_tr.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "1ab10b9c09998d148fca3e48f1f213ed77f1b109020a63f29a04866b1cbd26b0",
+      "ui": {
+        "language": "tr",
+        "direction": "ltr",
+        "version": "1.3.5",
+        "primary": "en",
+        "secondary": "tr",
+        "overflow": false,
+        "sync": "-0.1s",
+        "slider": "-100",
+        "blur": "none",
+        "hoverPause": true
+      },
+      "layout": {
+        "overflow": false,
+        "detailBottom": 616.90625,
+        "footerTop": 741,
+        "textOverflow": []
+      },
+      "pageErrors": []
+    },
+    {
+      "file": "screenshot3_learning_tr.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "a74bb725aeaadc3daa8d81d8c08ef9f07f1cf990bd6a2c10ac4b6677e5fc5cb8",
+      "ui": {
+        "language": "tr",
+        "direction": "ltr",
+        "version": "1.3.5",
+        "primary": "en",
+        "secondary": "tr",
+        "overflow": false,
+        "sync": "0.0s",
+        "slider": "0",
+        "blur": "secondary",
+        "hoverPause": true
+      },
+      "layout": {
+        "overflow": false,
+        "detailBottom": 666.125,
+        "footerTop": 741,
+        "textOverflow": []
+      },
+      "pageErrors": []
+    }
+  ]
+}

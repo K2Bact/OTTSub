@@ -1,0 +1,71 @@
+O OTTSub é uma extensão gratuita para o Chrome que permite ajustar o tempo das legendas da Netflix e apresentar duas faixas de legendas ao mesmo tempo — sem registo, sem subscrição e sem anúncios. Escolha os idiomas, personalize o aspeto do texto e utilize as ferramentas de aprendizagem no painel lateral do Chrome ou com atalhos de teclado.
+As legendas da Netflix aparecem adiantadas ou atrasadas em relação às falas? Quer ver a Netflix com legendas em dois idiomas em simultâneo para aprender línguas?
+
+Como começar: Instale o OTTSub no Chrome para computador, abra um vídeo no site da Netflix e clique no ícone do OTTSub para abrir o painel lateral. Escolha as faixas principais e secundárias disponíveis e ajuste os tempos em separado. O OTTSub não funciona dentro da aplicação da Netflix.
+
+FUNCIONALIDADES PRINCIPAIS
+
+1. Ajuste independente do tempo (Sincronização)
+• Adiante ou atrase as legendas principais e secundárias de forma independente.
+• Ajuste em passos de 0.1 segundos com o controlo deslizante do painel, a roda do rato ou os atalhos de teclado.
+• Reponha o desfasamento de cada idioma em 0.0 segundos, separadamente.
+
+2. Dois idiomas no mesmo ecrã e seleção de CC/SDH
+• Escolha dois idiomas entre as faixas de legendas disponíveis no título que está a ver.
+• Selecione o idioma principal manualmente ou use a seleção automática, que dá prioridade ao inglês e, depois, à primeira faixa disponível.
+• Quando existirem, escolha legendas normais ou CC/SDH (que podem incluir descrições de sons e identificação de quem fala).
+• Os idiomas e as faixas disponíveis dependem do título e da sua conta Netflix. O OTTSub não cria traduções automáticas nem acrescenta faixas que a Netflix não disponibiliza.
+
+3. Aspeto e posição das legendas
+• Ajuste o tamanho de cada idioma: 60–140% para as legendas principais e 60–120% para as secundárias.
+• Escolha branco, amarelo, menta ou verde para cada idioma.
+• Ative ou desative o fundo preto semitransparente de cada idioma.
+• Ajuste o espaçamento entre linhas em 0–6 níveis e a posição vertical entre −50 e +50 píxeis.
+• Arraste as legendas com o rato e bloqueie a posição quando estiverem no sítio pretendido.
+
+4. Ferramentas para aprender idiomas (Desfocagem e pausa ao passar o rato)
+• Desfoque (4 px / 8 px / 14 px) ou oculte um ou os dois idiomas e passe o rato sobre as legendas para revelar o texto.
+• Ative a opção de pausar o vídeo automaticamente ao passar o rato sobre as legendas.
+
+5. Anúncios e saltos na reprodução
+• O OTTSub oculta as suas legendas quando deteta anúncios.
+• Após um anúncio ou um salto para a frente ou para trás, verifica o tempo de reprodução antes de voltar a mostrar as legendas.
+• Durante essa verificação, as legendas originais do idioma selecionado na Netflix podem aparecer temporariamente.
+
+ATALHOS DE TECLADO
+[ / ] : ajustar as legendas principais em −0.1 / +0.1 segundos
+\ : repor o desfasamento das legendas principais em 0.0 segundos
+Alt + [ / Alt + ] : ajustar as legendas secundárias em −0.1 / +0.1 segundos
+Alt + \ : repor o desfasamento das legendas secundárias em 0.0 segundos
+Alt + D : ativar ou desactivar as legendas duplas
+Alt + L : bloquear ou desbloquear a posição das legendas
+Alt + B : ativar ou desativar a desfocagem ou ocultação das legendas
+Alt + R : repor a posição predefinida das legendas (ou duplo clique)
+• No Mac (macOS), use Option em vez de Alt. O painel apresenta automaticamente os atalhos adequados ao seu sistema.
+• As teclas indicadas correspondem às posições físicas de um teclado dos EUA; os símbolos impressos podem variar noutros esquemas. Também pode usar o controlo deslizante no painel.
+
+IDIOMAS DA INTERFACE (16 IDIOMAS)
+árabe, bengalês, chinês (tradicional, Taiwan), inglês, finlandês, alemão, hebraico, hindi, japonês, coreano, malaio, português europeu, russo, espanhol, tailandês, turco. O idioma da interface é independente dos idiomas de legendas disponíveis na Netflix.
+
+PERGUNTAS FREQUENTES (FAQ)
+P. Posso ajustar a sincronização dos dois idiomas em separado?
+R. Sim. Pode avançar ou atrasar as legendas principais e secundárias de forma independente em passos de 0.1 segundos.
+
+P. O OTTSub é gratuito? Preciso de criar conta?
+R. O OTTSub é totalmente gratuito e funciona sem registo nem subscrição. É necessária uma conta e uma subscrição da Netflix em separado; não estão incluídas no OTTSub.
+
+P. O OTTSub traduz as legendas automaticamente?
+R. Não. O OTTSub não gera traduções automáticas; carrega e sincroniza as faixas de legendas oficiais disponibilizadas pela Netflix para o título.
+
+P. Funciona em Mac e noutros navegadores como o Microsoft Edge?
+R. O OTTSub destina-se ao Chrome para computador; o Microsoft Edge no Windows também passou nos testes locais de compatibilidade. No macOS utiliza atalhos com Option, mas a verificação no Mac é parcial. A compatibilidade com outros navegadores Chromium não foi verificada. Este pacote não suporta o Chrome para dispositivos móveis nem o Safari.
+
+P. E se o idioma de legendas que pretendo não aparecer?
+R. O OTTSub utiliza as faixas disponíveis para o título e a conta da Netflix atuais. Alterar o idioma da interface do OTTSub não acrescenta nem traduz faixas. Verifique primeiro os idiomas de legendas que a Netflix disponibiliza para esse título.
+
+PRIVACIDADE E FUNCIONAMENTO
+A versão da Chrome Web Store não inclui o gravador local de diagnóstico nem ferramentas de análise de utilização ou de acompanhamento do histórico de visualização. As legendas recebidas dos serviços da Netflix são processadas no seu navegador. As preferências são guardadas no armazenamento do Chrome.
+
+É necessário ter acesso à Netflix. O OTTSub é uma extensão independente, sem afiliação à Netflix e sem o seu patrocínio.
+
+Site do produto e ajuda (em inglês): https://k2bact.github.io/ottsub-site/

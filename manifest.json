@@ -1,0 +1,85 @@
+{
+  "manifest_version": 3,
+  "default_locale": "en",
+  "minimum_chrome_version": "114",
+  "name": "__MSG_extName__",
+  "version": "1.3.9",
+  "version_name": "1.3.9-local-french-ui-20261029.70",
+  "homepage_url": "https://k2bact.github.io/ottsub-site/",
+  "description": "__MSG_extDescription__",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "OTTSub Settings",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/side-panel.js"
+  },
+  "permissions": [
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "https://*.netflix.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.netflix.com/*"
+      ],
+      "js": [
+        "src/track-languages-main.js",
+        "src/inject.js",
+        "tools/local-diagnostics/acquisition-main.js",
+        "src/video/netflix-playback-bridge.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://*.netflix.com/*"
+      ],
+      "js": [
+        "src/i18n.js",
+        "src/core/platform.js",
+        "src/core/track-languages.js",
+        "src/parser.js",
+        "src/sync-engine.js",
+        "src/core/settings-revisions.js",
+        "src/core/storage-guard.js",
+        "src/network/track-fetcher.js",
+        "src/network/track-recovery.js",
+        "src/layout/dual-placement.js",
+        "src/video/playback-gate.js",
+        "src/video/playback-clock.js",
+        "src/video/native-reference.js",
+        "src/video/netflix-playback-adapter.js",
+        "tools/local-diagnostics/collector.js",
+        "src/input/keyboard-router.js",
+        "src/interaction/controls-hit-detector.js",
+        "src/renderer.js",
+        "src/hud.js",
+        "src/content.js"
+      ],
+      "css": [
+        "src/styles.css"
+      ],
+      "world": "ISOLATED",
+      "run_at": "document_start"
+    }
+  ]
+}

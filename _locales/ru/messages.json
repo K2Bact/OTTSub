@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub — синхронизация и двойные субтитры для Netflix",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "Настраивайте синхронизацию субтитров Netflix и смотрите с двойными субтитрами. Удобные сочетания клавиш и элементы управления.",
+    "description": "Extension description"
+  }
+}

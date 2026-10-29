@@ -1,0 +1,71 @@
+OTTSub ialah sambungan Chrome percuma untuk melaraskan masa sari kata Netflix dan memaparkan dua trek sari kata secara serentak — tanpa pendaftaran akaun, tanpa langganan dan tanpa iklan. Pilih bahasa, rupa teks dan alat pembelajaran melalui panel sisi Chrome di sebelah video atau pintasan papan kekunci.
+Adakah sari kata Netflix muncul lebih awal atau lewat daripada dialog? Mahu menonton Netflix dengan sari kata dalam dua bahasa serentak sambil mempelajari bahasa baharu?
+
+Cara bermula: Pasang OTTSub dalam Chrome pada komputer, buka video di laman web Netflix dan klik ikon OTTSub untuk membuka panel sisi. Pilih trek sari kata utama dan kedua yang tersedia dan laraskan masanya secara berasingan. OTTSub tidak berjalan dalam aplikasi Netflix.
+
+CIRI UTAMA
+
+1. Laraskan masa setiap bahasa secara berasingan
+• Awalkan atau lewatkan sari kata bahasa utama dan bahasa kedua secara berasingan.
+• Laraskan dalam langkah 0.1 saat melalui gelungsur panel, roda tetikus atau pintasan papan kekunci.
+• Tetapkan semula masa setiap bahasa kepada 0.0 saat secara berasingan.
+
+2. Dua bahasa serentak & pilihan CC/SDH
+• Pilih bahasa utama dan bahasa kedua daripada trek sari kata yang tersedia untuk tajuk yang sedang ditonton.
+• Gunakan pemilihan automatik (mengutamakan bahasa Inggeris dahulu, kemudian trek pertama yang tersedia) atau pilih bahasa utama sendiri.
+• Pilih sari kata biasa atau CC/SDH (boleh merangkumi penerangan bunyi dan maklumat penutur) apabila tersedia.
+• Bahasa dan trek yang tersedia bergantung pada tajuk serta akaun Netflix anda. OTTSub tidak menghasilkan terjemahan automatik.
+
+3. Rupa, seretan tetikus & kunci kedudukan sari kata
+• Laraskan saiz secara berasingan: 60–140% untuk bahasa utama dan 60–120% untuk bahasa kedua.
+• Pilih warna putih, kuning, pudina atau hijau untuk setiap bahasa.
+• Hidupkan atau matikan latar belakang hitam separa lut sinar untuk setiap bahasa.
+• Laraskan jarak baris dalam 0–6 tahap dan kedudukan menegak antara −50 hingga +50 piksel.
+• Seret sari kata dengan tetikus dan kunci kedudukannya supaya tidak mengganggu bar garis masa main balik.
+
+4. Alat pembelajaran bahasa (Kabur & jeda apabila penuding berada pada sari kata)
+• Kaburkan (4 px / 8 px / 14 px) atau sembunyikan satu atau kedua-dua bahasa, kemudian dedahkan teks dengan menghalakan penuding ke atasnya.
+• Pilih untuk menjeda video secara automatik apabila penuding berada pada sari kata.
+
+5. Iklan dan perubahan kedudukan main balik
+• OTTSub menyembunyikan sari katanya semasa iklan yang dikesan.
+• Selepas iklan atau apabila anda melangkau dalam video, masa main balik diperiksa sebelum sari kata dipaparkan semula.
+• Semasa pemeriksaan ini, sari kata asal dalam bahasa yang dipilih di Netflix mungkin muncul buat sementara waktu.
+
+PINTASAN PAPAN KEKUNCI
+[ / ] : laraskan masa bahasa utama sebanyak −0.1 / +0.1 saat
+\ : tetapkan semula masa bahasa utama kepada 0.0 saat
+Alt + [ / Alt + ] : laraskan masa bahasa kedua sebanyak −0.1 / +0.1 saat
+Alt + \ : tetapkan semula masa bahasa kedua kepada 0.0 saat
+Alt + D : hidupkan atau matikan sari kata dua bahasa
+Alt + L : kunci atau buka kunci kedudukan sari kata
+Alt + B : hidupkan atau matikan kesan kabur atau sembunyi untuk pembelajaran
+Alt + R : tetapkan semula kedudukan asal sari kata (atau dwiklik)
+• Pada Mac (macOS), gunakan Option dan bukannya Alt. Panel memaparkan pintasan yang sesuai untuk sistem anda secara automatik.
+• Kedudukan kekunci merujuk kepada papan kekunci AS; simbol bercetak mungkin berbeza pada susun atur lain. Anda juga boleh menggunakan gelungsur pada panel.
+
+BAHASA ANTARA MUKA (16 BAHASA)
+Arab, Benggali, Cina (Tradisional, Taiwan), Inggeris, Finland, Jerman, Ibrani, Hindi, Jepun, Korea, Melayu, Portugis Eropah, Rusia, Sepanyol, Thai, Turki. Bahasa antara muka berbeza daripada bahasa sari kata yang tersedia di Netflix.
+
+SOALAN LAZIM (FAQ)
+S. Bolehkah saya melaraskan masa sari kata kedua-dua bahasa secara berasingan?
+J. Ya. Anda boleh melaraskan masa sari kata utama dan kedua secara bebas dalam langkah 0.1 saat.
+
+S. Adakah OTTSub percuma? Perlukah saya mendaftar akaun?
+J. OTTSub adalah percuma sepenuhnya dan berfungsi tanpa pendaftaran atau langganan. Akaun dan langganan Netflix diperlukan secara berasingan dan tidak disertakan dengan OTTSub.
+
+S. Adakah OTTSub menterjemah sari kata secara automatik?
+J. Tidak. OTTSub tidak menghasilkan terjemahan mesin; ia memuatkan dan menyegerakkan trek sari kata rasmi yang disediakan oleh Netflix.
+
+S. Adakah ia berfungsi pada Mac dan pelayar seperti Microsoft Edge?
+J. OTTSub direka untuk Chrome pada komputer; Microsoft Edge pada Windows juga telah lulus ujian keserasian setempat. macOS menggunakan pintasan Option, tetapi pengesahan Mac hanya separa. Keserasian pelayar Chromium lain belum disahkan. Pakej ini tidak menyokong Chrome mudah alih atau Safari.
+
+S. Bagaimana jika bahasa sari kata yang saya mahu tiada?
+J. OTTSub menggunakan trek yang tersedia untuk tajuk dan akaun Netflix semasa. Menukar bahasa menu OTTSub tidak menambah atau menterjemah trek. Semak dahulu bahasa sari kata yang Netflix sediakan untuk tajuk itu.
+
+PRIVASI DAN CARA OPERASI
+Versi Chrome Web Store tidak menyertakan perakam diagnostik setempat, analitik atau alat penjejakan sejarah tontonan. Sambungan ini mendapatkan trek sari kata daripada perkhidmatan Netflix dan memprosesnya dalam pelayar anda. Tetapan disimpan melalui storan Chrome.
+
+Kebenaran akses kepada Netflix diperlukan. OTTSub ialah sambungan bebas yang tidak mempunyai hubungan dengan Netflix dan tidak disokong olehnya.
+
+Laman produk dan bantuan (bahasa Inggeris): https://k2bact.github.io/ottsub-site/

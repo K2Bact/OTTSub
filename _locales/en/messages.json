@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - Subtitle Sync & Dual Subtitles for Netflix",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "Adjust Netflix subtitle timing and enjoy dual subtitles with intuitive keyboard shortcuts and controls.",
+    "description": "Extension description"
+  }
+}

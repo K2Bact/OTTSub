@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - 넷플릭스 자막 싱크 & 이중 자막",
+    "description": "확장 프로그램 이름"
+  },
+  "extDescription": {
+    "message": "넷플릭스 자막 싱크(타이밍) 미세 조절과 선명한 이중 자막을 직관적인 단축키와 컨트롤로 즐겨보세요.",
+    "description": "확장 프로그램 설명"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub — ปรับเวลาและคำบรรยายคู่สำหรับ Netflix",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "ปรับเวลาคำบรรยาย Netflix และแสดงคำบรรยายสองภาษาพร้อมกัน พร้อมปุ่มลัดและตัวควบคุมที่ใช้งานง่าย",
+    "description": "Extension description"
+  }
+}

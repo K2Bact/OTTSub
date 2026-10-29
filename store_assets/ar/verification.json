@@ -1,0 +1,69 @@
+{
+  "version": "1.3.2",
+  "locale": "ar",
+  "demoData": true,
+  "uploaded": false,
+  "screenshots": [
+    {
+      "file": "screenshot1_dual_ar.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "8bf818846e5e5407f23520124f1b1192e7a04041441e95043bd7b229bb9d2efd",
+      "ui": {
+        "language": "ar",
+        "direction": "rtl",
+        "version": "1.3.2",
+        "primary": "en",
+        "secondary": "ar",
+        "overflow": false,
+        "sync": "0.0s",
+        "blur": "none",
+        "hoverPause": true
+      },
+      "pageErrors": [],
+      "mode": "RGB"
+    },
+    {
+      "file": "screenshot2_sync_ar.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "1831f182122e386659b559bf1b9f9076b7b7d601d45db1a429d5bd15eafd061e",
+      "ui": {
+        "language": "ar",
+        "direction": "rtl",
+        "version": "1.3.2",
+        "primary": "en",
+        "secondary": "ar",
+        "overflow": false,
+        "sync": "-0.1s",
+        "blur": "none",
+        "hoverPause": true
+      },
+      "pageErrors": [],
+      "mode": "RGB"
+    },
+    {
+      "file": "screenshot3_learning_ar.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "ea334b24829ac1fa5edfe6eb10909f9286a80a3dcf340bcdc6748cd3e54035f2",
+      "ui": {
+        "language": "ar",
+        "direction": "rtl",
+        "version": "1.3.2",
+        "primary": "en",
+        "secondary": "ar",
+        "overflow": false,
+        "sync": "0.0s",
+        "blur": "secondary",
+        "hoverPause": true
+      },
+      "pageErrors": [],
+      "mode": "RGB"
+    }
+  ],
+  "packageSha256": "e8667e9d5bbe02bf923353fcd38711711041033c4d8f9014f11371b907fe187d"
+}

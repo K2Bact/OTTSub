@@ -1,0 +1,6693 @@
+{
+  "sourceSha256": "c3ec883359840ecf90cda58be00dfd9cb157e9437efbce1ac15cd20767255687",
+  "scope": "Only observed session/DOM signals; paused, readyState, seek and native cues are not recorded here. No subtitle synchronization claim.",
+  "events": [
+    {
+      "at": 630130.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1163698,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1163698,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 630130.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1181.576,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630180.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1181.626,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630230.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1181.675,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630387.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1164761,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1164761,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 630387.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1181.832,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630436.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1181.882,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630486.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1181.932,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630541.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1181.987,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630591.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1164761,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1164761,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 630591.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.036,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630642.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.088,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630642.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.088,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630694.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.14,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630743.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.189,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630793.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1164761,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1164761,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 630793.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.239,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630843.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.289,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630900.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.346,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 630952.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.398,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631003.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1165332,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1165332,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 631003.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.449,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631267.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1165332,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1165332,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 631267.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.713,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631369.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.814,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631418.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.864,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631469.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1165556,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1165556,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 631469.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.915,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631519.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1182.965,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631570.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631765.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1182836,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1182836,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 631765.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631865.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 631973.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1182836,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1182836,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 631973.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632066.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632139,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632190.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1182836,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1182836,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 632190.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632242.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632292.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632365.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632469.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1656921,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1656921,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 632469.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632519.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632568.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632620.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632671.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1656921,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1656921,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 632671.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 632922.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1656921,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1656921,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 632922.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633094.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633353.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1656921,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1656921,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 633353.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633404,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633564.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1656921,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1656921,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 633564.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633629.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1183.004,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633777.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1656921,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1656921,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 633777.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1656.921,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633804.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1656.921,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633805.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1656.921,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633864.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1656.928,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 633950.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1657.003,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 634005.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1657003,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1657003,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 634005.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1657.057,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 634257.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1657003,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1657003,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 634257.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1657.31,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 634308.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1657.36,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 634560,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1657350,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1657350,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 634560,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1657.612,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 634811,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1657350,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1657350,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 634811,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1657.863,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 634952.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.005,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635006,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.058,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635106.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1657910,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1657910,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 635106.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.158,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635131.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.184,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635182.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.234,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635233.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.286,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635491.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1658161,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1658161,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 635491.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.543,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635546.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.599,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635594.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.647,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635647.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.7,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635702,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1658161,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1658161,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 635702,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.754,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635751.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.804,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635801.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.854,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635855,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.907,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635905.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1658161,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1658161,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 635905.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1658.957,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 635961.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.014,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636014.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.067,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636065.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.118,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636281.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1659011,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1659011,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 636281.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.333,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636409.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636461.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636606.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1659262,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1659262,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 636606.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636629,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636720.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636785.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636836.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1659262,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1659262,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 636836.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 636887.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 637107.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1659262,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1659262,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 637108,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 637361.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 1659262,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 1659262,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 637361.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 637544,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 637794.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 637794.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638046.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 638046.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638096.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638128.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638214.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638472.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 638472.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638617.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638670,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638720.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 638720.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638810.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 638910.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639009,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 639009,
+      "type": "dom",
+      "ad": "absent",
+      "media": 1659.457,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639099.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 639099.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639160.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639192.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639195.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639245.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0.016,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639499.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 639499.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0.25,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639627.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0.379,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639705.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 639705.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0.456,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 639958.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 639958.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0.71,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 640214,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 640214,
+      "type": "dom",
+      "ad": "absent",
+      "media": 0.965,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 640468.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 640468.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 1.22,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 640634.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 640634.1,
+      "type": "dom",
+      "ad": "present",
+      "media": 1.385,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 640886.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 640886.7,
+      "type": "dom",
+      "ad": "present",
+      "media": 1.638,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 641128.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 641128.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 1.879,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 641381.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 641381.6,
+      "type": "dom",
+      "ad": "present",
+      "media": 2.133,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 641567.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 641567.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 2.318,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 641817.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 641817.7,
+      "type": "dom",
+      "ad": "present",
+      "media": 2.569,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 642077.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 642077.3,
+      "type": "dom",
+      "ad": "present",
+      "media": 2.829,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 642330.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 642330.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 3.082,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 642586.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 642586.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 3.338,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 642639.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 642639.3,
+      "type": "dom",
+      "ad": "present",
+      "media": 3.389,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 642641.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 3.393,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 642812.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 642812.6,
+      "type": "dom",
+      "ad": "present",
+      "media": 3.564,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 643070.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 643070.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 3.822,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 643322.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 643322.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 4.074,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 643577.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 643577.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 4.329,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 643690,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 643690,
+      "type": "dom",
+      "ad": "present",
+      "media": 4.441,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 643941,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 643941,
+      "type": "dom",
+      "ad": "present",
+      "media": 4.692,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 644138.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 644138.3,
+      "type": "dom",
+      "ad": "present",
+      "media": 4.889,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 644390.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 644390.9,
+      "type": "dom",
+      "ad": "present",
+      "media": 5.142,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 644594.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 644594.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 5.345,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 644845.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 644845.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 5.597,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 645097.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 645097.3,
+      "type": "dom",
+      "ad": "present",
+      "media": 5.848,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 645349.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 645349.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 6.101,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 645398.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 6.15,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 645628.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 645628.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 6.38,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 645817.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 645817.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 6.569,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 646068.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 646068.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 6.819,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 646319.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 646319.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 7.071,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 646370.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 646370.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 7.121,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 646620.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 646620.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 7.372,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 646877.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 646877.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 7.628,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 647128.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 647128.9,
+      "type": "dom",
+      "ad": "present",
+      "media": 7.88,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 647129,
+      "type": "dom",
+      "ad": "present",
+      "media": 7.88,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 647380.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 647380.3,
+      "type": "dom",
+      "ad": "present",
+      "media": 8.131,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 647512.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 647513,
+      "type": "dom",
+      "ad": "present",
+      "media": 8.264,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 647764.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 647764.1,
+      "type": "dom",
+      "ad": "present",
+      "media": 8.515,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 648021.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 648021.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 8.773,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 648273.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 648273.1,
+      "type": "dom",
+      "ad": "present",
+      "media": 9.024,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 648333.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 648333.6,
+      "type": "dom",
+      "ad": "present",
+      "media": 9.085,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 648588.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 648588.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 9.34,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 648628.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 9.38,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 648880.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 648880.1,
+      "type": "dom",
+      "ad": "present",
+      "media": 9.631,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 649138.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 649138.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 9.89,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 649389.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 649389.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 10.141,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 649533.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 649533.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 10.284,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 649792.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 649792.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 10.543,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 650043.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 650043.8,
+      "type": "dom",
+      "ad": "present",
+      "media": 10.795,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 650132.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 650132.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 10.883,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 650329.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 650329.7,
+      "type": "dom",
+      "ad": "present",
+      "media": 11.081,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 650580.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 650580.7,
+      "type": "dom",
+      "ad": "present",
+      "media": 11.332,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 650831.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 650831.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 11.582,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 651083.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 651083.7,
+      "type": "dom",
+      "ad": "present",
+      "media": 11.835,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 651338,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 651338,
+      "type": "dom",
+      "ad": "present",
+      "media": 12.089,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 651507.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 651507.6,
+      "type": "dom",
+      "ad": "present",
+      "media": 12.259,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 651628,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 651628,
+      "type": "dom",
+      "ad": "present",
+      "media": 12.379,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 651879.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 651879.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 12.63,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 652130.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 652130.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 12.882,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 652364.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 652364.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 13.116,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 652615.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 652615.1,
+      "type": "dom",
+      "ad": "present",
+      "media": 13.366,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 652873.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 652873.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 13.624,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 653131,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 653131.1,
+      "type": "dom",
+      "ad": "present",
+      "media": 13.882,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 653131.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 13.883,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 653397.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 653397.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 14.148,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 653519.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 653519.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 14.27,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 653770.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 653770.3,
+      "type": "dom",
+      "ad": "present",
+      "media": 14.521,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 654034.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 654034.6,
+      "type": "dom",
+      "ad": "present",
+      "media": 14.786,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 654300,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 654300,
+      "type": "dom",
+      "ad": "present",
+      "media": 15.051,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 654566.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 654566.2,
+      "type": "dom",
+      "ad": "present",
+      "media": 15.317,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 654617.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 654617.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 15.369,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 654628.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 15.38,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 654886.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 654886.4,
+      "type": "dom",
+      "ad": "present",
+      "media": 15.638,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 655137.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 655137.5,
+      "type": "dom",
+      "ad": "present",
+      "media": 15.889,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 655391.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2151566,
+        "adValue": "object"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2151566,
+        "adState": "start"
+      }
+    },
+    {
+      "at": 655391.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 16.143,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 655442.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 16.194,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 655697.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2154026,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2154026,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 655697.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 16.449,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 655948.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2154026,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2154026,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 655948.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 16.7,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 656132.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 16.884,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 656383.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2154608,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2154608,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 656383.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 17.135,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 656634.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2154865,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2154865,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 656634.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 17.386,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 656891.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2155231,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2155231,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 656891.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 17.642,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 657156.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2155231,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2155231,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 657156.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 17.907,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 657407.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2155662,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2155662,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 657407.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 18.159,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 657640.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2155662,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2155662,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 657640.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 18.391,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 657904.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2155662,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2155662,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 657904.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 18.656,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 658169.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2155662,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2155662,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 658169.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 18.921,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 658420.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2156725,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2156725,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 658420.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 19.172,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 658677.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2156725,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2156725,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 658677.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 19.429,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 658936.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2156725,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2156725,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 658936.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 19.687,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 659141.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2156725,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2156725,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 659141.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 19.892,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 659392,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2157538,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2157538,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 659392,
+      "type": "dom",
+      "ad": "absent",
+      "media": 20.143,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 659652.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2157538,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2157538,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 659652.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 20.404,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 659917.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2157538,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2157538,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 659917.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 20.668,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 660177.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2157538,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2157538,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 660177.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 20.929,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 660432.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2158606,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2158606,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 660432.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 21.184,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 660636,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2158606,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2158606,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 660636.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 21.387,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 660870.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2158606,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2158606,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 660870.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 21.622,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 661131.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2158606,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2158606,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 661131.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 21.883,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 661336.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2159666,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2159666,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 661336.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 22.087,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 661597.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2159666,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2159666,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 661597.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 22.348,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 661862.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2159666,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2159666,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 661862.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 22.613,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 662127,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2159666,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2159666,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 662127.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 22.878,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 662137.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 22.889,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 662349.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2160729,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2160729,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 662349.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 23.101,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 662612.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2160729,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2160729,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 662612.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 23.363,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 662662.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 23.414,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 662924.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2160729,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2160729,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 662924.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 23.675,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 663194.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2160729,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2160729,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 663194.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 23.946,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 663452.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2161523,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2161523,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 663452.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 24.204,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 663637.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 24.389,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 663889.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2161523,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2161523,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 663889.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 24.641,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 664154.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2161523,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2161523,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 664155,
+      "type": "dom",
+      "ad": "absent",
+      "media": 24.905,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 664418.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2162584,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2162584,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 664418.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 25.169,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 664682.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2162584,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2162584,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 664682.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 25.434,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 664847.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 25.598,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 665105.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2162584,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2162584,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 665105.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 25.856,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 665134.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 25.886,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 665379.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2163646,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2163646,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 665379.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 26.131,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 665630.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2163646,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2163646,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 665630.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 26.382,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 665893.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2163646,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2163646,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 665893.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 26.645,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 666144.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2163646,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2163646,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 666144.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 26.895,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 666383.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2164715,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2164715,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 666383.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 27.135,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 666631.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2164715,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2164715,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 666631.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 27.383,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 666896.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2164715,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2164715,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 666896.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 27.647,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 667161.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2164715,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2164715,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 667161.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 27.912,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 667298.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 28.05,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 667550.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2165777,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2165777,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 667550.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 28.301,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 667816,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2165777,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2165777,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 667816,
+      "type": "dom",
+      "ad": "absent",
+      "media": 28.567,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 668071.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2165777,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2165777,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 668071.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 28.823,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 668128.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 28.88,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 668379.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2165777,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2165777,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 668379.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 29.131,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 668643.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2166572,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2166572,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 668644,
+      "type": "dom",
+      "ad": "absent",
+      "media": 29.395,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 668908.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2166572,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2166572,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 668908.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 29.66,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 669173.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2166572,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2166572,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 669173.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 29.925,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 669300.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 30.052,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 669400.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2167633,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2167633,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 669400.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 30.152,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 669640.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2167633,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2167633,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 669640.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 30.391,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 669891.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2167633,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2167633,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 669891.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 30.642,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 670156.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2167633,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2167633,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 670157,
+      "type": "dom",
+      "ad": "absent",
+      "media": 30.908,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 670415.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2168694,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2168694,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 670415.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 31.166,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 670666.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2168694,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2168694,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 670666.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 31.418,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 670880.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2169236,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2169236,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 670880.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 31.631,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 671137.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2169236,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2169236,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 671137.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 31.889,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 671397.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2169236,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2169236,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 671397.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 32.149,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 671447.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 32.199,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 671711.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2169768,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2169768,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 671711.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 32.462,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 671973.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2169768,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2169768,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 671973.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 32.725,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 672054.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 32.806,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 672132.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 32.884,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 672395.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2169768,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2169768,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 672395.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 33.146,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 672446.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 33.198,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 672629.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2170824,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2170824,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 672630,
+      "type": "dom",
+      "ad": "absent",
+      "media": 33.381,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 672896.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2170824,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2170824,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 672896.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 33.647,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 673157.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2170824,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2170824,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 673157.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 33.909,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 673423.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2170824,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2170824,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 673423.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 34.174,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 673486.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 34.237,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 673737.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2171618,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2171618,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 673737.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 34.489,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 673997.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2171618,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2171618,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 673997.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 34.749,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 674137.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 34.888,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 674338.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2172549,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2172549,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 674338.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 35.09,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 674422.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 35.174,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 674473.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 35.225,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 674731.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2172708,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2172708,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 674731.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 35.482,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 674982.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2172708,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2172708,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 674982.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 35.733,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 675232.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2172708,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2172708,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 675232.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 35.984,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 675454.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2173755,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2173755,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 675454.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 36.206,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 675642.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 36.393,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 675906,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2173755,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2173755,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 675906,
+      "type": "dom",
+      "ad": "absent",
+      "media": 36.657,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 676171.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2173755,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2173755,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 676171.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 36.923,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 676423.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2173755,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2173755,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 676423.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 37.175,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 676473.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 37.225,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 676733.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2174820,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2174820,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 676733.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 37.485,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 676986.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2174820,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2174820,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 676986.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 37.737,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 677135.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 37.887,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 677260.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2175457,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2175457,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 677260.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 38.012,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 677525.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2175886,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2175886,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 677525.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 38.277,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 677789.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2175888,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2175888,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 677789.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 38.541,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 678041.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2176253,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2176253,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 678041.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 38.792,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 678296.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2176253,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2176253,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 678296.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 39.047,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 678548.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2176677,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2176677,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 678548.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 39.299,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 678642.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 39.394,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 678899.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2176677,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2176677,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 678899.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 39.65,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 679018.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 39.77,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 679284.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2176677,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2176677,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 679284.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 40.036,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 679474.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 40.226,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 679739.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2177744,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2177744,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 679739.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 40.49,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 679990.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2177744,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2177744,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 679990.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 40.741,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 680128,
+      "type": "dom",
+      "ad": "absent",
+      "media": 40.879,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 680177.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 40.929,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 680438,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2178459,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2178459,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 680438,
+      "type": "dom",
+      "ad": "absent",
+      "media": 41.189,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 680691.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2178805,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2178805,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 680691.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 41.442,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 680768.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 41.52,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 681030.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2178805,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2178805,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 681030.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 41.782,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 681285.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2178805,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2178805,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 681285.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 42.037,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 681484.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 42.236,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 681637.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2179865,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2179865,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 681637.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 42.388,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 681888.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2179865,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2179865,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 681888.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 42.639,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 682014.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 42.766,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 682271.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2179865,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2179865,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 682271.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 43.022,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 682528.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2180666,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2180666,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 682528.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 43.279,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 682779.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2180666,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2180666,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 682779.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 43.53,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 683037.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2180666,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2180666,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 683037.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 43.789,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 683135.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 43.886,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 683400.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2180666,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2180666,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 683400.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 44.151,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 683662.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2181726,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2181726,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 683662.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 44.414,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 683928,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2181726,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2181726,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 683928,
+      "type": "dom",
+      "ad": "absent",
+      "media": 44.679,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 684194,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2182470,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2182470,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 684194,
+      "type": "dom",
+      "ad": "absent",
+      "media": 44.945,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 684457.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2182470,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2182470,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 684457.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 45.209,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 684632.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 45.384,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 684886.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2182793,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2182793,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 684886.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 45.637,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 684942.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 45.693,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 685196.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2182793,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2182793,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 685196.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 45.948,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 685456.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2182793,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2182793,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 685456.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 46.207,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 685537,
+      "type": "dom",
+      "ad": "absent",
+      "media": 46.288,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 685799.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2184096,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2184096,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 685799.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 46.551,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 685974.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 46.726,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 686130.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2184096,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2184096,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 686130.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 46.881,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 686394.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2184096,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2184096,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 686394.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 47.145,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 686645.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2184916,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2184916,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 686645.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 47.397,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 686852.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2184916,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2184916,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 686852.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 47.604,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 687111.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2184916,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2184916,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 687111.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 47.863,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 687363.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2184916,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2184916,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 687363.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 48.115,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 687551.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 48.303,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 687628.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2185712,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2185712,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 687628.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 48.379,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 687892.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2185712,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2185712,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 687892.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 48.644,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 687987,
+      "type": "dom",
+      "ad": "absent",
+      "media": 48.738,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 688239.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2186528,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2186528,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 688239.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 48.99,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 688497.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2186528,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2186528,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 688497.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 49.249,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 688754.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2186776,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2186776,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 688754.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 49.506,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 689017.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2186776,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2186776,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 689017.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 49.769,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 689137.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 49.889,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 689390.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2186776,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2186776,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 689390.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 50.141,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 689641.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2187834,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2187834,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 689641.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 50.392,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 689907.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2187834,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2187834,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 689907.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 50.658,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 690113.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2187834,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2187834,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 690113.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 50.864,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 690375,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2187834,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2187834,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 690375,
+      "type": "dom",
+      "ad": "absent",
+      "media": 51.126,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 690582.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2188896,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2188896,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 690582.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 51.333,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 690637.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 51.389,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 690893.2,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2189274,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2189274,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 690893.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 51.644,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 691157.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2189274,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2189274,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 691157.6,
+      "type": "dom",
+      "ad": "absent",
+      "media": 51.909,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 691317,
+      "type": "dom",
+      "ad": "absent",
+      "media": 52.068,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 691577.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2189274,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2189274,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 691577.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 52.329,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 691831.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2189962,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2189962,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 691831.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 52.582,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 692082.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2190486,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2190486,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 692082.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 52.834,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 692128.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 52.879,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 692379.3,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2190486,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2190486,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 692379.3,
+      "type": "dom",
+      "ad": "absent",
+      "media": 53.13,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 692637.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2190760,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2190760,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 692637.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 53.389,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 692889.5,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2190760,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2190760,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 692889.5,
+      "type": "dom",
+      "ad": "absent",
+      "media": 53.641,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 693152,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2190760,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2190760,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 693152,
+      "type": "dom",
+      "ad": "absent",
+      "media": 53.903,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 693201.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 53.953,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 693457.4,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2190760,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2190760,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 693457.4,
+      "type": "dom",
+      "ad": "absent",
+      "media": 54.209,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 693527.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 54.278,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 693577,
+      "type": "dom",
+      "ad": "absent",
+      "media": 54.328,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 693627.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 54.378,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 693627.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 54.379,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 693884.6,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2191818,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2191818,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 693884.7,
+      "type": "dom",
+      "ad": "absent",
+      "media": 54.636,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 694137.7,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2191818,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2191818,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 694137.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 54.889,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 694397.8,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2191818,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2191818,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 694397.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 55.149,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 694590.2,
+      "type": "dom",
+      "ad": "absent",
+      "media": 55.341,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 694641.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2192890,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2192890,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 694641.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 55.392,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 694701.8,
+      "type": "dom",
+      "ad": "absent",
+      "media": 55.453,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 694953.1,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2192890,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2192890,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 694953.1,
+      "type": "dom",
+      "ad": "absent",
+      "media": 55.704,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 695127.9,
+      "type": "dom",
+      "ad": "absent",
+      "media": 55.879,
+      "video": true,
+      "pauseAd": false
+    },
+    {
+      "at": 695379.9,
+      "type": "session",
+      "status": "ok",
+      "session": "s2",
+      "playback": {
+        "raw": 2192890,
+        "adValue": "undefined"
+      },
+      "open": {
+        "status": "ok",
+        "raw": 2192890,
+        "adState": "other"
+      }
+    },
+    {
+      "at": 695380,
+      "type": "dom",
+      "ad": "absent",
+      "media": 56.131,
+      "video": true,
+      "pauseAd": false
+    }
+  ]
+}

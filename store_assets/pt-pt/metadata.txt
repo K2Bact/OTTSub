@@ -1,0 +1,5 @@
+확장 이름
+OTTSub - Sincronização e legendas duplas na Netflix
+
+짧은 설명
+Ajuste o tempo das legendas da Netflix e veja dois idiomas em simultâneo. Personalize o texto e aprenda idiomas.

@@ -1,0 +1,12 @@
+{
+  "locale": "he", "direction": "rtl", "languageName": "עברית",
+  "title": "OTTSub · צילומי מסך בעברית",
+  "panelLabel": "חלונית צדדית · הגדרות OTTSub",
+  "panelTitle": "הממשק של OTTSub בעברית",
+  "footer": "ל־Netflix · השפות הזמינות משתנות לפי הכותר. הממשק והכתוביות מוצגים עם נתוני הדגמה.",
+  "slides": [
+    {"eyebrow":"01 / כתוביות בשתי שפות", "headline":"שתי שפות.<br>באותו מסך.", "description":"בחרו שתי שפות מבין הכתוביות הזמינות<br>ב־Netflix, ישירות מהחלונית הצדדית.", "detail":"<div class=\"demo-screen\"><div class=\"demo-label\">דוגמה לכתוביות</div><div class=\"line1\" dir=\"ltr\">Let’s take the long way home.</div><div class=\"line2\">נחזור הביתה בדרך הארוכה.</div></div><p class=\"hint\">אנגלית + עברית · הגדרות נפרדות לכל שפה</p>"},
+    {"eyebrow":"02 / כיוון תזמון", "headline":"מכוונים את התזמון.<br>לכל שפה בנפרד.", "description":"מקדימים או מאחרים את הכתוביות<br>בצעדים של <bdi dir=\"ltr\">0.1</bdi> שניות.", "detail":"<div class=\"keyrow\"><div class=\"keycard\"><div class=\"keys\" dir=\"ltr\">[ &nbsp; ]</div><div class=\"keylabel\">שפה ראשית<br><bdi class=\"accent\" dir=\"ltr\">−0.1 s / +0.1 s</bdi></div></div><div class=\"keycard\"><div class=\"keys\" dir=\"ltr\">Alt + [ / ]</div><div class=\"keylabel\">שפה משנית<br><bdi class=\"accent\" dir=\"ltr\">−0.1 s / +0.1 s</bdi></div></div></div><p class=\"hint\">ב־Mac משתמשים ב־Option, וב־Windows ב־Alt.<br>אפשר גם לכוון דרך החלונית הצדדית.</p>"},
+    {"eyebrow":"03 / לימוד שפה", "headline":"לומדים עם הכתוביות.<br>בקצב שלכם.", "description":"מטשטשים כתוביות לתרגול.<br>אפשר להשהות את הסרטון בריחוף על הכתוביות.", "detail":"<div class=\"demo-screen\"><div class=\"demo-label\">דוגמה לתרגול</div><div class=\"line1\" dir=\"ltr\">One more step. You’re almost there.</div><div class=\"line2\" style=\"filter:blur(5px)\">עוד צעד אחד. כמעט הגעתם.</div></div><div class=\"steps\"><div class=\"step\"><span class=\"num\">1</span>קוראים</div><div class=\"step\"><span class=\"num\">2</span>בודקים</div><div class=\"step\"><span class=\"num\">3</span>ממשיכים</div></div>"}
+  ]
+}

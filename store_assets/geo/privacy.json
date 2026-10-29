@@ -1,0 +1,156 @@
+{
+  "reviewedDate": "2026-10-22",
+  "en": {
+    "title": "Privacy policy",
+    "label": "Privacy",
+    "intro": "This policy describes the OTTSub Chrome Web Store build and this product website. OTTSub is provided by K2Bact. Subtitle processing happens in your browser; this does not mean that the extension handles no data or makes no network requests.",
+    "sections": [
+      [
+        "Data used for subtitle display",
+        "OTTSub reads subtitle-track metadata and addresses, language and CC/SDH labels, subtitle text and timing, the current Netflix title identifier, and playback state needed for timing and display. These are used to provide subtitle synchronization and dual subtitles. OTTSub does not create a viewing-history database or save subtitle text in its settings storage."
+      ],
+      [
+        "Preferences and Chrome storage",
+        "Language, timing, appearance and learning preferences, together with technical values used to order settings changes, are saved using Chrome storage. The existing implementation uses local and sync storage. Depending on your Chrome settings, Google Chrome may synchronize those preference values through its own service. Subtitle text and Netflix subtitle addresses are not included in those preference records."
+      ],
+      [
+        "Network requests and recipients",
+        "The extension retrieves subtitle tracks from Netflix services over HTTPS, and the browser and Netflix apply their own network and account policies. The store build contains no developer-operated collection endpoint, analytics tracker, AI translation service, or subtitle upload feature. OTTSub does not read account passwords or use the Chrome cookies API. Optional support links open Ctee or Buy Me a Coffee only when you choose them; those sites apply their own policies."
+      ],
+      [
+        "Purpose and Limited Use",
+        "OTTSub uses the data it accesses only for its disclosed subtitle-timing and dual-subtitle features. This use follows the Chrome Web Store User Data Policy, including its Limited Use requirements. The extension does not sell this data, use it for advertising or profiling, or send it to an AI training or translation service."
+      ],
+      [
+        "Retention and your controls",
+        "Subtitle and playback working data are held in page memory and released when the page is reloaded or its tab is closed. Browser-managed network caches are separate from OTTSub settings. Preferences persist in Chrome storage; use Chrome's extension and storage controls to manage or remove them. Clearing ordinary browsing history alone may not clear extension settings. Copies managed by Chrome Sync are governed by your Chrome settings and Google's policies; the developer cannot directly inspect or delete them."
+      ],
+      [
+        "This website",
+        "This static website has no analytics scripts, account forms or external fonts. It is hosted on GitHub Pages. GitHub states that it logs visitors' IP addresses for security purposes even when they are not signed in. Following links to Netflix, the Chrome Web Store or other services is subject to those services' policies. Links to the Chrome Web Store include fixed campaign labels to distinguish this website, its language and link position in store reports. These labels contain no personal identifier, subtitle text or viewing history."
+      ],
+      [
+        "Questions and changes",
+        "Use the developer contact shown on the OTTSub Chrome Web Store page for privacy questions. Contacting the developer voluntarily may disclose your email address and the message you send; do not include passwords, cookies, access tokens or raw viewing diagnostics. Material changes to the extension's data practices require updated disclosures; this policy describes the reviewed implementation, rather than making a claim about unrelated developer tools."
+      ]
+    ],
+    "sources": [
+      [
+        "Chrome Web Store User Data FAQ",
+        "https://developer.chrome.com/docs/webstore/program-policies/user-data-faq"
+      ],
+      [
+        "Google privacy policy",
+        "https://policies.google.com/privacy"
+      ],
+      [
+        "GitHub Pages data collection",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection"
+      ]
+    ],
+    "contact": "Developer contact in the Chrome Web Store",
+    "reviewed": "Policy reviewed"
+  },
+  "ko": {
+    "title": "개인정보처리방침",
+    "label": "개인정보",
+    "intro": "이 방침은 K2Bact가 제공하는 OTTSub Chrome 웹스토어 배포판과 이 제품 소개 웹사이트를 설명합니다. 자막은 사용자의 브라우저에서 처리합니다. 데이터 처리가 전혀 없거나 네트워크 요청을 하지 않는다는 뜻은 아닙니다.",
+    "sections": [
+      [
+        "자막 표시를 위해 사용하는 정보",
+        "OTTSub는 자막 싱크와 이중 자막을 제공하기 위해 자막 트랙의 정보·주소, 언어와 일반/CC·SDH 구분, 자막 문장과 시간, 현재 Netflix 작품 식별자와 재생 상태를 읽습니다. 별도의 시청 기록 데이터베이스를 만들거나 자막 문장을 환경설정 저장소에 보관하지 않습니다."
+      ],
+      [
+        "환경설정과 Chrome 저장소",
+        "언어·싱크·모양·학습 설정과 설정 변경 순서를 처리하는 기술 값은 Chrome 저장소에 보관합니다. 기존 구현에는 local 및 sync 저장소가 사용됩니다. Chrome 설정에 따라 환경설정 값이 Google의 Chrome 동기화 서비스로 보관될 수 있습니다. 자막 문장과 Netflix 자막 주소는 이 환경설정 기록에 포함하지 않습니다."
+      ],
+      [
+        "통신과 정보를 받는 서비스",
+        "자막 트랙은 Netflix 서비스에서 HTTPS로 받으며 브라우저와 Netflix의 통신·계정 정책이 적용됩니다. 배포판에는 개발자 운영 수집 서버, 분석 추적기, AI 번역 서비스나 자막 업로드 기능이 없습니다. 계정 비밀번호를 읽거나 Chrome 쿠키 API를 사용하지 않습니다. 선택적인 후원 링크는 사용자가 누를 때 Ctee 또는 Buy Me a Coffee를 열며 해당 서비스의 정책이 적용됩니다."
+      ],
+      [
+        "사용 목적과 제한적 사용",
+        "접근한 정보는 공개한 자막 싱크·이중 자막 기능을 위해서만 사용하며 Chrome 웹스토어 사용자 데이터 정책과 제한적 사용(Limited Use) 요건을 따릅니다. 확장 프로그램은 이 정보를 판매하거나 광고·프로파일링에 사용하지 않으며 AI 학습·번역 서비스로 보내지 않습니다."
+      ],
+      [
+        "보관과 사용자의 관리",
+        "자막·재생 작업 정보는 페이지 메모리에서 처리하고 페이지를 새로 열거나 탭을 닫을 때 해제합니다. 브라우저가 관리하는 네트워크 캐시는 OTTSub 환경설정과 별개입니다. 환경설정은 Chrome 저장소에 유지되며 브라우저의 확장 프로그램·저장소 관리 기능으로 관리하거나 제거할 수 있습니다. 일반 방문 기록 삭제만으로 확장 설정이 지워진다고 가정해서는 안 됩니다. Chrome 동기화 서비스가 관리하는 사본은 Chrome 설정과 Google 정책을 따르며 개발자가 직접 조회·삭제할 수 없습니다."
+      ],
+      [
+        "이 웹사이트",
+        "이 정적 소개 페이지에는 분석 스크립트·계정 입력 폼·외부 폰트가 없습니다. 호스팅은 GitHub Pages를 사용하며 GitHub는 로그인 여부와 관계없이 보안을 위해 방문자의 IP 주소를 기록한다고 안내합니다. Netflix·Chrome 웹스토어 등 외부 링크로 이동하면 해당 서비스의 정책이 적용됩니다. Chrome 웹스토어 링크에는 이 웹사이트·언어·링크 위치를 스토어 통계에서 구분하는 고정 캠페인 값이 포함됩니다. 개인 식별자·자막 문장·시청 기록은 이 값에 포함하지 않습니다."
+      ],
+      [
+        "문의와 변경 안내",
+        "개인정보 문의는 OTTSub Chrome 웹스토어에 표시된 개발자 연락처를 이용할 수 있습니다. 직접 문의를 보내면 사용자가 보낸 이메일 주소와 메시지가 전달될 수 있으므로 비밀번호·쿠키·접근 토큰·원본 시청 진단은 보내지 마세요. 확장 프로그램의 데이터 처리 방식이 중요하게 변경되면 안내도 갱신해야 합니다. 이 방침은 검토한 배포판을 설명하며 별도의 개발 도구에 대한 보장은 아닙니다."
+      ]
+    ],
+    "sources": [
+      [
+        "Chrome 웹스토어 사용자 데이터 FAQ",
+        "https://developer.chrome.com/docs/webstore/program-policies/user-data-faq"
+      ],
+      [
+        "Google 개인정보처리방침",
+        "https://policies.google.com/privacy"
+      ],
+      [
+        "GitHub Pages의 데이터 기록 안내",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection"
+      ]
+    ],
+    "contact": "Chrome 웹스토어의 개발자 연락처",
+    "reviewed": "방침 검토일"
+  },
+  "es": {
+    "title": "Política de privacidad",
+    "label": "Privacidad",
+    "intro": "Esta política describe la versión de OTTSub distribuida en Chrome Web Store y este sitio web del producto. K2Bact proporciona OTTSub. Los subtítulos se procesan en tu navegador; esto no significa que la extensión no maneje datos ni haga solicitudes de red.",
+    "sections": [
+      [
+        "Datos utilizados para mostrar los subtítulos",
+        "OTTSub lee los metadatos y las direcciones de las pistas de subtítulos, las etiquetas de idioma y CC/SDH, el texto y los tiempos de los subtítulos, el identificador del título actual de Netflix y el estado de reproducción necesario para sincronizar y mostrar los subtítulos. Usa estos datos para sus funciones de sincronización y subtítulos duales. No crea una base de datos del historial de visualización ni guarda el texto de los subtítulos en sus preferencias."
+      ],
+      [
+        "Preferencias y almacenamiento de Chrome",
+        "Las preferencias de idioma, sincronización, apariencia y aprendizaje, junto con los valores técnicos que ordenan los cambios de configuración, se guardan en el almacenamiento de Chrome. La implementación existente utiliza los almacenes local y sync. Según la configuración de Chrome, Google Chrome puede sincronizar estas preferencias mediante su propio servicio. Los registros de preferencias no incluyen el texto de los subtítulos ni sus direcciones de Netflix."
+      ],
+      [
+        "Solicitudes de red y servicios receptores",
+        "La extensión obtiene las pistas de subtítulos de los servicios de Netflix mediante HTTPS, y se aplican las políticas de red y cuenta del navegador y de Netflix. La versión de la tienda no contiene un servidor de recopilación del desarrollador, un rastreador analítico, un servicio de traducción con IA ni una función para subir subtítulos. OTTSub no lee contraseñas de cuentas ni usa la API de cookies de Chrome. Los enlaces opcionales de apoyo abren Ctee o Buy Me a Coffee solo cuando los pulsas; esos sitios aplican sus propias políticas."
+      ],
+      [
+        "Finalidad y uso limitado",
+        "OTTSub utiliza los datos a los que accede únicamente para las funciones declaradas de sincronización y subtítulos duales. Este uso sigue la Política de Datos de Usuario de Chrome Web Store, incluidos sus requisitos de uso limitado (Limited Use). La extensión no vende estos datos, no los usa para publicidad o elaboración de perfiles y no los envía a servicios de entrenamiento o traducción con IA."
+      ],
+      [
+        "Conservación y control de los datos",
+        "Los datos temporales de subtítulos y reproducción se procesan en la memoria de la página y se liberan al recargarla o cerrar su pestaña. Las cachés de red gestionadas por el navegador son independientes de las preferencias de OTTSub. Las preferencias permanecen en el almacenamiento de Chrome; puedes gestionarlas o eliminarlas con los controles de extensiones y almacenamiento de Chrome. Borrar el historial de navegación por sí solo puede no eliminar las preferencias de la extensión. Las copias gestionadas por Chrome Sync dependen de la configuración de Chrome y de las políticas de Google; el desarrollador no puede consultarlas ni eliminarlas directamente."
+      ],
+      [
+        "Este sitio web",
+        "Este sitio estático no incluye scripts de analítica, formularios de cuenta ni fuentes externas. Se aloja en GitHub Pages. GitHub indica que registra las direcciones IP de los visitantes por seguridad, incluso cuando no han iniciado sesión. Al seguir enlaces a Netflix, Chrome Web Store u otros servicios se aplican las políticas de esos servicios. Los enlaces a Chrome Web Store incluyen etiquetas de campaña fijas para distinguir este sitio, su idioma y la posición del enlace en los informes de la tienda. Estas etiquetas no contienen identificadores personales, texto de subtítulos ni historial de visualización."
+      ],
+      [
+        "Consultas y cambios",
+        "Para consultas sobre privacidad, utiliza el contacto del desarrollador que aparece en la página de OTTSub en Chrome Web Store. Si contactas voluntariamente, puedes facilitar tu dirección de correo electrónico y el mensaje enviado; no incluyas contraseñas, cookies, tokens de acceso ni diagnósticos de visualización sin depurar. Los cambios importantes en el tratamiento de datos requieren actualizar esta información. Esta política describe la implementación revisada y no ofrece garantías sobre otras herramientas de desarrollo."
+      ]
+    ],
+    "sources": [
+      [
+        "Preguntas frecuentes sobre datos de usuario de Chrome Web Store",
+        "https://developer.chrome.com/docs/webstore/program-policies/user-data-faq"
+      ],
+      [
+        "Política de privacidad de Google",
+        "https://policies.google.com/privacy"
+      ],
+      [
+        "Recopilación de datos en GitHub Pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection"
+      ]
+    ],
+    "contact": "Contacto del desarrollador en Chrome Web Store",
+    "reviewed": "Política revisada"
+  }
+}

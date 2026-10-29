@@ -1,0 +1,57 @@
+# Version only reviewed project components; keep private captures local.
+/*
+!/.gitignore
+!/.gitattributes
+!/.ignore
+!/AGENTS.md
+!/README.md
+!/manifest.json
+!/naver9656c7453e069da26ec88aaa634f7acb.html
+!/_locales/
+!/icons/
+!/src/
+!/popup/
+!/tests/
+!/scripts/
+!/tools/
+!/docs/
+!/store_assets/
+
+**/node_modules/
+**/__pycache__/
+*.pyc
+*.log
+*.har
+*.zip
+*.crx
+*.cpuprofile
+*.pem
+*.key
+# Public loopback-only TLS fixtures required by the offline CDN regression test.
+!/tests/fixtures/cdn-network/server-cert.pem
+!/tests/fixtures/cdn-network/server-key.pem
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+**/browser-temp/
+**/qa-temp/
+**/*-profile-*/
+**/replay-results.json
+
+# Local-only discussion, third-party reference material, and account exports.
+# Keep these on disk for authorized local work; do not add them to Git.
+/OttsubAiTalk.md
+/tests/fixtures/netflix-player-reference.js
+**/.git-credentials
+**/.netrc
+**/_netrc
+**/credentials.json
+**/service-account*.json
+**/cookies.json
+**/storage-state*.json
+*.p12
+*.pfx
+*.jks
+*.keystore

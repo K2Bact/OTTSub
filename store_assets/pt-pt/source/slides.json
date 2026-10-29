@@ -1,0 +1,29 @@
+{
+  "locale": "pt-PT",
+  "direction": "ltr",
+  "languageName": "Português (Portugal)",
+  "title": "OTTSub · Capturas de ecrã em português",
+  "panelLabel": "Painel lateral · Definições do OTTSub",
+  "panelTitle": "Interface do OTTSub em português de Portugal",
+  "footer": "Para a Netflix · Os idiomas disponíveis dependem do título. O estado da interface e as legendas são exemplos de demonstração.",
+  "slides": [
+    {
+      "eyebrow": "01 / LEGENDAS DUPLAS",
+      "headline": "Um ecrã.<br>Dois idiomas.",
+      "description": "Escolha dois idiomas entre as legendas<br>disponíveis na Netflix.",
+      "detail": "<div class=\"demo-screen\"><div class=\"demo-label\">EXEMPLO DE LEGENDAS</div><div class=\"line1\">Let’s take the long way home.</div><div class=\"line2\">Vamos para casa pelo caminho mais longo.</div></div><p class=\"hint\">Inglês + português · Definições independentes para cada idioma</p>"
+    },
+    {
+      "eyebrow": "02 / AJUSTE DO TEMPO",
+      "headline": "Acerte o tempo.<br>Em cada idioma.",
+      "description": "Adiante ou atrase cada idioma separadamente.<br>Ajustes em passos de 0.1 segundos.",
+      "detail": "<div class=\"keyrow\"><div class=\"keycard\"><div class=\"keys\">[ &nbsp; ]</div><div class=\"keylabel\">Legendas principais<br><span class=\"accent\">−0.1 / +0.1 segundos</span></div></div><div class=\"keycard\"><div class=\"keys\">Alt + [ / ]</div><div class=\"keylabel\">Legendas secundárias<br><span class=\"accent\">−0.1 / +0.1 segundos</span></div></div></div><p class=\"hint\">Mac: Option · Windows: Alt.<br>Também pode usar os controlos no painel lateral.</p>"
+    },
+    {
+      "eyebrow": "03 / APRENDIZAGEM DE IDIOMAS",
+      "headline": "Pratique com<br>as legendas.",
+      "description": "Desfoque as legendas para praticar.<br>Passe o rato sobre elas para pausar o vídeo.",
+      "detail": "<div class=\"demo-screen\"><div class=\"demo-label\">EXEMPLO DE EXERCÍCIO</div><div class=\"line1\">One more step. You’re almost there.</div><div class=\"line2\" style=\"filter:blur(5px)\">Mais um passo. Está quase a chegar.</div></div><div class=\"steps\"><div class=\"step\"><span class=\"num\">1</span>Ler</div><div class=\"step\"><span class=\"num\">2</span>Confirmar</div><div class=\"step\"><span class=\"num\">3</span>Continuar</div></div>"
+    }
+  ]
+}

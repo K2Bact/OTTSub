@@ -1,0 +1,54 @@
+OTTSub on maksuton Chrome-laajennus Netflixin tekstitysten ajoituksen säätämiseen ja kahden tekstityskielen näyttämiseen yhtä aikaa. Voit säätää ajoitusta, tekstin ulkoasua ja kieltenopiskelun asetuksia sivupaneelista tai pikanäppäimillä. OTTSub ei sisällä mainoksia eikä vaadi omaa tiliä tai tilausta. Netflix-tili ja katseluoikeus tarvitaan erikseen.
+
+ALOITTAMINEN
+
+Asenna OTTSub tietokoneen Chrome-selaimeen, avaa video Netflixin verkkosivustolla ja avaa sivupaneeli napsauttamalla OTTSub-kuvaketta. Valitse saatavilla olevista tekstitysraidoista ensisijainen ja toissijainen kieli ja säädä niiden ajoitusta erikseen. Laajennus ei toimi Netflix-sovelluksen sisällä.
+
+OMINAISUUDET
+
+• Säädä ensisijaisen ja toissijaisen tekstityksen ajoitusta erikseen 0,1 sekunnin askelin. Käytä sivupaneelin säädintä, hiiren rullaa tai pikanäppäimiä. Kummankin ajoituksen voi palauttaa erikseen arvoon 0.0s.
+• Näytä kaksi tekstityskieltä yhtä aikaa käyttäen katseltavan Netflix-nimikkeen ja tilin saatavilla olevia raitoja. OTTSub ei tuota käännöksiä eikä lisää kieliä, joita Netflix ei tarjoa.
+• Valitse tavalliset tekstitykset tai CC/SDH-tekstitykset, kun ne ovat saatavilla. CC/SDH voi sisältää puhujien tunnisteita sekä musiikin ja muiden äänten kuvauksia.
+• Säädä kielten tekstikokoa erikseen: ensisijainen 60–140 % ja toissijainen 60–120 %. Valitse valkoinen, keltainen, minttu tai vihreä tekstiväri ja halutessasi puoliläpinäkyvä taustalaatikko.
+• Muuta riviväliä ja pystysijaintia. Siirrä tekstityksiä vetämällä hiirellä tai lukitse niiden sijainti.
+• Sumenna tai piilota ensisijainen kieli, toissijainen kieli tai molemmat. Näytä teksti viemällä hiiri sen päälle. Voit myös ottaa käyttöön videon keskeyttämisen tekstityksen kohdalla.
+• OTTSub piilottaa omat tekstityksensä havaittujen mainosten ajaksi. Mainoksen tai siirtymisen jälkeen se tarkistaa toiston ajan ennen tekstitysten palauttamista. Tarkistuksen aikana Netflixin omat tekstitykset voivat näkyä tilapäisesti.
+• Käytä suomenkielistä käyttöliittymää tai jotakin muuta 16 tuetusta valikkokielestä. Valikon kieli ja Netflixin tarjoamat tekstityskielet ovat eri asioita.
+
+PIKANÄPPÄIMET
+
+[ / ]: ensisijaisen tekstityksen ajoitus −0,1 / +0,1 sekuntia
+Alt + [ / ]: toissijaisen tekstityksen ajoitus −0,1 / +0,1 sekuntia
+\: palauta ensisijaisen tekstityksen ajoitus arvoon 0.0s
+Alt + \: palauta toissijaisen tekstityksen ajoitus arvoon 0.0s
+Alt + D: kaksoistekstitys päälle tai pois
+Alt + B: tekstityksen sumennus tai piilotus päälle tai pois
+Alt + L: lukitse tekstityksen sijainti tai poista lukitus
+Alt + R: palauta tekstityksen oletussijainti
+
+Macissa käytetään Option-näppäintä Alt-näppäimen sijaan. Näppäinten sijainnit vastaavat yhdysvaltalaista näppäimistöasettelua; näppäimiin painetut merkit voivat erota muissa asetteluissa. Voit käyttää myös sivupaneelin säätimiä.
+
+USEIN KYSYTTYÄ
+
+Onko OTTSub maksuton ja tarvitaanko oma tili?
+OTTSub on maksuton eikä vaadi rekisteröitymistä tai omaa tilausta. Netflix-tili ja Netflixin katseluoikeus tarvitaan erikseen, eivätkä ne sisälly OTTSubiin.
+
+Kääntääkö OTTSub tekstityksiä?
+Ei. OTTSub käyttää Netflixin nykyiselle nimikkeelle ja tilille tarjoamia tekstitysraitoja. Se ei tarjoa tekoälykäännöksiä eikä lisää puuttuvia kieliä.
+
+Voiko kahta tekstityskieltä ajoittaa erikseen?
+Kyllä. Ensisijaisen ja toissijaisen tekstityksen ajoitus on erillinen. Säädä kumpaakin 0,1 sekunnin askelin ja kuuntele puhetta sopivan ajoituksen löytämiseksi. Jos ero kasvaa toiston aikana, yksi kiinteä ajoituskorjaus ei välttämättä ratkaise ongelmaa.
+
+Toimiiko OTTSub mobiili-Chromessa, Safarissa tai Netflix-sovelluksessa?
+Tämä paketti on tarkoitettu tietokoneen Chrome-selaimeen ja Netflixin verkkosivustolle. Mobiili-Chromea, Safaria tai Netflix-sovelluksen sisäistä käyttöä ei tueta. Macin toiminta on tarkistettu vasta osittain, eikä kaikkien Chromium-selainten yhteensopivuutta luvata.
+
+Mitä teen, jos haluamani tekstityskieli puuttuu?
+Tarkista ensin kyseisen nimikkeen tekstityskielet Netflixin omasta valikosta. Jos OTTSub odottaa tekstityksen osoitetta, voit käynnistää latauspyynnön valitsemalla kielen kerran Netflixin valikosta. OTTSubin valikkokielen vaihtaminen ei lisää tekstitysraitoja.
+
+TIEDOT JA YKSITYISYYS
+
+Netflixistä saadut tekstitysraidat käsitellään selaimessa, ja asetukset tallennetaan Chromen tallennustilaan. Kauppaversio ei sisällä paikallista diagnostiikkatallenninta, analytiikkatyökaluja tai katseluhistorian seurantaa. Tietojen käsittely ja säilyttäminen kuvataan englanninkielisessä tietosuojakäytännössä: https://k2bact.github.io/ottsub-site/#privacy
+
+OTTSub on itsenäinen laajennus. Se ei ole Netflixin virallinen tuote eikä Netflixin hyväksymä tai sen kanssa yhteistyössä toteutettu.
+
+Tuotteen esittely ja ohjeet englanniksi: https://k2bact.github.io/ottsub-site/

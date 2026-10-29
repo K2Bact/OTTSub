@@ -1,0 +1,370 @@
+{
+  "product": {
+    "name": "OTTSub",
+    "storeName": "OTTSub - Subtitle Sync & Dual Subtitles for Netflix",
+    "storeId": "hlcahpgeildbabcchpkhemjjgjapbdkd",
+    "storeUrl": "https://chromewebstore.google.com/detail/ottsub-subtitle-sync-dual/hlcahpgeildbabcchpkhemjjgjapbdkd",
+    "publicBaseUrl": "https://k2bact.github.io/ottsub-site/",
+    "reviewedDate": "2026-10-22",
+    "draftBuild": "1.3.6-local-russian-ui-20261020.58",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "pages": {
+    "en": {
+      "path": "index.html",
+      "title": "OTTSub — Netflix subtitle sync and dual subtitles for Chrome",
+      "description": "Adjust Netflix subtitle timing in 0.1-second steps and watch two available subtitle tracks with OTTSub, a free desktop Chrome extension. Netflix subscription required.",
+      "nav": [
+        "How it works",
+        "Timing example",
+        "Questions"
+      ],
+      "language": "한국어",
+      "eyebrow": "OTTSub · for desktop Chrome",
+      "headline": "Two subtitle tracks.\nYour timing.",
+      "intro": "OTTSub is a free desktop Chrome extension that adjusts Netflix subtitle timing in 0.1-second steps and displays two subtitle tracks available for the title you are watching.",
+      "install": "View OTTSub in the Chrome Web Store",
+      "cost": "OTTSub is free. A Netflix account and subscription are required separately.",
+      "demoLabel": "Illustration · example dialogue, not a Netflix playback capture",
+      "demoPrimary": "Let's watch one more episode.",
+      "demoSecondary": "한 편만 더 보자.",
+      "demoTiming": "Each subtitle track has its own timing offset.",
+      "featuresTitle": "One panel, two independent tracks",
+      "features": [
+        [
+          "Fine-tune each language",
+          "Adjust primary and secondary subtitle timing separately, in 0.1-second steps. Reset either track to 0.0s when needed."
+        ],
+        [
+          "Use the subtitles Netflix provides",
+          "Choose two available tracks for the current title. OTTSub does not generate translations or unlock missing languages."
+        ],
+        [
+          "Make room for learning",
+          "Choose subtitle size, color and background. Blur one or both tracks, reveal them on hover, or enable hover-to-pause."
+        ]
+      ],
+      "stepsTitle": "Start with a video on Netflix",
+      "steps": [
+        [
+          "Install on your computer",
+          "Open the OTTSub Chrome Web Store page in desktop Chrome and install the extension."
+        ],
+        [
+          "Open the side panel",
+          "Play a video on the Netflix website. Click the OTTSub extension icon to open its side panel."
+        ],
+        [
+          "Choose and adjust",
+          "Select the primary and secondary subtitle tracks available for that title. Adjust their timing separately with the panel controls or shortcuts."
+        ]
+      ],
+      "exampleTitle": "Subtitles 0.3 seconds late?",
+      "exampleIntro": "Starting from 0.0s, try +0.3s for the affected subtitle track to display it earlier. If it appears 0.3 seconds too early, try −0.3s instead. Listen, compare and fine-tune; a single offset may not fix a track that drifts over time.",
+      "exampleRows": [
+        [
+          "Subtitles appear late",
+          "+0.3s",
+          "Display them earlier"
+        ],
+        [
+          "Subtitles appear early",
+          "−0.3s",
+          "Display them later"
+        ]
+      ],
+      "exampleNote": "Example values start at 0.0s. Primary and secondary offsets are independent. Adjusting subtitle timing does not change the video's playback speed.",
+      "faqTitle": "Before you install",
+      "faqs": [
+        [
+          "How can I fix Netflix subtitles that are out of sync?",
+          "In OTTSub, adjust the affected subtitle track in 0.1-second steps. Starting from 0.0s, try +0.3s when subtitles appear 0.3 seconds late, or −0.3s when they appear 0.3 seconds early. Primary and secondary timing can be adjusted independently."
+        ],
+        [
+          "Why do subtitles drift out of sync again after I adjust them?",
+          "A fixed timing offset can correct a constant early or late subtitle track. If the gap keeps growing during playback, one fixed offset may not solve it. Check another subtitle track provided by Netflix; OTTSub does not rewrite subtitle timings or change video playback speed."
+        ],
+        [
+          "Can OTTSub show two languages on Netflix?",
+          "Yes, when both subtitle tracks are available for the current Netflix title and account. Choose the primary and secondary tracks in the side panel; their timing and appearance can be adjusted separately."
+        ],
+        [
+          "Does OTTSub translate subtitles automatically?",
+          "No. OTTSub displays subtitle tracks provided by Netflix. It does not create AI translations, provide a translation service, or add languages that Netflix does not offer for that title."
+        ],
+        [
+          "Why is my subtitle language missing?",
+          "Subtitle availability depends on the Netflix title and account. Check the languages Netflix provides for that title. Changing the OTTSub menu language does not add or translate subtitle tracks."
+        ],
+        [
+          "Are the extension and Netflix both free?",
+          "OTTSub itself is free and does not require a separate OTTSub account or subscription. A Netflix account and subscription are required separately and are not included."
+        ],
+        [
+          "Does OTTSub work in mobile Chrome, Safari or the Netflix app?",
+          "This package targets desktop Chrome on the Netflix website. It does not support mobile Chrome, Safari or operation inside the Netflix app. Being able to view this website on a phone does not mean the extension runs there."
+        ],
+        [
+          "What about Microsoft Edge and Mac?",
+          "Microsoft Edge on Windows has passed local compatibility tests. macOS has Option shortcuts and has been partially verified; complete Mac verification is pending. Other Chromium browsers have not been verified."
+        ],
+        [
+          "Can I choose ordinary subtitles or CC/SDH?",
+          "When the title provides them, OTTSub keeps ordinary subtitle and CC/SDH tracks separate. CC/SDH can include sound descriptions and speaker information. Track availability still depends on Netflix."
+        ],
+        [
+          "Does OTTSub send subtitles to an AI service?",
+          "No AI translation service is used. Subtitle tracks are retrieved from Netflix services and processed in your browser; preferences use Chrome storage. The store build excludes the local diagnostic recorder, analytics and viewing-history tracking tools. This does not mean the extension makes no network requests."
+        ],
+        [
+          "Is OTTSub an official Netflix product?",
+          "No. OTTSub is an independently developed extension and is not affiliated with or endorsed by Netflix."
+        ]
+      ],
+      "footer": "OTTSub is offered by K2Bact in the Chrome Web Store. Netflix access is separate. This page loads without analytics scripts, account forms or external fonts.",
+      "reviewed": "Product information reviewed",
+      "preview": "Local preview · not published or submitted for indexing",
+      "skip": "Skip to content",
+      "nativeName": "English",
+      "navLabel": "Page navigation"
+    },
+    "ko": {
+      "path": "ko/index.html",
+      "title": "OTTSub — Netflix 자막 싱크 조절·이중 자막 Chrome 확장 프로그램",
+      "description": "OTTSub로 Netflix 자막 싱크를 0.1초 단위로 조절하고 작품에서 제공되는 두 언어 자막을 함께 보세요. 데스크톱 Chrome용 무료 확장 프로그램이며 Netflix 구독은 별도입니다.",
+      "nav": [
+        "사용 방법",
+        "싱크 조절 예시",
+        "자주 묻는 질문"
+      ],
+      "language": "English",
+      "eyebrow": "OTTSub · 데스크톱 Chrome용",
+      "headline": "두 언어 자막을,\n내 타이밍에.",
+      "intro": "OTTSub는 Netflix 자막 싱크를 0.1초 단위로 조절하고, 시청 중인 작품에서 제공되는 두 자막 트랙을 함께 표시하는 데스크톱 Chrome용 무료 확장 프로그램입니다.",
+      "install": "Chrome 웹스토어에서 OTTSub 보기",
+      "cost": "OTTSub는 무료입니다. Netflix 계정과 구독은 별도로 필요합니다.",
+      "demoLabel": "기능 설명용 예시 대사이며 Netflix 재생 화면 캡처가 아닙니다",
+      "demoPrimary": "Let's watch one more episode.",
+      "demoSecondary": "한 편만 더 보자.",
+      "demoTiming": "주언어·보조언어 싱크를 따로 조절합니다.",
+      "featuresTitle": "한 패널에서, 두 자막을 독립적으로",
+      "features": [
+        [
+          "언어별로 싱크 조절",
+          "주언어와 보조언어의 타이밍을 0.1초 단위로 각각 조절하고, 필요할 때 한쪽만 0.0s로 초기화할 수 있습니다."
+        ],
+        [
+          "Netflix가 제공하는 자막 사용",
+          "현재 작품에서 이용 가능한 두 트랙을 선택합니다. 없는 언어를 추가하거나 자막을 자체 번역하지 않습니다."
+        ],
+        [
+          "나에게 맞는 학습 화면",
+          "글자 크기·색상·배경을 고르고, 한쪽 또는 양쪽 자막을 가렸다가 마우스를 올려 확인하세요. 호버 일시정지도 선택할 수 있습니다."
+        ]
+      ],
+      "stepsTitle": "Netflix 웹사이트에서 시작하세요",
+      "steps": [
+        [
+          "컴퓨터에 설치",
+          "데스크톱 Chrome에서 OTTSub의 Chrome 웹스토어 페이지를 열고 확장 프로그램을 설치하세요."
+        ],
+        [
+          "사이드패널 열기",
+          "Netflix 웹사이트에서 영상을 재생한 뒤 OTTSub 확장 아이콘을 눌러 사이드패널을 여세요."
+        ],
+        [
+          "자막 선택·조절",
+          "작품에서 제공되는 주언어·보조언어 자막을 고르고, 패널이나 단축키로 각 언어의 타이밍을 조절하세요."
+        ]
+      ],
+      "exampleTitle": "자막이 대사보다 0.3초 늦다면?",
+      "exampleIntro": "0.0s에서 시작했다면 해당 자막을 +0.3s로 조절해 더 일찍 표시해 보세요. 자막이 0.3초 빠르다면 −0.3s로 조절해 보세요. 대사를 들으며 미세 조절하세요. 시간이 지날수록 오차가 커지는 트랙은 고정 오프셋 하나로 해결되지 않을 수 있습니다.",
+      "exampleRows": [
+        [
+          "자막이 늦게 나올 때",
+          "+0.3s",
+          "더 일찍 표시"
+        ],
+        [
+          "자막이 빨리 나올 때",
+          "−0.3s",
+          "더 늦게 표시"
+        ]
+      ],
+      "exampleNote": "0.0s를 기준으로 한 예시입니다. 주언어·보조언어에 각각 적용하며 자막 타이밍 조절로 영상의 재생 속도가 바뀌지는 않습니다.",
+      "faqTitle": "설치 전에 궁금한 것들",
+      "faqs": [
+        [
+          "넷플릭스 자막 싱크가 안 맞을 때 어떻게 조절하나요?",
+          "OTTSub에서 어긋난 자막의 싱크를 0.1초 단위로 조절하세요. 0.0s에서 시작했을 때 자막이 0.3초 늦으면 +0.3s로, 0.3초 빠르면 −0.3s로 맞춰 보세요. 주언어와 보조언어의 싱크는 서로 따로 조절할 수 있습니다."
+        ],
+        [
+          "맞춰도 시간이 지날수록 자막 싱크가 다시 어긋나는 이유는 뭔가요?",
+          "일정하게 빠르거나 늦는 자막은 고정 오프셋으로 조절할 수 있습니다. 재생할수록 오차가 커진다면 고정 오프셋 하나로 해결되지 않을 수 있습니다. Netflix가 제공하는 다른 자막 트랙도 확인하세요. OTTSub는 자막 원본의 시간표를 다시 쓰거나 영상 재생 속도를 바꾸지 않습니다."
+        ],
+        [
+          "Netflix에서 두 언어 자막을 함께 볼 수 있나요?",
+          "현재 Netflix 작품과 계정에서 두 자막 트랙을 제공한다면 가능합니다. 사이드패널에서 주언어와 보조언어를 고르고, 타이밍과 모양을 각각 조절할 수 있습니다."
+        ],
+        [
+          "OTTSub가 자막을 자동 번역하나요?",
+          "아니요. OTTSub는 Netflix가 제공하는 자막 트랙을 표시합니다. AI 번역을 생성하거나 번역 서비스를 제공하지 않으며, 작품에 없는 자막 언어를 추가하지 않습니다."
+        ],
+        [
+          "원하는 자막 언어가 왜 안 보이나요?",
+          "이용 가능한 자막은 Netflix 작품과 계정에 따라 다릅니다. 먼저 해당 작품에 Netflix가 제공하는 자막 언어를 확인하세요. OTTSub 메뉴 언어를 바꿔도 자막 트랙이 추가되거나 번역되지는 않습니다."
+        ],
+        [
+          "확장 프로그램도 Netflix도 무료인가요?",
+          "무료인 것은 OTTSub 자체입니다. 별도의 OTTSub 계정이나 구독은 필요하지 않습니다. Netflix 계정과 구독은 별도로 필요하며 OTTSub에 포함되지 않습니다."
+        ],
+        [
+          "모바일 Chrome·Safari·Netflix 앱에서도 작동하나요?",
+          "이 패키지는 데스크톱 Chrome의 Netflix 웹사이트를 대상으로 합니다. 모바일 Chrome·Safari나 Netflix 앱 내부 실행은 지원하지 않습니다. 휴대전화로 이 소개 페이지를 볼 수 있어도 확장 프로그램이 휴대전화에서 실행된다는 뜻은 아닙니다."
+        ],
+        [
+          "Microsoft Edge나 Mac은 어떤가요?",
+          "Windows의 Microsoft Edge는 로컬 호환성 검사를 통과했습니다. macOS용 Option 단축키와 일부 검증은 완료했지만 Mac 전체 검증은 남아 있습니다. 다른 Chromium 브라우저의 호환성은 확인하지 않았습니다."
+        ],
+        [
+          "일반 자막과 CC/SDH를 구분해 고를 수 있나요?",
+          "작품에서 제공한다면 일반 자막과 CC/SDH 트랙을 구분해 선택할 수 있습니다. CC/SDH에는 소리 설명이나 화자 정보가 포함될 수 있습니다. 이용 가능 여부는 Netflix에 따라 다릅니다."
+        ],
+        [
+          "자막을 AI 서비스로 보내나요?",
+          "AI 번역 서비스를 사용하지 않습니다. Netflix 서비스에서 자막 트랙을 받아 브라우저 안에서 처리하고, 환경설정은 Chrome 저장소에 보관합니다. 스토어 배포판에는 로컬 진단 기록기·분석·시청 기록 추적 도구가 포함되지 않습니다. 네트워크 요청을 전혀 하지 않는다는 뜻은 아닙니다."
+        ],
+        [
+          "Netflix의 공식 제품인가요?",
+          "아니요. OTTSub는 독립적으로 개발된 확장 프로그램이며 Netflix와 제휴하거나 승인받은 제품이 아닙니다."
+        ]
+      ],
+      "footer": "OTTSub의 Chrome 웹스토어 제공자는 K2Bact입니다. Netflix 이용 권한은 별도입니다. 이 페이지는 분석 스크립트·계정 입력 폼·외부 폰트 없이 열립니다.",
+      "reviewed": "제품 정보 확인일",
+      "preview": "로컬 미리보기 · 아직 게시하거나 검색 색인에 제출하지 않았습니다",
+      "skip": "본문으로 건너뛰기",
+      "nativeName": "한국어",
+      "navLabel": "페이지 탐색"
+    },
+    "es": {
+      "path": "es/index.html",
+      "nativeName": "Español",
+      "navLabel": "Navegación de la página",
+      "title": "OTTSub — Sincronización y subtítulos duales de Netflix para Chrome",
+      "description": "Ajusta los subtítulos de Netflix en pasos de 0,1 segundos y muestra dos idiomas disponibles con OTTSub, una extensión gratuita para Chrome de escritorio. Netflix requiere una suscripción aparte.",
+      "nav": [
+        "Cómo usarlo",
+        "Ejemplo de sincronización",
+        "Preguntas frecuentes"
+      ],
+      "eyebrow": "OTTSub · para Chrome de escritorio",
+      "headline": "Dos subtítulos.\nA tu ritmo.",
+      "intro": "OTTSub es una extensión gratuita para Chrome de escritorio que permite ajustar la sincronización de los subtítulos de Netflix en pasos de 0,1 segundos y mostrar dos pistas de subtítulos disponibles para el título que estás viendo.",
+      "install": "Ver OTTSub en Chrome Web Store",
+      "cost": "OTTSub es gratuito. Necesitas una cuenta y una suscripción a Netflix por separado.",
+      "demoLabel": "Ilustración con un diálogo de ejemplo; no es una captura de reproducción de Netflix",
+      "demoPrimary": "Let's watch one more episode.",
+      "demoSecondary": "Veamos un episodio más.",
+      "demoPrimaryLang": "en",
+      "demoSecondaryLang": "es",
+      "demoTiming": "Cada pista de subtítulos tiene su propio ajuste de sincronización.",
+      "featuresTitle": "Un panel, dos pistas independientes",
+      "features": [
+        [
+          "Ajusta cada idioma por separado",
+          "Adelanta o retrasa los subtítulos principales y secundarios de forma independiente, en pasos de 0,1 segundos. Restablece cualquiera de los ajustes a 0.0s cuando lo necesites."
+        ],
+        [
+          "Usa los subtítulos que ofrece Netflix",
+          "Elige dos pistas disponibles para el título actual. OTTSub no genera traducciones ni añade idiomas que no estén disponibles."
+        ],
+        [
+          "Adapta la pantalla para aprender",
+          "Elige el tamaño, el color y el fondo de los subtítulos. Difumina una o ambas pistas, muéstralas al pasar el ratón o activa la pausa al situar el ratón sobre ellas."
+        ]
+      ],
+      "stepsTitle": "Empieza con un vídeo en el sitio web de Netflix",
+      "steps": [
+        [
+          "Instala la extensión en tu ordenador",
+          "Abre la página de OTTSub en Chrome Web Store desde Chrome de escritorio e instala la extensión."
+        ],
+        [
+          "Abre el panel lateral",
+          "Reproduce un vídeo en el sitio web de Netflix. Pulsa el icono de la extensión OTTSub para abrir el panel lateral."
+        ],
+        [
+          "Selecciona y ajusta los subtítulos",
+          "Elige las pistas principal y secundaria disponibles para ese título. Ajusta la sincronización de cada una con los controles del panel o los atajos de teclado."
+        ]
+      ],
+      "exampleTitle": "¿Los subtítulos aparecen 0,3 segundos tarde?",
+      "exampleIntro": "Partiendo de 0.0s, prueba +0.3s en la pista afectada para mostrar los subtítulos antes. Si aparecen 0,3 segundos demasiado pronto, prueba −0.3s. Escucha, compara y afina el ajuste. Un único desplazamiento fijo puede no resolver un desfase que aumenta durante la reproducción.",
+      "exampleRows": [
+        [
+          "Los subtítulos aparecen tarde",
+          "+0.3s",
+          "Mostrarlos antes"
+        ],
+        [
+          "Los subtítulos aparecen pronto",
+          "−0.3s",
+          "Mostrarlos después"
+        ]
+      ],
+      "exampleNote": "Los valores del ejemplo parten de 0.0s. Los ajustes principal y secundario son independientes. Ajustar los subtítulos no cambia la velocidad de reproducción del vídeo.",
+      "faqTitle": "Antes de instalar",
+      "faqs": [
+        [
+          "¿Cómo puedo corregir los subtítulos de Netflix cuando están desincronizados?",
+          "En OTTSub, ajusta la pista afectada en pasos de 0,1 segundos. Partiendo de 0.0s, prueba +0.3s si los subtítulos aparecen 0,3 segundos tarde, o −0.3s si aparecen 0,3 segundos pronto. La sincronización de los subtítulos principales y secundarios se ajusta por separado."
+        ],
+        [
+          "¿Por qué vuelven a desincronizarse los subtítulos después de ajustarlos?",
+          "Un desplazamiento fijo puede corregir una pista que siempre se adelanta o se retrasa lo mismo. Si el desfase aumenta durante la reproducción, un único ajuste fijo puede no resolverlo. Comprueba otra pista que ofrezca Netflix. OTTSub no reescribe los tiempos originales de los subtítulos ni cambia la velocidad del vídeo."
+        ],
+        [
+          "¿Puede OTTSub mostrar dos idiomas en Netflix?",
+          "Sí, si ambas pistas están disponibles para el título y la cuenta de Netflix actuales. Elige las pistas principal y secundaria en el panel lateral y ajusta su sincronización y apariencia de forma independiente."
+        ],
+        [
+          "¿OTTSub traduce los subtítulos automáticamente?",
+          "No. OTTSub muestra las pistas de subtítulos que proporciona Netflix. No genera traducciones con IA, no ofrece un servicio de traducción y no añade idiomas que Netflix no ofrezca para ese título."
+        ],
+        [
+          "¿Por qué no aparece el idioma de subtítulos que quiero?",
+          "Los idiomas disponibles dependen del título y de la cuenta de Netflix. Comprueba qué idiomas ofrece Netflix para ese título. Cambiar el idioma del menú de OTTSub no añade ni traduce pistas de subtítulos."
+        ],
+        [
+          "¿Son gratuitos tanto la extensión como Netflix?",
+          "OTTSub es gratuito y no requiere una cuenta ni una suscripción propia. Necesitas una cuenta y una suscripción a Netflix por separado; no están incluidas."
+        ],
+        [
+          "¿Funciona OTTSub en Chrome para móviles, Safari o la aplicación de Netflix?",
+          "Este paquete está destinado a Chrome de escritorio y al sitio web de Netflix. No admite Chrome para móviles, Safari ni el uso dentro de la aplicación de Netflix. Poder ver esta página en un teléfono no significa que la extensión funcione en él."
+        ],
+        [
+          "¿Y Microsoft Edge o Mac?",
+          "Microsoft Edge en Windows ha superado pruebas locales de compatibilidad. macOS dispone de atajos con Option y se ha verificado parcialmente; la verificación completa en Mac sigue pendiente. No se han verificado otros navegadores basados en Chromium."
+        ],
+        [
+          "¿Puedo elegir subtítulos normales o CC/SDH?",
+          "Cuando el título los ofrece, OTTSub permite distinguir y seleccionar las pistas normales y CC/SDH. Los subtítulos CC/SDH pueden incluir descripciones de sonidos e identificación de hablantes. Su disponibilidad depende de Netflix."
+        ],
+        [
+          "¿Envía OTTSub los subtítulos a un servicio de IA?",
+          "No utiliza un servicio de traducción con IA. Las pistas se obtienen de los servicios de Netflix y se procesan en tu navegador; las preferencias se guardan en el almacenamiento de Chrome. La versión de la tienda excluye el registro de diagnóstico local, las herramientas de analítica y el seguimiento del historial de visualización. Esto no significa que la extensión no haga solicitudes de red."
+        ],
+        [
+          "¿Es OTTSub un producto oficial de Netflix?",
+          "No. OTTSub es una extensión desarrollada de forma independiente y no está afiliada a Netflix ni cuenta con su aprobación."
+        ]
+      ],
+      "footer": "K2Bact ofrece OTTSub en Chrome Web Store. El acceso a Netflix se contrata por separado. Esta página no carga scripts de analítica, formularios de cuenta ni fuentes externas.",
+      "reviewed": "Información del producto revisada",
+      "preview": "Vista previa local · no publicada ni enviada para indexación",
+      "skip": "Ir al contenido"
+    }
+  }
+}

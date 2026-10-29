@@ -1,0 +1,29 @@
+{
+  "locale": "fi",
+  "direction": "ltr",
+  "languageName": "suomi",
+  "title": "OTTSub · Suomenkieliset kuvakaappaukset",
+  "panelLabel": "Sivupaneeli · OTTSubin asetukset",
+  "panelTitle": "OTTSubin suomenkielinen käyttöliittymä",
+  "footer": "Netflixille · Saatavilla olevat kielet riippuvat nimikkeestä. Näytön tila ja vuoropuhelu ovat esimerkkejä.",
+  "slides": [
+    {
+      "eyebrow": "01 / KAKSOISTEKSTITYS",
+      "headline": "Kaksi kieltä.<br>Samalla ruudulla.",
+      "description": "Valitse kaksi tekstityskieltä Netflixin<br>katseltavalle nimikkeelle tarjoamista raidoista.",
+      "detail": "<div class=\"demo-screen\"><div class=\"demo-label\">Esimerkkitekstitys</div><div class=\"line1\" lang=\"en\">Let’s take a walk.</div><div class=\"line2\">Mennään kävelylle.</div></div><p class=\"hint\">Englanti + suomi · Kielten asetukset erikseen</p>"
+    },
+    {
+      "eyebrow": "02 / TEKSTITYKSEN AJOITUS",
+      "headline": "Ajoita kumpikin<br>kieli erikseen.",
+      "description": "Säädä ensisijaista ja toissijaista tekstitystä<br>0,1 sekunnin askelin.",
+      "detail": "<div class=\"keyrow\"><div class=\"keycard\"><div class=\"keys\">[ &nbsp; ]</div><div class=\"keylabel\">Ensisijainen kieli<br><span class=\"accent\">−0,1 / +0,1 sekuntia</span></div></div><div class=\"keycard\"><div class=\"keys\">Alt + [ / ]</div><div class=\"keylabel\">Toissijainen kieli<br><span class=\"accent\">−0,1 / +0,1 sekuntia</span></div></div></div><p class=\"hint\">Windows: Alt · Mac: Option<br>Voit käyttää myös sivupaneelin säätimiä.</p>"
+    },
+    {
+      "eyebrow": "03 / KIELTENOPISKELU",
+      "headline": "Opi kieliä<br>tekstityksillä.",
+      "description": "Sumenna teksti harjoittelua varten.<br>Keskeytä video viemällä hiiri tekstityksen päälle.",
+      "detail": "<div class=\"demo-screen\"><div class=\"demo-label\">Harjoitteluesimerkki</div><div class=\"line1\" lang=\"en\">You’re almost there.</div><div class=\"line2\" style=\"filter:blur(5px)\">Olet melkein perillä.</div></div><div class=\"steps\"><div class=\"step\"><span class=\"num\">1</span>Lue</div><div class=\"step\"><span class=\"num\">2</span>Tarkista</div><div class=\"step\"><span class=\"num\">3</span>Jatka</div></div>"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - ضبط توقيت ترجمة Netflix والترجمة المزدوجة",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "اضبط توقيت ترجمة Netflix واعرض ترجمتين معًا باستخدام اختصارات لوحة المفاتيح وعناصر تحكم سهلة.",
+    "description": "Extension description"
+  }
+}

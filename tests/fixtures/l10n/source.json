@@ -1,0 +1,12 @@
+{
+  "authority": "app_common/l10n_engine",
+  "captured": "2026-10-14",
+  "purpose": "Pinned completeness/token/script and OTTSub profile gates; not native linguistic review",
+  "sha256": {
+    "core/gate1_completeness.mjs": "060a024cd77a3e0c0ccc2e0def829709bf15229ab1a7c5b9a8a02c40cb44abe8",
+    "core/gate2_tokens.mjs": "23896e7f57e7cb21e0ef4fe9ec75bdcec4a470419592419712c58b9b1c622518",
+    "profiles/ottsub.mjs": "ee9e09d9b2704fcf1fa5e70562a487719134221fb5ec43e8faee5f857ac73654",
+    "core/gate12_script_allowlist.mjs": "61a01ac1eb3d12846a1506dd77050eab9c1959687c06744081accc475cd0dd4e"
+  },
+  "gate12Captured": "2026-10-21"
+}

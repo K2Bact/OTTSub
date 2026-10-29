@@ -1,0 +1,593 @@
+/*  */
+
+/* 1. Hide Netflix Native Subtitles visually while allowing background DOM layout measurement */
+body.ottsub-active .player-timedtext, body.ottsub-active [data-uia="player-timedtext"], body.ottsub-active div[class*="timedtext"],
+body.ottsub-recovery-native-hidden .player-timedtext, body.ottsub-recovery-native-hidden [data-uia="player-timedtext"], body.ottsub-recovery-native-hidden div[class*="timedtext"] {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  forced-color-adjust: none !important;
+}
+
+/* 넷플릭스 인터랙티브 선택지(Bandersnatch 등) 및 오프닝 건너뛰기 버튼 우선권 보장 (자막 레이어 상위 배치 및 클릭 통과 원천 방어) */
+.akira-choice-container, .interactive-choice-container, [data-uia*="interactive-choice"], .watch-video--interactive-choice-container, [data-uia*="player-skip-intro"], .skip-credits, [data-uia*="next-episode-seamless-button"] {
+  z-index: 2147483647 !important;
+  pointer-events: auto !important;
+}
+
+/* 인터랙티브 선택지 화면 활성 시 자막 드래그 영역이 선택지 클릭을 가로채지 못하도록 포인터 이벤트 자동 통과 */
+:has(.akira-choice-container, .interactive-choice-container, [data-uia*="interactive-choice"]) #ottsub-container .ottsub-box, :has(.akira-choice-container, .interactive-choice-container, [data-uia*="interactive-choice"]) #ottsub-container .ottsub-box * {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* 2. Custom Subtitle Layer Container attached directly to video.parentElement */
+#ottsub-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2147483640;
+  pointer-events: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+  overflow: hidden;
+  contain: layout style;
+  will-change: transform;
+  transform: translateZ(0);
+  forced-color-adjust: none !important;
+
+  /* CSS variables initialized with Netflix native standard defaults */
+  --ottsub-font-size: clamp(20px, 4.8vh, 52px);
+  --ottsub-primary-scale: 1.0;
+  --ottsub-secondary-scale: 0.78;
+  --ottsub-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK KR", sans-serif;
+  --ottsub-color: #ffffff;
+  --ottsub-secondary-color: #ffe082;
+  --ottsub-text-shadow: rgb(0, 0, 0) 0px 0px 7px, rgb(0, 0, 0) 0px 0px 4px;
+  --ottsub-bottom: clamp(90px, 11vh, 130px);
+  --ottsub-split-baseline: clamp(170px, 19.5vh, 225px);
+  --ottsub-line-height: 1.20;
+  --ottsub-primary-line-height: 1.20;
+  --ottsub-secondary-line-height: 1.20;
+  --ottsub-primary-offset-y: 0px;
+  --ottsub-secondary-offset-y: 0px;
+}
+
+/* 3. Subtitle Boxes (Top & Bottom Regions) */
+.ottsub-box {
+  position: absolute;
+  left: calc(50% + var(--ottsub-custom-x, 0%));
+  transform: translateX(-50%) translateY(var(--ottsub-custom-y, 0%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(90%, 1200px);
+  max-width: 1200px;
+  max-height: 42%;
+  box-sizing: border-box;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  contain: layout style;
+  text-align: center;
+  pointer-events: none !important;
+  cursor: default !important;
+  touch-action: none;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
+}
+
+/* 마우스 드래그 커스텀 위치 활성 시에도 안정적인 가로폭 유지 (세로 수축 붕괴 원천 방어) */
+#ottsub-container.has-custom-position .ottsub-box {
+  width: min(90%, 1200px) !important;
+  max-width: 1200px !important;
+}
+
+/* 실제 자막 글자 및 슬롯 래퍼 위에서만 손 모양(grab) 커서 노출 및 드래그 반응 */
+.ottsub-box .ottsub-slots-wrapper, .ottsub-box .ottsub-slot-primary, .ottsub-box .ottsub-slot-secondary, .ottsub-box .ottsub-line, .ottsub-box .ottsub-line-primary, .ottsub-box .ottsub-line-secondary {
+  cursor: grab !important;
+  pointer-events: auto !important;
+}
+
+.ottsub-recovery-notice {
+  position: absolute; top: 15%; right: 3%; max-width: min(420px, 85%);
+  padding: 14px; color: white; background: rgba(20,20,20,.94);
+  z-index: 2147483647; font: 14px/1.5 sans-serif; pointer-events: auto;
+}
+.ottsub-recovery-notice button {
+  display: block; margin-top: 8px; padding: 8px 12px; cursor: pointer;
+  color: white; background: #333; border: 1px solid #777; border-radius: 4px;
+}
+/* 빈 자막 박스는 비디오 재생/일시정지 클릭을 위해 클릭 통과 */
+#ottsub-container.native-controls-hit .ottsub-box,
+#ottsub-container.native-controls-hit .ottsub-box * {
+  pointer-events: none !important;
+}
+
+.ottsub-box:empty, .ottsub-box.all-empty, .ottsub-box:not(:has(.ottsub-line-primary, .ottsub-line-secondary, .ottsub-line)) {
+  pointer-events: none !important;
+  cursor: default !important;
+  display: none !important;
+}
+
+.ottsub-box.all-empty *, .ottsub-box:empty * {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* 마우스 드래그 진행 중 */
+.ottsub-box.is-dragging, .ottsub-box.is-dragging * {
+  pointer-events: auto !important;
+  cursor: grabbing !important;
+  transition: none !important;
+}
+
+/* 위치 잠금은 renderer의 pointerdown에서 드래그만 차단한다.
+   자막의 hit testing은 유지해야 hover 일시정지와 가림 해제가 작동한다. */
+#ottsub-container.lock-position .ottsub-box, #ottsub-container.lock-position .ottsub-box * {
+  cursor: default !important;
+}
+
+/* 넷플릭스 탐색/컨트롤바(약 100~130px) 활성화 시 자막이 밑에 깔리지 않도록 안전 지대(Safe Area)로 즉각 부양 (고정 모드가 아닐 때만 적용) */
+#ottsub-container:not(.lock-position).controls-visible .ottsub-bottom, .active #ottsub-container:not(.lock-position) .ottsub-bottom, .controls-active #ottsub-container:not(.lock-position) .ottsub-bottom, [data-uia*="player"].active #ottsub-container:not(.lock-position) .ottsub-bottom, .watch-video--player-view:has(.watch-video--bottom-controls-container:not([style*="display: none"])) #ottsub-container:not(.lock-position) .ottsub-bottom {
+  --ottsub-bottom-adaptive: clamp(150px, 18vh, 200px);
+  --ottsub-split-baseline-adaptive: clamp(210px, 24vh, 270px);
+}
+
+/* 자막 위치 고정 모드: 재생바 표시 여부와 관계없이 보통 상태(재생바 없을 때)의 기본 위치 100% 불변 유지 */
+#ottsub-container.lock-position .ottsub-bottom {
+  --ottsub-bottom-adaptive: var(--ottsub-bottom, clamp(90px, 11vh, 130px)) !important;
+  --ottsub-split-baseline-adaptive: var(--ottsub-split-baseline, clamp(170px, 19.5vh, 225px)) !important;
+  transition: none !important;
+}
+
+#ottsub-container.lock-position .ottsub-box:not(.is-dual).ottsub-bottom {
+  bottom: var(--ottsub-bottom, clamp(90px, 11vh, 130px)) !important;
+}
+
+#ottsub-container.lock-position .ottsub-box.is-dual.ottsub-bottom {
+  bottom: var(--ottsub-split-baseline, clamp(170px, 19.5vh, 225px)) !important;
+}
+
+.ottsub-bottom {
+  bottom: var(--ottsub-bottom-adaptive, var(--ottsub-bottom, clamp(90px, 11vh, 130px)));
+  transition: bottom 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 넷플릭스 상단 타이틀/뒤로가기 컨트롤바 활성화 시 상단 자막 간섭 방지 안전 지대 적응 */
+#ottsub-container:not(.lock-position).controls-visible .ottsub-top, .active #ottsub-container:not(.lock-position) .ottsub-top, .controls-active #ottsub-container:not(.lock-position) .ottsub-top, [data-uia*="player"].active #ottsub-container:not(.lock-position) .ottsub-top, .watch-video--player-view:has(.watch-video--top-controls-container:not([style*="display: none"])) #ottsub-container:not(.lock-position) .ottsub-top {
+  --ottsub-top-adaptive: clamp(90px, 13vh, 140px);
+}
+
+#ottsub-container.lock-position .ottsub-top {
+  --ottsub-top-adaptive: var(--ottsub-top, clamp(48px, 8.5vh, 100px)) !important;
+  transition: none !important;
+}
+
+#ottsub-container.lock-position .ottsub-box.ottsub-top {
+  top: calc(var(--ottsub-top, clamp(48px, 8.5vh, 100px)) + env(safe-area-inset-top, 0px)) !important;
+}
+
+.ottsub-top {
+  top: calc(var(--ottsub-top-adaptive, var(--ottsub-top, clamp(48px, 8.5vh, 100px))) + env(safe-area-inset-top, 0px));
+  transition: top 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 상단 박스 전용: 천장 밖으로의 뷰포트 이탈(Clipping)을 막기 위한 하향(Downward) 자연 팽창 */
+.ottsub-top .ottsub-slots-wrapper {
+  align-content: start !important;
+}
+
+.ottsub-top .ottsub-slot-primary, .ottsub-top .ottsub-slot-secondary {
+  justify-content: flex-start !important;
+}
+
+/* 방어책: 언어별 행간 분리 및 수학적 하단 베이스라인 앵커링 (0px 진동 및 겹침 방지) */
+.ottsub-box .ottsub-line-primary {
+  line-height: var(--ottsub-primary-line-height, var(--ottsub-line-height, 1.20)) !important;
+  margin-top: 0 !important;
+  margin-bottom: calc((1.20 - var(--ottsub-primary-line-height, var(--ottsub-line-height, 1.20))) * 0.5em) !important;
+}
+
+.ottsub-box .ottsub-line-primary:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+
+.ottsub-box .ottsub-line-secondary {
+  line-height: var(--ottsub-secondary-line-height, var(--ottsub-line-height, 1.20)) !important;
+  margin-top: calc((1.20 - var(--ottsub-secondary-line-height, var(--ottsub-line-height, 1.20))) * 0.5em) !important;
+  margin-bottom: 0 !important;
+}
+
+.ottsub-box .ottsub-line-secondary:not(:first-child) {
+  margin-top: 0 !important;
+}
+
+/* 방어책: flex 컨테이너 내부 br 요소의 불필요한 빈 줄 flex-item 생성 방지 */
+.ottsub-slots-wrapper > br, .ottsub-slot-primary > br, .ottsub-slot-secondary > br, .ottsub-box > br {
+  display: none !important;
+}
+
+/* 4. Subtitle Line Styling (1:1 Netflix Pure Replica + Dynamic Variable Mirroring) */
+.ottsub-line {
+  display: inline-block;
+  color: var(--ottsub-primary-color, var(--ottsub-color, #ffffff));
+  font-family: var(--ottsub-font-family, Netflix Sans, "Helvetica Neue", Segoe UI, Roboto, Ubuntu, sans-serif);
+  font-weight: 700;
+  font-size: var(--ottsub-font-size, 34px);
+  line-height: var(--ottsub-line-height, 1.20);
+  text-align: center;
+  text-shadow: var(--ottsub-text-shadow, rgb(0, 0, 0) 0px 0px 7px, rgb(0, 0, 0) 0px 0px 4px);
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  max-inline-size: 96%;
+  unicode-bidi: isolate !important;
+  direction: inherit;
+  pointer-events: auto !important;
+  cursor: grab !important;
+}
+
+/* dir=auto resolves each subtitle's own text, independently of the page language. */
+.ottsub-line[dir="auto"]:dir(rtl) { direction: rtl; }
+.ottsub-line[dir="auto"]:dir(ltr) { direction: ltr; }
+
+/* 일본어 후리가나(Furigana) ruby / rt 태그 레이아웃 지원 */
+.ottsub-line ruby {
+  ruby-align: center;
+  ruby-position: over;
+}
+
+.ottsub-line rt {
+  font-size: 0.52em;
+  line-height: 1;
+  text-shadow: var(--ottsub-text-shadow, rgb(0, 0, 0) 0px 0px 4px);
+  user-select: none;
+}
+
+/*  */
+
+/* 완전 숨김 모드 (Hide): 화면에서 100% 투명하게 안 보이지만 레이아웃 공간과 마우스 감지 영역은 유지 */
+.ottsub-line.is-obscured-hide {
+  opacity: 0 !important;
+  filter: none !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  contain: layout style;
+}
+
+.ottsub-line.is-obscured-hide:hover {
+  opacity: 1 !important;
+}
+
+/* 블러 모드 (Blur): 지정된 강도(4px, 8px, 14px)로 흐림 처리, 마우스 호버 시 0.15초 만에 선명하게 해제 */
+.ottsub-line.is-obscured-blur {
+  filter: blur(var(--ottsub-blur-px, 8px)) !important;
+  opacity: 0.65;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  transition: filter 0.15s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: filter, opacity;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  contain: layout style;
+}
+
+.ottsub-line.is-obscured-blur:hover {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* 방어책 (Set 1): 자막 내부 <i>, <b>, <ruby>, <rt> 등 자식 요소 포인터 관통 (호버 깜빡임 방지) */
+.ottsub-line.is-obscured-hide > *, .ottsub-line.is-obscured-blur > * {
+  pointer-events: none !important;
+}
+
+/* 방어책 (Set 2): 자막 드래그 중에는 정확한 위치 배치를 위해 숨김/블러를 일시 해제하여 선명하게 표시 */
+.ottsub-box.is-dragging .ottsub-line.is-obscured-hide, #ottsub-container.is-dragging .ottsub-line.is-obscured-hide {
+  opacity: 1 !important;
+}
+
+.ottsub-box.is-dragging .ottsub-line.is-obscured-blur, #ottsub-container.is-dragging .ottsub-line.is-obscured-blur {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* ==========================================================================
+   Central Split-Anchor Architecture (중심 분할 베이스라인)
+   Primary(원어 자막)와 Secondary(번역 자막)를 독립된 수직 축에 완전 격리하여
+   상대방 자막의 줄 수 변경(1줄↔2줄), 타이밍 오프셋(0.5초 선행/지연) 발생 시에도
+   0.001px의 수직 위치 변동/점프/낙하(CLS)도 발생하지 않는 불변 구조.
+   ========================================================================== */
+
+/* 하단 박스 이중 자막 모드: 중심 분할 기준선(Split Baseline) 확립 */
+.ottsub-box.is-dual.ottsub-bottom {
+  bottom: var(--ottsub-split-baseline-adaptive, var(--ottsub-split-baseline, clamp(170px, 19.5vh, 225px)));
+  height: 0;
+  contain: layout style;
+  transition: none !important;
+}
+
+.ottsub-box.is-dual.ottsub-bottom .ottsub-slots-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  display: block;
+  pointer-events: none !important;
+}
+
+/* 상단 슬롯 (원어 자막, Primary / English): 기준선 위에서 상향(Upward) 팽창 + 독립 위치 오프셋 */
+.ottsub-box.is-dual.ottsub-bottom .ottsub-slot-primary {
+  position: absolute;
+  bottom: calc(4px + var(--ottsub-primary-offset-y, 0px)); /* 기준선 위 4px + 사용자 영어 위치 오프셋 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  min-height: calc(var(--ottsub-font-size, 34px) * 2.5); /* 2줄 분량 공간 안전 고정 예약 (행간 조절 시 흔들림 0px) */
+  min-height: calc(var(--ottsub-font-size, 34px) * var(--ottsub-primary-scale, 1.0) * 2.5); /* 언어별 크기 비율 반영 2줄 분량 공간 안전 고정 예약 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* 2줄이 되면 위쪽으로만 확장 */
+  pointer-events: none !important;
+}
+
+/* 하단 슬롯 (번역 자막, Secondary / Korean): 기준선 아래에서 하향(Downward) 팽창 + 독립 위치 오프셋 */
+.ottsub-box.is-dual.ottsub-bottom .ottsub-slot-secondary {
+  position: absolute;
+  top: calc(4px - var(--ottsub-secondary-offset-y, 0px)); /* 기준선 아래 4px - 사용자 번역 위치 오프셋 (양수면 위로 올라감) */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  min-height: calc(var(--ottsub-font-size, 34px) * 2.5); /* 2줄 분량 공간 안전 고정 예약 (행간 조절 시 흔들림 0px) */
+  min-height: calc(var(--ottsub-font-size, 34px) * var(--ottsub-secondary-scale, 0.78) * 2.5); /* 언어별 크기 비율 반영 2줄 분량 공간 안전 고정 예약 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 2줄이 되면 아래쪽으로만 확장 */
+  pointer-events: none !important;
+}
+
+/* 상단 박스 이중 자막 모드 (오프닝 크레딧 구간): 천장 이탈 및 줄 겹침 방지 자연 하향 Flex 흐름 */
+.ottsub-box.is-dual.ottsub-top {
+  top: clamp(48px, 8.5vh, 100px);
+  height: auto;
+  contain: layout style;
+}
+
+.ottsub-box.is-dual.ottsub-top .ottsub-slots-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  pointer-events: none !important;
+}
+
+.ottsub-box.is-dual.ottsub-top .ottsub-slot-primary {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  pointer-events: none !important;
+  transform: translateY(max(calc(var(--ottsub-primary-offset-y, 0px) * -1), -25px));
+}
+
+.ottsub-box.is-dual.ottsub-top .ottsub-slot-secondary {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  pointer-events: none !important;
+  transform: translateY(max(calc(var(--ottsub-secondary-offset-y, 0px) * -1), -25px));
+}
+
+/* 이중 자막 모드: 빈 슬롯 숨김 처리 */
+.ottsub-box.is-dual .ottsub-slot-primary.is-empty, .ottsub-box.is-dual .ottsub-slot-secondary.is-empty {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* 단일 자막 모드 (영어 또는 한국어 단일 시청): 표준 바닥 안착 */
+.ottsub-box:not(.is-dual) {
+  height: auto;
+}
+
+.ottsub-box:not(.is-dual) .ottsub-slots-wrapper {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  pointer-events: none !important;
+}
+
+.ottsub-box:not(.is-dual) .ottsub-slot-primary {
+  position: static;
+  transform: translateY(calc(-1 * var(--ottsub-primary-offset-y, 0px)));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  pointer-events: none !important;
+}
+
+.ottsub-box:not(.is-dual) .ottsub-slot-secondary, .ottsub-box.all-empty .ottsub-slot-primary, .ottsub-box.all-empty .ottsub-slot-secondary {
+  display: none !important;
+  min-height: 0 !important;
+}
+
+/* 레거시 호환용 래퍼 */
+.ottsub-dual-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  pointer-events: none !important;
+}
+
+.ottsub-line, .ottsub-line-primary {
+  display: inline-block;
+  color: var(--ottsub-primary-color, var(--ottsub-color, #ffffff));
+  font-family: var(--ottsub-font-family, Netflix Sans, "Helvetica Neue", Segoe UI, Roboto, Ubuntu, sans-serif);
+  font-weight: 700;
+  font-size: calc(var(--ottsub-font-size, 34px) * var(--ottsub-primary-scale, 1.0));
+  line-height: var(--ottsub-line-height, 1.20);
+  text-align: center;
+  text-shadow: var(--ottsub-text-shadow, rgb(0, 0, 0) 0px 0px 7px, rgb(0, 0, 0) 0px 0px 4px);
+  white-space: pre-line;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  unicode-bidi: isolate;
+  min-width: 0;
+  pointer-events: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+}
+
+.ottsub-line-secondary {
+  display: inline-block;
+  color: var(--ottsub-secondary-color, #ffe082);
+  font-family: var(--ottsub-font-family, Netflix Sans, "Helvetica Neue", Segoe UI, Roboto, Ubuntu, sans-serif);
+  font-weight: 500;
+  font-size: calc(var(--ottsub-font-size, 34px) * var(--ottsub-secondary-scale, 0.78));
+  line-height: var(--ottsub-line-height, 1.20);
+  text-align: center;
+  text-shadow: var(--ottsub-text-shadow, rgb(0, 0, 0) 0px 0px 7px, rgb(0, 0, 0) 0px 0px 4px);
+  white-space: pre-line;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  unicode-bidi: isolate;
+  min-width: 0;
+  pointer-events: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+}
+
+/* 4-1. Semi-Transparent Black Background Box (Independent Primary & Secondary Options) */
+#ottsub-container.has-primary-bg-box .ottsub-line-primary, #ottsub-container.has-primary-bg-box:not(.is-dual) .ottsub-line:not(.ottsub-line-secondary), #ottsub-container.has-bg-box .ottsub-line-primary, #ottsub-container.has-bg-box:not(.is-dual) .ottsub-line:not(.ottsub-line-secondary) {
+  background-color: rgba(0, 0, 0, 0.72) !important;
+  padding: 0.12em 0.45em !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+  text-shadow: none !important;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+#ottsub-container.has-secondary-bg-box .ottsub-line-secondary, #ottsub-container.has-bg-box .ottsub-line-secondary {
+  background-color: rgba(0, 0, 0, 0.72) !important;
+  padding: 0.12em 0.45em !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+  text-shadow: none !important;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* Windows High Contrast / Forced Colors Mode Defense (Backplate & Outline fallback when text-shadow is stripped) */
+@media (forced-colors: active) {
+  .ottsub-line, .ottsub-line-primary, .ottsub-line-secondary {
+    forced-color-adjust: auto;
+    color: CanvasText !important;
+    background-color: Canvas !important;
+    outline: 2px solid CanvasText !important;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding: 2px 8px !important;
+    border-radius: 4px !important;
+  }
+
+  #ottsub-container.has-primary-bg-box .ottsub-line-primary, #ottsub-container.has-primary-bg-box:not(.is-dual) .ottsub-line:not(.ottsub-line-secondary), #ottsub-container.has-bg-box .ottsub-line-primary, #ottsub-container.has-bg-box:not(.is-dual) .ottsub-line:not(.ottsub-line-secondary) {
+    forced-color-adjust: none;
+    background-color: rgba(0, 0, 0, 0.88) !important;
+    color: #ffffff !important;
+    padding: 2px 10px !important;
+    border-radius: 4px !important;
+  }
+  #ottsub-container.has-secondary-bg-box .ottsub-line-secondary, #ottsub-container.has-bg-box .ottsub-line-secondary {
+    forced-color-adjust: none;
+    background-color: rgba(0, 0, 0, 0.88) !important;
+    color: #ffff88 !important;
+    padding: 2px 10px !important;
+    border-radius: 4px !important;
+  }
+
+  #ottsub-hud {
+    background-color: Canvas !important;
+    color: CanvasText !important;
+    border: 2px solid Highlight !important;
+    forced-color-adjust: auto;
+  }
+}
+
+.ottsub-line i, .ottsub-line-primary i, .ottsub-line-secondary i {
+  font-style: italic;
+}
+
+/* 5. Minimalist Dark HUD Notification */
+#ottsub-hud {
+  position: fixed;
+  top: 28px;
+  right: 28px;
+  z-index: 99999999;
+  pointer-events: none !important;
+  background: rgba(18, 18, 18, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  padding: 10px 18px;
+  color: #ffffff;
+  font-family: Netflix Sans, "Helvetica Neue", Segoe UI, Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  contain: layout paint;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  will-change: opacity, transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.ottsub-hud-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.ottsub-hud-hidden {
+  opacity: 0;
+  transform: translate3d(0, -8px, 0);
+  visibility: hidden;
+}

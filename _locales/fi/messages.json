@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - Netflixin tekstitysten ajoitus ja kaksoistekstitys",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "Säädä Netflixin tekstitysten ajoitusta ja näytä kaksi tekstitystä yhtä aikaa pikanäppäimillä ja helppokäyttöisillä säätimillä.",
+    "description": "Extension description"
+  }
+}

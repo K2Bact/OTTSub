@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - סנכרון כתוביות וכתוביות בשתי שפות ב־Netflix",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "כיוון תזמון הכתוביות ב־Netflix והצגת כתוביות בשתי שפות, עם קיצורי מקשים ופקדים נוחים.",
+    "description": "Extension description"
+  }
+}

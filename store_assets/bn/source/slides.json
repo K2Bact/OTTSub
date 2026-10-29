@@ -1,0 +1,12 @@
+{
+  "locale": "bn", "direction": "ltr", "languageName": "বাংলা",
+  "title": "OTTSub · বাংলা স্ক্রিনশট",
+  "panelLabel": "পাশের প্যানেল · OTTSub সেটিংস",
+  "panelTitle": "OTTSub-এর বাংলা ইন্টারফেস",
+  "footer": "Netflix-এর জন্য · ভাষার উপলভ্যতা ভিডিওভেদে বদলায়। ইন্টারফেসের অবস্থা ও সাবটাইটেল উদাহরণের তথ্য দিয়ে দেখানো হয়েছে।",
+  "slides": [
+    {"eyebrow":"০১ / দ্বৈত সাবটাইটেল", "headline":"এক পর্দা।<br>দুই ভাষা।", "description":"Netflix-এ থাকা সাবটাইটেল থেকে<br>পাশের প্যানেলে দুই ভাষা বেছে নিন।", "detail":"<div class=\"demo-screen\"><div class=\"demo-label\">সাবটাইটেলের উদাহরণ</div><div class=\"line1\">Let’s take the long way home.</div><div class=\"line2\">চলো, ঘুরপথে বাড়ি ফিরি।</div></div><p class=\"hint\">ইংরেজি + বাংলা · প্রতিটি ভাষার জন্য আলাদা সেটিংস</p>"},
+    {"eyebrow":"০২ / সময় মেলান", "headline":"সময় মেলান।<br>ভাষাভেদে আলাদা।", "description":"সাবটাইটেল আলাদাভাবে এগিয়ে বা পিছিয়ে দিন।<br>0.1 সেকেন্ড ধাপে সময় মেলান।", "detail":"<div class=\"keyrow\"><div class=\"keycard\"><div class=\"keys\">[ &nbsp; ]</div><div class=\"keylabel\">প্রধান সাবটাইটেল<br><span class=\"accent\">−0.1 / +0.1 সেকেন্ড</span></div></div><div class=\"keycard\"><div class=\"keys\">Alt + [ / ]</div><div class=\"keylabel\">দ্বিতীয় সাবটাইটেল<br><span class=\"accent\">−0.1 / +0.1 সেকেন্ড</span></div></div></div><p class=\"hint\">Mac: Option · Windows: Alt।<br>পাশের প্যানেলের নিয়ন্ত্রণও ব্যবহার করতে পারবেন।</p>"},
+    {"eyebrow":"০৩ / ভাষা শেখা", "headline":"সাবটাইটেল দিয়ে<br>চর্চা করুন।", "description":"চর্চার জন্য সাবটাইটেল ঝাপসা করুন।<br>মাউস ওপরে রাখলে ভিডিওতে বিরতি দিন।", "detail":"<div class=\"demo-screen\"><div class=\"demo-label\">চর্চার উদাহরণ</div><div class=\"line1\">One more step. You’re almost there.</div><div class=\"line2\" style=\"filter:blur(5px)\">আর এক ধাপ। তুমি প্রায় পৌঁছে গেছ।</div></div><div class=\"steps\"><div class=\"step\"><span class=\"num\">১</span>পড়ুন</div><div class=\"step\"><span class=\"num\">২</span>মিলিয়ে নিন</div><div class=\"step\"><span class=\"num\">৩</span>এগিয়ে যান</div></div>"}
+  ]
+}

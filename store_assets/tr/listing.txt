@@ -1,0 +1,71 @@
+OTTSub, kayıt veya abonelik gerektirmeden ücretsiz kullanılabilen bir Netflix alt yazı senkronizasyonu ve çift alt yazı Chrome uzantısıdır. Videonun yanındaki Chrome yan panelinden veya klavye kısayollarıyla alt yazı zamanlamasını, görünümünü ve öğrenme araçlarını kolayca yönetebilirsiniz.
+Netflix alt yazıları diyalogdan önce mi yoksa sonra mı görünüyor? Dil öğrenirken Netflix'i aynı anda iki dilde alt yazıyla (çift alt yazı) izlemek mi istiyorsunuz?
+
+Başlangıç: OTTSub uzantısını masaüstü Chrome içine yükleyin, Netflix web sitesinde bir video açın ve yan paneli açmak için OTTSub simgesine tıklayın. Mevcut ana ve ikinci alt yazı parçalarını seçip zamanlamalarını ayrı ayrı ayarlayın. OTTSub Netflix uygulamasının içinde çalışmaz.
+
+TEMEL ÖZELLİKLER
+
+1. Her dil için bağımsız zamanlama (Senkron ayarı)
+• Ana ve ikinci alt yazıları birbirinden bağımsız olarak öne alın veya geciktirin.
+• Panel kaydırıcısı, fare tekerleği veya klavye kısayollarıyla 0.1 saniyelik adımlarla ayarlayın.
+• Her dilin zaman farkını ayrı ayrı 0.0 saniyeye sıfırlayın.
+
+2. Aynı anda iki dil ve CC/SDH seçimi
+• İçerikte sunulan alt yazılardan ana ve ikinci dili seçerek ekranda birlikte gösterin.
+• Ana alt yazı dili için otomatik seçimi (önce İngilizceyi, sonra mevcut ilk alt yazıyı tercih eder) kullanın veya dili kendiniz seçin.
+• Sunulduğunda standart alt yazı veya CC/SDH (diyalogların yanı sıra ses ve konuşmacı bilgileri içerebilir) seçin.
+• Kullanılabilir diller ve alt yazılar içeriğe ve Netflix hesabınıza bağlıdır. OTTSub otomatik çeviri üretmez.
+
+3. Alt yazı görünümü, sürükleme ve konum kilidi
+• Boyutları ayrı ayrı ayarlayın: ana alt yazıda %60–140, ikinci alt yazıda %60–120.
+• Her dil için beyaz, sarı, nane yeşili veya yeşil seçin.
+• Her dilin arkasındaki yarı saydam siyah arka planı açın veya kapatın.
+• Satır aralığını 0–6 kademede, dikey konumu −50 ile +50 piksel arasında ayarlayın.
+• Alt yazıları fareyle sürükleyin ve oynatma çubuğuyla çakışmaması için konumlarını kilitleyin.
+
+4. Dil öğrenme araçları (Bulanıklaştırma ve üzerine gelince duraklatma)
+• Bir veya iki dili bulanıklaştırın (4 px / 8 px / 14 px) ya da gizleyin; fareyle üzerine gelerek metni görün.
+• Alt yazının üzerine gelince videoyu otomatik duraklatma seçeneğini açın.
+
+5. Reklamlar ve oynatma konumu değişiklikleri
+• Algılanan reklamlarda OTTSub kendi alt yazılarını gizler.
+• Reklamdan veya videoda ileri/geri atlamadan sonra alt yazıları yeniden göstermeden önce oynatma zamanını kontrol eder.
+• Bu kontrol sırasında Netflix'te seçilen dilin özgün alt yazıları geçici olarak görünebilir.
+
+KLAVYE KISAYOLLARI
+[ / ] : ana alt yazının zamanını −0.1 / +0.1 saniye ayarlayın
+\ : ana alt yazının zaman farkını 0.0 saniyeye sıfırlayın
+Alt + [ / Alt + ] : ikinci alt yazının zamanını −0.1 / +0.1 saniye ayarlayın
+Alt + \ : ikinci alt yazının zaman farkını 0.0 saniyeye sıfırlayın
+Alt + D : çift alt yazıyı açın veya kapatın
+Alt + L : konum kilidini açın veya kapatın
+Alt + B : alt yazı bulanıklaştırmayı veya gizlemeyi açın veya kapatın
+Alt + R : alt yazı konumunu varsayılana sıfırlayın (veya çift tıklayın)
+• Mac'te (macOS) Alt yerine Option kullanın. Panel, sisteminize uygun kısayolları otomatik gösterir.
+• Gösterilen tuş konumları ABD klavyesine göredir; diğer düzenlerde tuş üzerindeki simgeler farklı olabilir. Paneldeki kaydırıcıyı da kullanabilirsiniz.
+
+ARAYÜZ DİLLERİ (16 DİL)
+Arapça, Bengalce, Çince (Geleneksel, Tayvan), İngilizce, Fince, Almanca, İbranice, Hintçe, Japonca, Korece, Malayca, Avrupa Portekizcesi, Rusça, İspanyolca, Tayca, Türkçe. Arayüz dili, Netflix'te sunulan alt yazı dillerinden ayrıdır.
+
+SIK SORULAN SORULAR (SSS / FAQ)
+S. Ana ve ikinci alt yazının senkronunu ayrı ayrı ayarlayabilir miyim?
+C. Evet, her iki dilin zamanlamasını 0.1 saniyelik adımlarla birbirinden bağımsız olarak ayarlayabilirsiniz.
+
+S. OTTSub ücretsiz mi? Hesap açmak gerekiyor mu?
+C. Tamamen ücretsizdir; üyelik, giriş veya abonelik gerektirmez. Netflix hesabı ve aboneliği ayrıca gereklidir; OTTSub bunları içermez.
+
+S. OTTSub alt yazıları otomatik çeviriyor mu?
+C. Hayır. OTTSub makine çevirisi yapmaz; izlediğiniz içerikte Netflix tarafından sunulan resmi alt yazı parçalarını yükler ve senkronize eder.
+
+S. Mac'te ve Microsoft Edge gibi tarayıcılarda çalışır mı?
+C. OTTSub masaüstü Chrome için tasarlanmıştır; Windows üzerindeki Microsoft Edge de yerel uyumluluk testlerini geçmiştir. macOS için Option kısayolları vardır, ancak Mac doğrulaması kısmidir. Diğer Chromium tarayıcılarının uyumluluğu doğrulanmamıştır. Bu paket mobil Chrome veya Safari için destek sunmaz.
+
+S. İstediğim alt yazı dili listede yoksa ne yapmalıyım?
+C. OTTSub, mevcut Netflix içeriği ve hesabı için sunulan alt yazı parçalarını kullanır. OTTSub arayüz dilini değiştirmek parça eklemez veya çeviri yapmaz. Önce Netflix’in o içerik için sunduğu alt yazı dillerini kontrol edin.
+
+GİZLİLİK VE ÇALIŞMA ŞEKLİ
+Chrome Web Mağazası sürümü yerel tanılama kaydedicisi, analiz veya izleme geçmişi takip araçları içermez. Netflix hizmetlerinden aldığı alt yazıları tarayıcınızda işler. Tercihleriniz Chrome depolama alanında saklanır.
+
+Netflix'e erişim yetkisi gerekir. OTTSub bağımsız bir uzantıdır; Netflix ile bağlantılı değildir ve Netflix tarafından desteklenmez.
+
+Ürün sitesi ve yardım (İngilizce): https://k2bact.github.io/ottsub-site/

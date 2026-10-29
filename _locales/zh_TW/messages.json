@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - Netflix 字幕時間調整與雙語字幕",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "調整 Netflix 字幕時間，同時顯示兩種語言，並透過快速鍵與側邊面板輕鬆操作。",
+    "description": "Extension description"
+  }
+}

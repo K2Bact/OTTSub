@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - Sincronización y subtítulos dobles para Netflix",
+    "description": "Nombre de la extensión mostrado en la tienda y en la interfaz de extensiones"
+  },
+  "extDescription": {
+    "message": "Ajusta el tiempo de los subtítulos de Netflix y usa subtítulos dobles con atajos y controles personalizables.",
+    "description": "Descripción concisa de la extensión para la tienda de Chrome"
+  }
+}

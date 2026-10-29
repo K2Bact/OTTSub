@@ -1,0 +1,71 @@
+OTTSub ist eine kostenlose Chrome-Erweiterung zur präzisen Untertitel-Synchronisation und für zweisprachige Untertitel auf Netflix – ohne Registrierung, ohne Abo und ohne Werbung. Steuere das Timing, das Aussehen und die Lernfunktionen bequem über die Chrome-Seitenleiste neben dem Video oder per Tastenkürzel.
+Sind die Netflix-Untertitel dem Dialog voraus oder kommen sie zu spät? Möchtest du Netflix zum Sprachenlernen mit zweisprachigen Untertiteln (Dual Subtitles) ansehen?
+
+Erste Schritte: Installiere OTTSub in Chrome auf dem Desktop, öffne ein Video auf der Netflix-Website und klicke auf das OTTSub-Symbol, um die Seitenleiste zu öffnen. Wähle verfügbare Haupt- und Zweituntertitel und passe ihr Timing getrennt an. OTTSub läuft nicht innerhalb der Netflix-App.
+
+HAUPTFUNKTIONEN
+
+1. Unabhängige Zeitanpassung (Sync) für jede Sprache
+• Verschiebe Haupt- und Zweituntertitel unabhängig voneinander nach vorn oder hinten.
+• Passe das Timing in Schritten von 0,1 Sekunden über den Schieberegler in der Seitenleiste, das Mausrad oder Tastenkürzel an.
+• Setze den Versatz jeder Sprache jederzeit getrennt auf 0,0 Sekunden zurück.
+
+2. Zwei Sprachen gleichzeitig & CC/SDH-Auswahl
+• Wähle Haupt- und Zweitsprache aus den für den aktuellen Titel verfügbaren Untertitelspuren.
+• Nutze die automatische Auswahl (bevorzugt zuerst Englisch, danach die erste verfügbare Spur) oder wähle die Hauptsprache manuell.
+• Wähle je nach Verfügbarkeit normale Untertitel oder CC/SDH (Untertitel mit Geräuschbeschreibungen und Sprecherhinweisen).
+• Die verfügbaren Sprachen und Spuren hängen vom jeweiligen Titel und deinem Netflix-Konto ab. OTTSub erstellt keine maschinellen Übersetzungen.
+
+3. Aussehen, Ziehen per Maus & Positionssperre
+• Unabhängige Schriftgröße: 60–140 % für Hauptuntertitel und 60–120 % für Zweituntertitel.
+• Vier Farben pro Sprache: Weiß, Gelb, Mint und Grün.
+• Optionaler halbtransparenter schwarzer Hintergrund für jede Sprache.
+• Zeilenabstand in 0–6 Stufen und vertikale Position zwischen −50 und +50 Pixeln.
+• Verschiebe Untertitel frei mit der Maus und sperre ihre Position, damit die Netflix-Zeitleiste problemlos bedienbar bleibt.
+
+4. Werkzeuge zum Sprachenlernen (Weichzeichnen & Pause bei Mausberührung)
+• Verwische (4 px / 8 px / 14 px) oder verberge eine oder beide Sprachen und blende den Text beim Darüberfahren mit der Maus ein.
+• Aktiviere optional das automatische Pausieren des Videos, sobald sich der Mauszeiger auf den Untertiteln befindet.
+
+5. Werbung und Zeitsprünge in der Wiedergabe
+• Während erkannter Werbung blendet OTTSub seine eigenen Untertitel automatisch aus.
+• Nach Werbung oder einem Vor-/Zurückspringen im Video prüft OTTSub die Wiedergabezeit, bevor die Untertitel wieder angezeigt werden.
+• Während dieser Prüfung können vorübergehend die originalen Netflix-Untertitel in der bei Netflix gewählten Sprache erscheinen.
+
+TASTENKÜRZEL
+[ / ] : Timing der Hauptuntertitel um −0,1 / +0,1 Sekunden anpassen
+\ : Timing der Hauptuntertitel auf 0,0 Sekunden zurücksetzen
+Alt + [ / Alt + ] : Timing der Zweituntertitel um −0,1 / +0,1 Sekunden anpassen
+Alt + \ : Timing der Zweituntertitel auf 0,0 Sekunden zurücksetzen
+Alt + D : Zweisprachige Untertitel ein- oder ausschalten
+Alt + L : Positionssperre ein- oder ausschalten
+Alt + B : Lerneffekt (Verwischen/Ausblenden) ein- oder ausschalten
+Alt + R : Untertitelposition auf Standard zurücksetzen (oder Doppelklick)
+• Verwende auf dem Mac (macOS) Option anstelle von Alt. Die Seitenleiste zeigt automatisch die passenden Tastenkürzel für dein System an.
+• Die angegebenen Tasten beziehen sich auf die physischen Tastenpositionen einer US-Tastatur; aufgedruckte Zeichen können je nach Tastaturlayout abweichen.
+
+OBERFLÄCHENSPRACHEN (16 SPRACHEN)
+Arabisch, Bengalisch, Chinesisch (Traditionell, Taiwan), Englisch, Finnisch, Deutsch, Hebräisch, Hindi, Japanisch, Koreanisch, Malaiisch, Portugiesisch (Portugal), Russisch, Spanisch, Thailändisch, Türkisch. Die Sprache der Benutzeroberfläche ist unabhängig von den auf Netflix verfügbaren Untertitelsprachen.
+
+HÄUFIG GESTELLTE FRAGEN (FAQ)
+F. Kann ich die Synchronisation für beide Sprachen getrennt einstellen?
+A. Ja, Haupt- und Zweituntertitel lassen sich unabhängig voneinander in 0,1-Sekunden-Schritten anpassen.
+
+F. Ist OTTSub kostenlos oder ist ein Konto nötig?
+A. OTTSub ist komplett kostenlos und funktioniert ohne Anmeldung oder Abonnement. Ein Netflix-Konto und ein Netflix-Abonnement sind separat erforderlich und nicht in OTTSub enthalten.
+
+F. Übersetzt OTTSub Untertitel automatisch?
+A. Nein. OTTSub generiert keine automatischen Übersetzungen, sondern lädt und synchronisiert die offiziell von Netflix für den jeweiligen Titel bereitgestellten Untertitelspuren.
+
+F. Funktioniert die Erweiterung auch auf dem Mac und in Microsoft Edge?
+A. OTTSub ist für Chrome auf Desktop-Computern ausgelegt; Microsoft Edge unter Windows hat ebenfalls lokale Kompatibilitätstests bestanden. Unter macOS gibt es Option-Tastenkürzel, die Mac-Prüfung ist jedoch nur teilweise abgeschlossen. Andere Chromium-Browser wurden nicht verifiziert. Dieses Paket unterstützt weder mobiles Chrome noch Safari.
+
+F. Was tun, wenn die gewünschte Untertitelsprache fehlt?
+A. OTTSub verwendet die für den aktuellen Netflix-Titel und das Konto verfügbaren Untertitelspuren. Eine andere OTTSub-Menüsprache fügt keine Spuren hinzu und übersetzt sie nicht. Prüfe zuerst, welche Untertitel Netflix für den Titel anbietet.
+
+DATENSCHUTZ UND BETRIEB
+Die Version für den Chrome Web Store enthält weder den lokalen Diagnose-Recorder noch Analyse- oder Trackingfunktionen für deinen Wiedergabeverlauf. Die von Netflix-Diensten empfangenen Untertitel werden lokal in deinem Browser verarbeitet, und deine Einstellungen werden im Chrome-Speicher abgelegt.
+
+Ein Netflix-Zugang ist erforderlich. OTTSub ist eine unabhängige Erweiterung und steht in keiner Verbindung zu Netflix.
+
+Produktseite und Hilfe (Englisch): https://k2bact.github.io/ottsub-site/

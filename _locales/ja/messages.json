@@ -1,0 +1,4 @@
+{
+  "extName": { "message": "OTTSub - Netflix字幕のタイミング調整・二言語字幕" },
+  "extDescription": { "message": "Netflix字幕のタイミングを調整し、二言語の字幕を同時に表示。言語ごとに文字サイズ、色、位置を設定できます。" }
+}

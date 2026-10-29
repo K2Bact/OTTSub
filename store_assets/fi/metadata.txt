@@ -1,0 +1,5 @@
+Laajennuksen nimi
+OTTSub - Netflixin tekstitysten ajoitus ja kaksoistekstitys
+
+Lyhyt kuvaus
+Säädä Netflixin tekstitysten ajoitusta ja näytä kaksi tekstitystä yhtä aikaa pikanäppäimillä ja helppokäyttöisillä säätimillä.

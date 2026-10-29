@@ -1,0 +1,8 @@
+# Search scope only. Packaging is allowlisted in scripts/package-store.py.
+# Use rg --no-ignore on a specific archived path for historical evidence.
+/archive/
+/artifacts/
+/dist/
+*.crx
+*.diff
+*.log

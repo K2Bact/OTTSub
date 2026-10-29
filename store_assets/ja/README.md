@@ -1,0 +1,13 @@
+# 일본어 스토어 스크린샷 — 2026-10-14
+
+현재 **1.3.2 실제 일본어 UI**로 제작했다. 스토어 日本語(ja) 현지화 항목에 아래 순서로 등록하면 된다. 업로드는 사용자가 직접 한다.
+
+1. [이중 자막](screenshot1_dual_ja.jpg) — 영어 + 일본어 선택 및 언어별 상태.
+2. [싱크 조절](screenshot2_sync_ja.jpg) — 언어별 싱크와 단축키. 실제 UI 슬라이더를 −100ms로 조작했다.
+3. [학습 기능](screenshot3_learning_ja.jpg) — 보조언어 블러와 마우스 오버 일시정지.
+
+모두 **1280×800 RGB JPEG**. 일본어 표시와 주요 설명·컨트롤의 잘림을 육안 확인했다. 브라우저 오류 없음, 선택 언어·버전·설정 및 해시는 [verification.json](verification.json)에 기록했다.
+
+제품의 실제 HTML/CSS/JS와 일본어 번역을 로컬 Chromium에서 렌더링했다. 연결 상태와 자막 수는 제작용 모의 데이터이며, 자막 예시는 직접 작성했다. 하단에 데모 데이터임을 표시했다. 실제 Netflix 작품 영상이나 실서비스 동작 검증 결과를 나타내지 않는다.
+
+재현: `node store_assets/ja/source/capture.cjs`. Playwright Chromium을 사용하며 모든 요청을 로컬 파일로 처리한다. [일본어 HTML](source/index.html), [Chrome API 제작용 데이터](source/fixture.js)가 함께 보관돼 있다. 이 폴더는 배포 ZIP 밖에 있으며 제품 코드와 기존 1.3.2 ZIP은 변경하지 않았다.

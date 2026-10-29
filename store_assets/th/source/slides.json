@@ -1,0 +1,29 @@
+{
+  "locale": "th",
+  "direction": "ltr",
+  "languageName": "ไทย",
+  "title": "OTTSub · ภาพหน้าจอภาษาไทย",
+  "panelLabel": "แผงด้านข้าง · การตั้งค่า OTTSub",
+  "panelTitle": "เมนู OTTSub ภาษาไทย",
+  "footer": "สำหรับ Netflix · ภาษาที่มีขึ้นอยู่กับวิดีโอ สถานะหน้าจอและบทสนทนาเป็นตัวอย่าง",
+  "slides": [
+    {
+      "eyebrow": "01 / คำบรรยายสองภาษา",
+      "headline": "หน้าจอเดียว<br>สองภาษา",
+      "description": "เลือกคำบรรยายสองภาษาจากแทร็ก<br>ที่มีสำหรับวิดีโอ Netflix ของคุณ",
+      "detail": "<div class=\"demo-screen\"><div class=\"demo-label\">ตัวอย่างคำบรรยาย</div><div class=\"line1\">Let’s take a walk.</div><div class=\"line2\">ไปเดินเล่นกันเถอะ</div></div><p class=\"hint\">อังกฤษ + ไทย · ตั้งค่าแต่ละภาษาแยกกัน</p>"
+    },
+    {
+      "eyebrow": "02 / ปรับเวลาคำบรรยาย",
+      "headline": "ปรับเวลา<br>แยกแต่ละภาษา",
+      "description": "ปรับคำบรรยายหลักและรองแยกกัน<br>เพิ่มหรือลดครั้งละ 0.1 วินาที",
+      "detail": "<div class=\"keyrow\"><div class=\"keycard\"><div class=\"keys\">[ &nbsp; ]</div><div class=\"keylabel\">คำบรรยายหลัก<br><span class=\"accent\">−0.1 / +0.1 วินาที</span></div></div><div class=\"keycard\"><div class=\"keys\">Alt + [ / ]</div><div class=\"keylabel\">คำบรรยายรอง<br><span class=\"accent\">−0.1 / +0.1 วินาที</span></div></div></div><p class=\"hint\">Windows: Alt · Mac: Option<br>ใช้ตัวควบคุมในแผงด้านข้างได้เช่นกัน</p>"
+    },
+    {
+      "eyebrow": "03 / เรียนภาษา",
+      "headline": "ฝึกภาษา<br>ไปกับคำบรรยาย",
+      "description": "เบลอข้อความเพื่อฝึกความเข้าใจ<br>ชี้เมาส์บนคำบรรยายเพื่อหยุดวิดีโอชั่วคราว",
+      "detail": "<div class=\"demo-screen\"><div class=\"demo-label\">ตัวอย่างการฝึก</div><div class=\"line1\">You’re almost there.</div><div class=\"line2\" style=\"filter:blur(5px)\">อีกนิดเดียวก็ถึงแล้ว</div></div><div class=\"steps\"><div class=\"step\"><span class=\"num\">1</span>อ่าน</div><div class=\"step\"><span class=\"num\">2</span>ตรวจสอบ</div><div class=\"step\"><span class=\"num\">3</span>ฝึกต่อ</div></div>"
+    }
+  ]
+}

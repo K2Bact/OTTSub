@@ -1,0 +1,66 @@
+{
+  "version": "1.3.2",
+  "locale": "de",
+  "demoData": true,
+  "uploaded": false,
+  "screenshots": [
+    {
+      "file": "screenshot1_dual_de.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "de85a755df80d72ae0f36633bf7bbfa3bb657187e19c163279a07005b8f24dc6",
+      "ui": {
+        "language": "de",
+        "version": "1.3.2",
+        "primary": "en",
+        "secondary": "de",
+        "overflow": false,
+        "sync": "0.0s",
+        "blur": "none",
+        "hoverPause": true
+      },
+      "pageErrors": [],
+      "mode": "RGB"
+    },
+    {
+      "file": "screenshot2_sync_de.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "8dd3483b1d1231b364797413aa06896b07050cf8b407ef0144c772e9beebb96f",
+      "ui": {
+        "language": "de",
+        "version": "1.3.2",
+        "primary": "en",
+        "secondary": "de",
+        "overflow": false,
+        "sync": "-0.1s",
+        "blur": "none",
+        "hoverPause": true
+      },
+      "pageErrors": [],
+      "mode": "RGB"
+    },
+    {
+      "file": "screenshot3_learning_de.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "33c6a21d74be6d7bafb48686c68f4d328635251423e0114749f7972701a39158",
+      "ui": {
+        "language": "de",
+        "version": "1.3.2",
+        "primary": "en",
+        "secondary": "de",
+        "overflow": false,
+        "sync": "0.0s",
+        "blur": "secondary",
+        "hoverPause": true
+      },
+      "pageErrors": [],
+      "mode": "RGB"
+    }
+  ],
+  "packageSha256": "e8667e9d5bbe02bf923353fcd38711711041033c4d8f9014f11371b907fe187d"
+}

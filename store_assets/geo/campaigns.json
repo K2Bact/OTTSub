@@ -1,0 +1,12 @@
+{
+  "source": "ottsub_site",
+  "medium": "referral",
+  "campaign": "site_help_20261022",
+  "campaignPattern": "<campaign>_<en|ko|es>_<hero|footer|privacy>",
+  "contentPattern": "<en|ko|es>_<hero|footer|privacy>",
+  "developerTest": {
+    "source": "ottsub_devtest",
+    "medium": "referral",
+    "campaign": "qa_only"
+  }
+}

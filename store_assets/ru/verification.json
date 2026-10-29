@@ -1,0 +1,94 @@
+{
+  "version": "1.3.7",
+  "locale": "ru",
+  "demoData": true,
+  "uploaded": false,
+  "packageSha256": "8e822d7474bbab6f7fb64447f0a077253166d63346aefef6ba8eb608c3e93164",
+  "productSource": "Extracted upload ZIP; actual popup HTML/CSS/JS with simulated Chrome API and tracks",
+  "screenshots": [
+    {
+      "file": "screenshot1_dual_ru.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "fbf99b2ac4a2962353ab4ad8aeed8d7d1b06db742882ecf51b1c2faa3a40847f",
+      "ui": {
+        "language": "ru",
+        "direction": "ltr",
+        "version": "1.3.7",
+        "primary": "en",
+        "secondary": "ru",
+        "overflow": false,
+        "sync": "0.0s",
+        "slider": "0",
+        "blur": "none",
+        "hoverPause": true,
+        "learningExpanded": "false",
+        "learningDisplayed": false
+      },
+      "layout": {
+        "overflow": false,
+        "detailBottom": 645.921875,
+        "footerTop": 741,
+        "textOverflow": []
+      },
+      "pageErrors": []
+    },
+    {
+      "file": "screenshot2_sync_ru.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "e9adf3e925eba1c5b17c98ed1431babbf40315cf2ce8ff503c678a7852e81e7f",
+      "ui": {
+        "language": "ru",
+        "direction": "ltr",
+        "version": "1.3.7",
+        "primary": "en",
+        "secondary": "ru",
+        "overflow": false,
+        "sync": "-0.1s",
+        "slider": "-100",
+        "blur": "none",
+        "hoverPause": true,
+        "learningExpanded": "false",
+        "learningDisplayed": false
+      },
+      "layout": {
+        "overflow": false,
+        "detailBottom": 616.90625,
+        "footerTop": 741,
+        "textOverflow": []
+      },
+      "pageErrors": []
+    },
+    {
+      "file": "screenshot3_learning_ru.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "e7a136e94fb2c374804eb6f70e3aa9235f45783ab0acfce929ba4379f7489344",
+      "ui": {
+        "language": "ru",
+        "direction": "ltr",
+        "version": "1.3.7",
+        "primary": "en",
+        "secondary": "ru",
+        "overflow": false,
+        "sync": "0.0s",
+        "slider": "0",
+        "blur": "secondary",
+        "hoverPause": true,
+        "learningExpanded": "true",
+        "learningDisplayed": true
+      },
+      "layout": {
+        "overflow": false,
+        "detailBottom": 666.125,
+        "footerTop": 741,
+        "textOverflow": []
+      },
+      "pageErrors": []
+    }
+  ]
+}

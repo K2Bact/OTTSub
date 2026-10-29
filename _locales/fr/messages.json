@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - Synchro et doubles sous-titres Netflix",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "Réglez le décalage des sous-titres Netflix et affichez deux langues avec des raccourcis et des commandes simples.",
+    "description": "Extension description"
+  }
+}

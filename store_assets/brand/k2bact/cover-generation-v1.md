@@ -1,0 +1,7 @@
+# K2Bact 후원 페이지 커버 시안
+
+2026-10-14 내장 image_gen 도구 사용. 기존 profile-avatar-v1.png를 브랜드 참조로 사용했다. 생성 파일 cover-v1.png는 원본 그대로 보관하고 업로드하지 않았다. 글자 K2Bact와 Independent apps & tools를 육안 확인했다. 실제 출력 비율은 요청한 4:1과 다르므로 사이트의 커버 업로드에서 중앙 로고가 보이도록 크롭한다. 생성 요청의 1600×400이 실제 파일 크기라는 뜻은 아니다.
+
+## 최종 생성 프롬프트
+
+Use case: logo-brand. Transform the supplied K2Bact square profile logo into one finished ultra-wide horizontal cover banner for the same independent app developer brand on Buy Me a Coffee. The reference image is the brand identity reference: retain its distinctive navy K / bright blue 2 geometry and exact spelling K2Bact. Target canvas 1600 pixels wide by 400 pixels high, 4:1 aspect ratio, a full-bleed landscape banner with no mockup. Clean white to very pale blue backdrop with restrained original abstract flowing blue geometric details at the distant edges. Center a compact K2 symbol and adjacent readable navy K2Bact wordmark as one balanced horizontal lockup; beneath the wordmark include only the exact subtitle "Independent apps & tools". Keep the lockup and subtitle safely within the middle 60 percent of the canvas width and the middle 55 percent of its height, with ample unobtrusive outer space for responsive crops. Flat crisp professional graphic design matching the avatar. No coffee cup, no Netflix logo, no payment-platform logo, no other text, no device illustration, no watermark. Deliver one cover image, not a sheet of alternatives. Opaque background.

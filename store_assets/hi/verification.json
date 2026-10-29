@@ -1,0 +1,63 @@
+{
+  "version": "1.3.3",
+  "locale": "hi",
+  "demoData": true,
+  "uploaded": false,
+  "screenshots": [
+    {
+      "file": "screenshot1_dual_hi.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "0615275c351962ac6044a8cf869cc7cc91b2feb257737cbe4524d7ba076d289e",
+      "ui": {
+        "language": "hi",
+        "version": "1.3.3",
+        "primary": "en",
+        "secondary": "hi",
+        "overflow": false,
+        "sync": "0.0s",
+        "blur": "none",
+        "hoverPause": true
+      },
+      "pageErrors": []
+    },
+    {
+      "file": "screenshot2_sync_hi.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "8a327b73bb967751f7afbdc5bf024c2347535fbae4c0c9c80d274774ad67897f",
+      "ui": {
+        "language": "hi",
+        "version": "1.3.3",
+        "primary": "en",
+        "secondary": "hi",
+        "overflow": false,
+        "sync": "-0.1s",
+        "blur": "none",
+        "hoverPause": true
+      },
+      "pageErrors": []
+    },
+    {
+      "file": "screenshot3_learning_hi.jpg",
+      "width": 1280,
+      "height": 800,
+      "format": "JPEG",
+      "sha256": "2193deb9ce8ee12d704c52791dc0205389182dd737a90c1725870502a1a4bb42",
+      "ui": {
+        "language": "hi",
+        "version": "1.3.3",
+        "primary": "en",
+        "secondary": "hi",
+        "overflow": false,
+        "sync": "0.0s",
+        "blur": "secondary",
+        "hoverPause": true
+      },
+      "pageErrors": []
+    }
+  ],
+  "packageSha256": "4d4843e87bde4798313fdab029dbae2807d4143bf7e13b21011cea5d69f8a444"
+}

@@ -1,0 +1,12 @@
+{
+  "locale": "tr", "direction": "ltr", "languageName": "Türkçe",
+  "title": "OTTSub · Türkçe ekran görüntüleri",
+  "panelLabel": "Yan panel · OTTSub ayarları",
+  "panelTitle": "OTTSub Türkçe arayüzü",
+  "footer": "Netflix için · Sunulan diller içeriğe bağlıdır. Arayüz durumu ve alt yazılar gösterim amaçlı örnek verilerdir.",
+  "slides": [
+    {"eyebrow":"01 / ÇİFT ALT YAZI", "headline":"Tek ekran.<br>İki dil.", "description":"Netflix'te sunulan alt yazılardan<br>iki dili yan panelden seçin.", "detail":"<div class=\"demo-screen\"><div class=\"demo-label\">ÖRNEK ALT YAZILAR</div><div class=\"line1\">Let’s take the long way home.</div><div class=\"line2\">Eve uzun yoldan dönelim.</div></div><p class=\"hint\">İngilizce + Türkçe · Her dil için ayrı ayarlar</p>"},
+    {"eyebrow":"02 / ZAMANLAMA AYARI", "headline":"Zamanı ayarla.<br>Her dil için ayrı.", "description":"Alt yazıları ayrı ayrı öne alın veya geciktirin.<br>0.1 saniyelik adımlarla ayarlayın.", "detail":"<div class=\"keyrow\"><div class=\"keycard\"><div class=\"keys\">[ &nbsp; ]</div><div class=\"keylabel\">Ana alt yazı<br><span class=\"accent\">−0.1 / +0.1 saniye</span></div></div><div class=\"keycard\"><div class=\"keys\">Alt + [ / ]</div><div class=\"keylabel\">İkinci alt yazı<br><span class=\"accent\">−0.1 / +0.1 saniye</span></div></div></div><p class=\"hint\">Mac: Option · Windows: Alt.<br>Yan paneldeki denetimleri de kullanabilirsiniz.</p>"},
+    {"eyebrow":"03 / DİL ÖĞRENME", "headline":"Alt yazılarla<br>pratik yap.", "description":"Pratik için alt yazıları bulanıklaştırın.<br>Üzerine gelince videoyu duraklatın.", "detail":"<div class=\"demo-screen\"><div class=\"demo-label\">ÖRNEK ALIŞTIRMA</div><div class=\"line1\">One more step. You’re almost there.</div><div class=\"line2\" style=\"filter:blur(5px)\">Bir adım daha. Neredeyse vardın.</div></div><div class=\"steps\"><div class=\"step\"><span class=\"num\">1</span>Oku</div><div class=\"step\"><span class=\"num\">2</span>Kontrol et</div><div class=\"step\"><span class=\"num\">3</span>Devam et</div></div>"}
+  ]
+}

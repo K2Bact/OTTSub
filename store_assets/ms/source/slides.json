@@ -1,0 +1,12 @@
+{
+  "locale": "ms", "direction": "ltr", "languageName": "Bahasa Melayu",
+  "title": "OTTSub · Tangkapan skrin Bahasa Melayu",
+  "panelLabel": "Panel sisi · Tetapan OTTSub",
+  "panelTitle": "Antara muka OTTSub dalam Bahasa Melayu",
+  "footer": "Untuk Netflix · Bahasa yang tersedia bergantung pada tajuk. Antara muka dan sari kata menggunakan data demo.",
+  "slides": [
+    {"eyebrow":"01 / SARI KATA DUA BAHASA", "headline":"Satu skrin.<br>Dua bahasa.", "description":"Pilih dua bahasa daripada sari kata yang tersedia<br>di Netflix melalui panel sisi.", "detail":"<div class=\"demo-screen\"><div class=\"demo-label\">CONTOH SARI KATA</div><div class=\"line1\">Let’s take the long way home.</div><div class=\"line2\">Mari pulang melalui jalan yang lebih jauh.</div></div><p class=\"hint\">Inggeris + Melayu · Tetapan berasingan untuk setiap bahasa</p>"},
+    {"eyebrow":"02 / LARASKAN MASA", "headline":"Laraskan masa.<br>Untuk setiap bahasa.", "description":"Awalkan atau lewatkan sari kata secara berasingan.<br>Laraskan dalam langkah 0.1 saat.", "detail":"<div class=\"keyrow\"><div class=\"keycard\"><div class=\"keys\">[ &nbsp; ]</div><div class=\"keylabel\">Bahasa utama<br><span class=\"accent\">−0.1 / +0.1 saat</span></div></div><div class=\"keycard\"><div class=\"keys\">Alt + [ / ]</div><div class=\"keylabel\">Bahasa kedua<br><span class=\"accent\">−0.1 / +0.1 saat</span></div></div></div><p class=\"hint\">Mac: Option · Windows: Alt.<br>Anda juga boleh menggunakan kawalan pada panel sisi.</p>"},
+    {"eyebrow":"03 / PEMBELAJARAN BAHASA", "headline":"Belajar dengan<br>sari kata.", "description":"Kaburkan sari kata untuk berlatih.<br>Jeda video apabila penuding berada pada sari kata.", "detail":"<div class=\"demo-screen\"><div class=\"demo-label\">CONTOH LATIHAN</div><div class=\"line1\">One more step. You’re almost there.</div><div class=\"line2\" style=\"filter:blur(5px)\">Satu langkah lagi. Anda hampir sampai.</div></div><div class=\"steps\"><div class=\"step\"><span class=\"num\">1</span>Baca</div><div class=\"step\"><span class=\"num\">2</span>Semak</div><div class=\"step\"><span class=\"num\">3</span>Teruskan</div></div>"}
+  ]
+}

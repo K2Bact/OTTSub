@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTTSub - 넷플릭스 자막 싱크</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="title-row">
+        <h1 class="logo-title" data-i18n="ext_title">OTTSub</h1>
+        <div class="header-actions">
+          <div class="lang-select-wrapper" title="Language (UI 언어 설정)" data-i18n-title="ui_language">
+            <select id="ui-lang-select" class="ui-lang-select" aria-label="UI Language" data-i18n-aria-label="ui_language">
+              <option value="ar" data-english-name="Arabic">العربية (AR)</option>
+              <option value="bn" data-english-name="Bengali">বাংলা (BN)</option>
+              <option value="zh-TW" data-english-name="Chinese (Traditional)">繁體中文 (TW)</option>
+              <option value="en" data-english-name="English">English (EN)</option>
+              <option value="fi" data-english-name="Finnish">Suomi (FI)</option>
+              <option value="fr" data-english-name="French">Français (FR)</option>
+              <option value="de" data-english-name="German">Deutsch (DE)</option>
+              <option value="he" data-english-name="Hebrew">עברית (HE)</option>
+              <option value="hi" data-english-name="Hindi">हिन्दी (HI)</option>
+              <option value="ja" data-english-name="Japanese">日本語 (JA)</option>
+              <option value="ko" data-english-name="Korean">한국어 (KO)</option>
+              <option value="ms" data-english-name="Malay">Bahasa Melayu (MS)</option>
+              <option value="pt-PT" data-english-name="Portuguese (Portugal)">Português (PT)</option>
+              <option value="ru" data-english-name="Russian">Русский (RU)</option>
+                        <option value="es" data-english-name="Spanish">Español (ES)</option>
+              <option value="th" data-english-name="Thai">ไทย (TH)</option>
+              <option value="tr" data-english-name="Turkish">Türkçe (TR)</option>
+            </select>
+          </div>
+          <span class="status-badge" id="status-badge" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" data-i18n="status_waiting">대기 중</span>
+        </div>
+      </div>
+      <p class="subtitle" data-i18n="ext_subtitle">넷플릭스 자막 싱크 & 이중 자막</p>
+      <p class="subtitle" id="build-version"></p>
+      <p id="dev-research-row" class="subtitle" hidden><a id="dev-research-link" target="_blank" rel="noopener noreferrer">시장조사 보고서 (개발용)</a></p>
+    </header>
+
+    <main class="popup-body">
+      <p id="playback-notice" role="status" aria-live="polite" hidden></p>
+      <button id="reload-video" type="button" hidden data-i18n="reload_video">Reload Netflix tab</button>
+      <button id="show-native" type="button" hidden data-i18n="show_native">Show Netflix subtitles temporarily</button>
+      <!-- 자막 및 이중 자막 설정 카드 (통합 및 접기/펼치기 가능) -->
+      <section class="card subtitle-settings-card" id="subtitle-settings-card">
+        <button type="button" class="card-toggle-btn" id="sub-settings-toggle-btn" aria-expanded="true" aria-controls="sub-settings-content" title="자막 및 이중 자막 설정 접기/펼치기" data-i18n-title="title_sub_settings_toggle">
+          <span class="card-title" data-i18n="sub_settings_title">자막 및 이중 자막 설정</span>
+          <svg class="chevron-icon" id="sub-settings-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="collapsible-content" id="sub-settings-content" role="region" aria-labelledby="sub-settings-toggle-btn">
+          <!-- 주언어 자막 상태 -->
+          <div class="card-row option-row">
+            <label class="label" for="primary-lang-select" data-i18n="primary_lang_label">주언어</label>
+            <select id="primary-lang-select" class="lang-select" aria-describedby="primary-auto-description">
+              <option value="auto" data-i18n-option="primary_lang_auto">자동</option>
+            </select>
+          </div>
+          <p id="primary-auto-description" class="subtitle" data-i18n="primary_lang_auto_desc">Automatic prefers English, then the first available subtitle. It does not detect the original language.</p>
+          <div class="card-row option-row">
+            <label class="label" for="primary-track-kind" data-i18n="track_kind_label">자막 종류</label>
+            <select id="primary-track-kind" class="lang-select" aria-describedby="track-kind-help"></select>
+          </div>
+          <div class="card-row status-clickable-row" id="row-primary-status" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false">
+            <span class="label" data-i18n="primary_status_label">주언어 자막 상태</span>
+            <span class="value" id="sub-status" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" data-i18n="sub_status_checking">자막 확인 중...</span>
+          </div>
+          <p id="primary-track-notice" class="track-notice" role="status" aria-live="polite" hidden></p>
+
+          <div class="card-divider"></div>
+
+          <!-- 이중 자막 모드 설정 -->
+          <div class="card-row">
+            <label class="label clickable-label" for="dual-toggle" data-i18n="dual_title">이중 자막 (주언어 + 보조언어)</label>
+            <label class="toggle-switch">
+              <input type="checkbox" id="dual-toggle" role="switch" aria-label="이중 자막" data-i18n-aria-label="dual_title" checked>
+              <span class="slider-round"></span>
+            </label>
+          </div>
+          <div class="dual-sub-options" id="dual-sub-options">
+            <div class="card-row option-row">
+              <span class="label" data-i18n="secondary_lang_label">보조언어</span>
+              <select id="secondary-lang-select" class="lang-select" aria-label="보조언어" data-i18n-aria-label="secondary_lang_label">
+                <option value="ko" selected data-i18n-option="lang_ko">한국어</option>
+                <option value="en" data-i18n-option="lang_en">영어</option>
+                <option value="ja" data-i18n-option="lang_ja">일본어</option>
+                <option value="es" data-i18n-option="lang_es">스페인어</option>
+                <option value="zh-Hans" data-i18n-option="lang_zh">중국어(간체)</option>
+                <option value="fr" data-i18n-option="lang_fr">프랑스어</option>
+                <option value="de" data-i18n-option="lang_de">독일어</option>
+                <option value="hi" data-i18n-option="lang_hi">힌디어</option>
+              </select>
+            </div>
+            <div class="card-row option-row">
+              <label class="label" for="secondary-track-kind" data-i18n="track_kind_label">자막 종류</label>
+              <select id="secondary-track-kind" class="lang-select" aria-describedby="track-kind-help"></select>
+            </div>
+            <div class="card-row status-detail-row status-clickable-row" id="row-secondary-status" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false">
+              <span class="label" data-i18n="secondary_status_label">보조언어 자막 상태</span>
+              <span class="value-highlight" id="secondary-sub-status" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" data-i18n="secondary_status_waiting">대기 중...</span>
+            </div>
+            <p id="secondary-track-notice" class="track-notice" role="status" aria-live="polite" hidden></p>
+          </div>
+          <p id="track-kind-help" class="subtitle" data-i18n="track_kind_help">CC는 대사와 소리 설명을 함께 표시해.</p>
+
+          <div class="card-divider"></div>
+
+          <!-- 자막 위치 잠금 설정 -->
+          <div class="card-row">
+            <div class="label-group">
+              <label class="label clickable-label" for="lock-pos-toggle" data-i18n="lock_pos_title" title="재생바 간섭 방지 및 마우스 드래그 고정" data-i18n-title="lock_pos_subtitle">자막 위치 잠금</label>
+              <div class="sub-label" data-i18n="lock_pos_subtitle">재생바 간섭 방지 및 마우스 드래그 고정</div>
+            </div>
+            <label class="toggle-switch" for="lock-pos-toggle">
+              <input type="checkbox" id="lock-pos-toggle" role="switch" aria-label="자막 위치 잠금" data-i18n-aria-label="lock_pos_title">
+              <span class="slider-round"></span>
+            </label>
+          </div>
+
+          <!-- 자막 위치 기본값 초기화 버튼 (상시 노출) -->
+          <div class="card-row adjust-actions-row">
+            <button type="button" class="btn-action-full" id="btn-reset-pos" data-i18n="btn_reset_pos">자막 위치 기본값 초기화</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 언어별 간격 & 위치 조정 카드 (접기/펼치기 가능) -->
+      <section class="card lang-adjust-card" id="lang-adjust-card">
+        <button type="button" class="card-toggle-btn" id="lang-adjust-toggle-btn" aria-expanded="true" aria-controls="lang-adjust-content" title="언어별 간격 & 위치 조정 접기/펼치기" data-i18n-title="title_lang_adjust_toggle">
+          <span class="card-title" data-i18n="lang_adjust_title">언어별 간격 & 위치 조정</span>
+          <svg class="chevron-icon" id="lang-adjust-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="collapsible-content" id="lang-adjust-content" role="region" aria-labelledby="lang-adjust-toggle-btn">
+          <div class="lang-adjust-header">
+          <div class="lang-tab-group" role="tablist">
+            <button type="button" class="lang-tab-btn active" id="tab-btn-primary" data-tab="primary" data-i18n="tab_primary">주언어</button>
+            <button type="button" class="lang-tab-btn" id="tab-btn-secondary" data-tab="secondary" data-i18n="tab_secondary">보조언어</button>
+          </div>
+        </div>
+
+        <!-- 주언어 (Primary) 패널 -->
+        <div class="lang-panel active" id="panel-primary">
+          <!-- 주언어 줄 간격 -->
+          <div class="card-row adjust-row">
+            <span class="label" data-i18n="primary_spacing_title">주언어 줄 간격</span>
+            <div class="stepper-group" id="line-spacing-stepper">
+              <button type="button" class="stepper-btn" id="btn-spacing-dec" title="줄 간격 좁히기" data-i18n-title="decrease_spacing" aria-label="줄 간격 좁히기" data-i18n-aria-label="decrease_spacing">-</button>
+              <span class="stepper-value" id="line-spacing-val">4</span>
+              <button type="button" class="stepper-btn" id="btn-spacing-inc" title="줄 간격 넓히기" data-i18n-title="increase_spacing" aria-label="줄 간격 넓히기" data-i18n-aria-label="increase_spacing">+</button>
+            </div>
+          </div>
+
+          <!-- 주언어 위치 조정 -->
+          <div class="card-row adjust-row pos-row">
+            <span class="label" data-i18n="primary_pos_title">주언어 위치 조정</span>
+            <div class="stepper-group">
+              <button type="button" class="stepper-btn" id="btn-primary-pos-dec" title="아래로 내리기" data-i18n-title="move_down" aria-label="아래로 내리기" data-i18n-aria-label="move_down">-</button>
+              <span class="stepper-value pos-val" id="primary-pos-val">0px</span>
+              <button type="button" class="stepper-btn" id="btn-primary-pos-inc" title="위로 올리기" data-i18n-title="move_up" aria-label="위로 올리기" data-i18n-aria-label="move_up">+</button>
+            </div>
+          </div>
+
+          <!-- 주언어 크기 비율 -->
+          <div class="card-row adjust-row scale-row">
+            <span class="label" data-i18n="primary_scale_title">주언어 크기 비율</span>
+            <div class="stepper-group">
+              <button type="button" class="stepper-btn" id="btn-primary-scale-dec" title="크기 축소" data-i18n-title="smaller_text" aria-label="크기 축소" data-i18n-aria-label="smaller_text">-</button>
+              <span class="stepper-value scale-val" id="primary-scale-val">100%</span>
+              <button type="button" class="stepper-btn" id="btn-primary-scale-inc" title="크기 확대" data-i18n-title="larger_text" aria-label="크기 확대" data-i18n-aria-label="larger_text">+</button>
+            </div>
+          </div>
+
+          <!-- 주언어 색상 팔레트 -->
+          <div class="card-row adjust-row color-row">
+            <span class="label" data-i18n="primary_color_title">주언어 색상</span>
+            <div class="color-palette-group" id="primary-color-palette" role="radiogroup" aria-label="주언어 색상" data-i18n-aria-label="primary_color_title">
+              <button type="button" class="color-chip active" data-color="#ffffff" style="background-color: #ffffff;" title="퓨어 화이트" data-i18n-title="color_white" aria-label="White" data-i18n-aria-label="color_white" role="radio" aria-checked="true" tabindex="0"></button>
+              <button type="button" class="color-chip" data-color="#ffe082" style="background-color: #ffe082;" title="클래식 옐로우" data-i18n-title="color_yellow" aria-label="Yellow" data-i18n-aria-label="color_yellow" role="radio" aria-checked="false" tabindex="-1"></button>
+              <button type="button" class="color-chip" data-color="#80deea" style="background-color: #80deea;" title="소프트 민트" data-i18n-title="color_mint" aria-label="Mint" data-i18n-aria-label="color_mint" role="radio" aria-checked="false" tabindex="-1"></button>
+              <button type="button" class="color-chip" data-color="#c8e6c9" style="background-color: #c8e6c9;" title="소프트 그린" data-i18n-title="color_green" aria-label="Green" data-i18n-aria-label="color_green" role="radio" aria-checked="false" tabindex="-1"></button>
+            </div>
+          </div>
+
+          <!-- 주언어 반투명 배경 박스 -->
+          <div class="card-row adjust-row bg-box-row">
+            <label class="label clickable-label" for="primary-bg-box-toggle" data-i18n="primary_bg_box_title">주언어 배경 박스</label>
+            <label class="toggle-switch">
+              <input type="checkbox" id="primary-bg-box-toggle" role="switch" aria-label="주언어 배경 박스" data-i18n-aria-label="primary_bg_box_title">
+              <span class="slider-round"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 보조언어 (Secondary) 패널 -->
+        <div class="lang-panel" id="panel-secondary" style="display: none;">
+          <!-- 보조언어 줄 간격 -->
+          <div class="card-row adjust-row">
+            <span class="label" data-i18n="secondary_spacing_title">보조언어 줄 간격</span>
+            <div class="stepper-group">
+              <button type="button" class="stepper-btn" id="btn-secondary-spacing-dec" title="줄 간격 좁히기" data-i18n-title="decrease_spacing" aria-label="줄 간격 좁히기" data-i18n-aria-label="decrease_spacing">-</button>
+              <span class="stepper-value" id="secondary-spacing-val">4</span>
+              <button type="button" class="stepper-btn" id="btn-secondary-spacing-inc" title="줄 간격 넓히기" data-i18n-title="increase_spacing" aria-label="줄 간격 넓히기" data-i18n-aria-label="increase_spacing">+</button>
+            </div>
+          </div>
+
+          <!-- 보조언어 위치 조정 -->
+          <div class="card-row adjust-row pos-row">
+            <span class="label" data-i18n="secondary_pos_title">보조언어 위치 조정</span>
+            <div class="stepper-group">
+              <button type="button" class="stepper-btn" id="btn-secondary-pos-dec" title="아래로 내리기" data-i18n-title="move_down" aria-label="아래로 내리기" data-i18n-aria-label="move_down">-</button>
+              <span class="stepper-value pos-val" id="secondary-pos-val">0px</span>
+              <button type="button" class="stepper-btn" id="btn-secondary-pos-inc" title="위로 올리기" data-i18n-title="move_up" aria-label="위로 올리기" data-i18n-aria-label="move_up">+</button>
+            </div>
+          </div>
+
+          <!-- 보조언어 크기 비율 -->
+          <div class="card-row adjust-row scale-row">
+            <span class="label" data-i18n="secondary_scale_title">보조언어 크기 비율</span>
+            <div class="stepper-group">
+              <button type="button" class="stepper-btn" id="btn-secondary-scale-dec" title="크기 축소" data-i18n-title="smaller_text" aria-label="크기 축소" data-i18n-aria-label="smaller_text">-</button>
+              <span class="stepper-value scale-val" id="secondary-scale-val">78%</span>
+              <button type="button" class="stepper-btn" id="btn-secondary-scale-inc" title="크기 확대" data-i18n-title="larger_text" aria-label="크기 확대" data-i18n-aria-label="larger_text">+</button>
+            </div>
+          </div>
+
+          <!-- 보조언어 색상 팔레트 -->
+          <div class="card-row adjust-row color-row">
+            <span class="label" data-i18n="secondary_color_title">보조언어 색상</span>
+            <div class="color-palette-group" id="secondary-color-palette" role="radiogroup" aria-label="보조언어 색상" data-i18n-aria-label="secondary_color_title">
+              <button type="button" class="color-chip active" data-color="#ffe082" style="background-color: #ffe082;" title="클래식 옐로우" data-i18n-title="color_yellow" aria-label="Yellow" data-i18n-aria-label="color_yellow" role="radio" aria-checked="true" tabindex="0"></button>
+              <button type="button" class="color-chip" data-color="#ffffff" style="background-color: #ffffff;" title="퓨어 화이트" data-i18n-title="color_white" aria-label="White" data-i18n-aria-label="color_white" role="radio" aria-checked="false" tabindex="-1"></button>
+              <button type="button" class="color-chip" data-color="#80deea" style="background-color: #80deea;" title="소프트 민트" data-i18n-title="color_mint" aria-label="Mint" data-i18n-aria-label="color_mint" role="radio" aria-checked="false" tabindex="-1"></button>
+              <button type="button" class="color-chip" data-color="#c8e6c9" style="background-color: #c8e6c9;" title="소프트 그린" data-i18n-title="color_green" aria-label="Green" data-i18n-aria-label="color_green" role="radio" aria-checked="false" tabindex="-1"></button>
+            </div>
+          </div>
+
+          <!-- 보조언어 반투명 배경 박스 -->
+          <div class="card-row adjust-row bg-box-row">
+            <label class="label clickable-label" for="secondary-bg-box-toggle" data-i18n="secondary_bg_box_title">보조언어 배경 박스</label>
+            <label class="toggle-switch">
+              <input type="checkbox" id="secondary-bg-box-toggle" role="switch" aria-label="보조언어 배경 박스" data-i18n-aria-label="secondary_bg_box_title">
+              <span class="slider-round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 어학 학습 & 자막 가림 (Language Learning & Blur) -->
+    <section class="card learning-card collapsed" id="learning-card">
+      <button type="button" class="card-toggle-btn learning-toggle-btn" id="learning-toggle-btn" aria-expanded="false" aria-controls="learning-body" title="어학 학습 & 자막 가림 접기/펼치기" data-i18n-title="title_learning_toggle">
+        <span class="card-title" data-i18n="learning_card_title">어학 학습 & 자막 가림</span>
+        <svg class="chevron-icon" id="learning-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+
+      <div class="card-body learning-body collapsible-content" id="learning-body" role="region" aria-labelledby="learning-toggle-btn">
+        <!-- 가릴 자막 대상 (Target) -->
+        <div class="card-row adjust-row">
+          <span class="label" data-i18n="blur_target_label">가릴 자막 대상</span>
+          <div class="segmented-control" id="blur-target-control" role="radiogroup" aria-label="가릴 자막 대상" data-i18n-aria-label="blur_target_label">
+            <button type="button" class="segment-btn active" data-target="none" data-i18n="blur_target_none">사용 안 함</button>
+            <button type="button" class="segment-btn" data-target="secondary" data-i18n="blur_target_secondary">보조언어</button>
+            <button type="button" class="segment-btn" data-target="primary" data-i18n="blur_target_primary">주언어</button>
+            <button type="button" class="segment-btn" data-target="both" data-i18n="blur_target_both">양쪽 모두</button>
+          </div>
+        </div>
+
+        <!-- 가림 방식 (Mode) -->
+        <div class="card-row adjust-row" id="blur-mode-row">
+          <span class="label" data-i18n="blur_mode_label">가림 방식</span>
+          <div class="segmented-control mode-control" id="blur-mode-control" role="radiogroup" aria-label="가림 방식" data-i18n-aria-label="blur_mode_label">
+            <button type="button" class="segment-btn" data-mode="blur_4" data-i18n="blur_mode_blur_4">약함 (4px)</button>
+            <button type="button" class="segment-btn active" data-mode="blur_8" data-i18n="blur_mode_blur_8">보통 (8px)</button>
+            <button type="button" class="segment-btn" data-mode="blur_14" data-i18n="blur_mode_blur_14">강함 (14px)</button>
+          </div>
+        </div>
+
+        <!-- 마우스 호버 시 일시정지 (Hover to Pause) -->
+        <div class="card-row adjust-row hover-pause-row" id="hover-pause-row">
+          <label class="label clickable-label" for="hover-pause-toggle" data-i18n="hover_pause_label">자막에 마우스 올리면 일시정지</label>
+          <label class="toggle-switch">
+            <input type="checkbox" id="hover-pause-toggle" role="switch" aria-label="자막에 마우스를 올리면 재생 일시정지" data-i18n-aria-label="hover_pause_label">
+            <span class="slider-round"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+      <!-- 현재 싱크 디스플레이 (주언어 & 보조언어) -->
+      <section class="sync-display-section">
+        <div class="sync-targets-row" role="tablist" aria-label="Subtitle Sync Targets" data-i18n-aria-label="sync_targets">
+          <button type="button" role="tab" class="sync-target-card active" id="sync-card-primary" data-sync-target="primary" aria-selected="true" tabindex="0" title="주언어 싱크 조절" data-i18n-title="primary_sync_label">
+            <span class="sync-target-title" data-i18n="primary_sync_title">주언어 싱크</span>
+            <span class="sync-target-value sync-value" id="sync-value">0.0s</span>
+          </button>
+          <button type="button" role="tab" class="sync-target-card" id="sync-card-secondary" data-sync-target="secondary" aria-selected="false" tabindex="-1" title="보조언어 싱크 조절" data-i18n-title="secondary_sync_label">
+            <span class="sync-target-title" data-i18n="secondary_sync_title">보조언어 싱크</span>
+            <span class="sync-target-value" id="secondary-sync-value">0.0s</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 슬라이더 컨트롤 -->
+      <section class="control-section">
+        <div class="slider-row">
+          <span class="slider-limit">-10s</span>
+          <input type="range" id="sync-slider" min="-10000" max="10000" step="100" value="0" aria-label="Subtitle Sync Offset Slider" data-i18n-aria-label="sync_slider" aria-valuetext="0.0s" title="좌우로 드래그하여 싱크 조절 (더블클릭 시 0.0s 리셋)" data-i18n-title="sync_slider_help">
+          <span class="slider-limit">+10s</span>
+        </div>
+      </section>
+
+      <!-- 단축키 안내 (접기/펼치기 가능) -->
+      <section class="card shortcuts-card" id="shortcuts-card">
+        <button type="button" class="card-toggle-btn shortcuts-toggle-btn" id="shortcuts-toggle-btn" aria-expanded="true" aria-controls="shortcut-list" title="단축키 안내 접기/펼치기" data-i18n-title="title_shortcuts_toggle">
+          <span class="card-title" data-i18n="shortcuts_title">단축키 안내</span>
+          <svg class="chevron-icon" id="shortcuts-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="shortcut-list collapsible-content" id="shortcut-list" role="region" aria-labelledby="shortcuts-toggle-btn">
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd>[</kbd> / <kbd>]</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_01">주언어 자막 싱크 (±0.1초)</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd data-shortcut-modifier>Alt</kbd> + <kbd>[</kbd> / <kbd>]</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_alt_sync">보조언어 자막 싱크 (±0.1초)</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd>\</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_reset">주언어 싱크 0.0초 리셋</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd data-shortcut-modifier>Alt</kbd> + <kbd>\</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_alt_reset">보조언어 싱크 0.0초 리셋</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd data-shortcut-modifier>Alt</kbd> + <kbd>D</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_dual">이중 자막 ON / OFF 토글</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd data-shortcut-modifier>Alt</kbd> + <kbd>B</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_blur_toggle">자막 가림/블러 ON / OFF 토글</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd data-shortcut-modifier>Alt</kbd> + <kbd>L</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_lock_pos">자막 위치 잠금 ON / OFF</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd data-i18n="mouse_drag">드래그</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_drag">자막 자유 이동 (위치 잠금 해제 시)</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd data-shortcut-modifier>Alt</kbd> + <kbd>R</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_reset_pos">자막 위치 기본값 초기화</span>
+          </div>
+          <div class="shortcut-item">
+            <span class="shortcut-keys"><kbd data-i18n="double_click">더블클릭</kbd></span>
+            <span class="shortcut-desc" data-i18n="shortcut_dblclick_reset">자막 위치 기본값 초기화</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 크티(CTEE) 후원 섹션 -->
+      <section class="support-section">
+        <a href="https://ctee.kr/place/gaejib" target="_blank" rel="noopener noreferrer" class="ctee-btn" id="btn-ctee">
+          <svg class="ctee-cup-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+          <span class="btn-text" data-i18n="support_btn">개발자 커피 한 잔 후원하기</span>
+        </a>
+        <p class="support-subtext" data-i18n="support_subtext">광고 없이 무료로 유지하는 데 큰 힘이 됩니다</p>
+        <a id="homepage-link" class="homepage-link" href="https://k2bact.github.io/ottsub-site/" target="_blank" rel="noopener noreferrer" dir="ltr">k2bact.github.io/ottsub-site <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <!-- 상태 설명 비모달 대화상자 (클릭 또는 키보드로 열기) -->
+    <div id="status-popover" class="status-popover" role="dialog" aria-labelledby="popover-title" aria-describedby="popover-body" aria-hidden="true" tabindex="-1">
+      <div class="popover-header">
+        <span class="popover-title" id="popover-title" data-i18n="status_help_title">상태 안내</span>
+        <button type="button" class="popover-close" id="popover-close" aria-label="닫기" title="닫기" data-i18n-aria-label="btn_close" data-i18n-title="btn_close">&times;</button>
+      </div>
+      <div class="popover-body" id="popover-body"></div>
+    </div>
+  </div>
+  <script src="../src/i18n.js"></script>
+  <script src="../src/core/platform.js"></script>
+  <script src="../src/core/track-languages.js"></script>
+  <script src="../src/core/settings-revisions.js"></script>
+  <script src="../src/core/storage-guard.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

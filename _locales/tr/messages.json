@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - Netflix alt yazı senkronu ve çift alt yazı",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "Netflix alt yazılarının zamanını ayarlayın, iki dili aynı anda görün ve kısayollarla kolayca kontrol edin.",
+    "description": "Extension description"
+  }
+}

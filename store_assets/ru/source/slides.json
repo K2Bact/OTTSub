@@ -1,0 +1,29 @@
+{
+  "locale": "ru",
+  "direction": "ltr",
+  "languageName": "Русский",
+  "title": "OTTSub · Скриншоты на русском языке",
+  "panelLabel": "Боковая панель · Настройки OTTSub",
+  "panelTitle": "Интерфейс OTTSub на русском языке",
+  "footer": "Для Netflix · Доступные языки зависят от видео. Состояние интерфейса и реплики приведены для примера.",
+  "slides": [
+    {
+      "eyebrow": "01 / ДВОЙНЫЕ СУБТИТРЫ",
+      "headline": "Один экран.<br>Два языка.",
+      "description": "Выбирайте две дорожки субтитров,<br>доступные для вашего видео на Netflix.",
+      "detail": "<div class=\"demo-screen\"><div class=\"demo-label\">ПРИМЕР СУБТИТРОВ</div><div class=\"line1\">Let’s take a walk.</div><div class=\"line2\">Давай прогуляемся.</div></div><p class=\"hint\">Английский + русский · Отдельные настройки для каждого языка</p>"
+    },
+    {
+      "eyebrow": "02 / НАСТРОЙКА ВРЕМЕНИ",
+      "headline": "Точный сдвиг.<br>Для каждого языка.",
+      "description": "Настраивайте обе дорожки отдельно.<br>Шаг — 0.1 секунды.",
+      "detail": "<div class=\"keyrow\"><div class=\"keycard\"><div class=\"keys\">[ &nbsp; ]</div><div class=\"keylabel\">Основные субтитры<br><span class=\"accent\">−0.1 / +0.1 секунды</span></div></div><div class=\"keycard\"><div class=\"keys\">Alt + [ / ]</div><div class=\"keylabel\">Дополнительные<br>субтитры <span class=\"accent\">−0.1 / +0.1 с</span></div></div></div><p class=\"hint\">Windows: Alt · Mac: Option.<br>Также можно использовать элементы панели.</p>"
+    },
+    {
+      "eyebrow": "03 / ИЗУЧЕНИЕ ЯЗЫКОВ",
+      "headline": "Учитесь<br>с субтитрами.",
+      "description": "Размывайте текст для практики.<br>Наводите курсор, чтобы поставить видео на паузу.",
+      "detail": "<div class=\"demo-screen\"><div class=\"demo-label\">ПРИМЕР УПРАЖНЕНИЯ</div><div class=\"line1\">You’re almost there.</div><div class=\"line2\" style=\"filter:blur(5px)\">Ты почти у цели.</div></div><div class=\"steps\"><div class=\"step\"><span class=\"num\">1</span>Читайте</div><div class=\"step\"><span class=\"num\">2</span>Проверяйте</div><div class=\"step\"><span class=\"num\">3</span>Продолжайте</div></div>"
+    }
+  ]
+}

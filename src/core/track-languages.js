@@ -1,0 +1,58 @@
+// Shared by MAIN and ISOLATED worlds. A language family is not a script variant.
+(() => {
+  'use strict';
+  const code = value => typeof value === 'string' && /^[a-z]{2,3}(?:-[a-z0-9]{2,8})*$/i.test(value.trim()) ? value.trim().toLowerCase() : '';
+  function chineseScript(value) {
+    const parts = code(value).split('-');
+    if (parts[0] !== 'zh') return '';
+    if (parts.includes('hans')) return 'hans';
+    if (parts.includes('hant')) return 'hant';
+    if (parts.some(p => ['cn', 'sg'].includes(p))) return 'hans';
+    if (parts.some(p => ['tw', 'hk', 'mo'].includes(p))) return 'hant';
+    return '';
+  }
+  function compatible(requested, available) {
+    const a = code(requested), b = code(available);
+    if (!a || !b) return false;
+    if (a === b) return true;
+    if (a.split('-')[0] !== b.split('-')[0]) return false;
+    if (a.startsWith('zh-')) return !!chineseScript(a) && chineseScript(a) === chineseScript(b);
+    // A generic choice may pick a regional track; a specific choice must not
+    // silently fall back to a different region (or an unspecified script).
+    return !a.includes('-');
+  }
+  function trackKind(track) {
+    const type = String(track?.rawTrackType || track?.trackType || '').toLowerCase();
+    const label = String(track?.label || track?.displayName || track?.languageDescription || '');
+    return track?.isCC === true || ['closedcaptions', 'assistive', 'sdh'].includes(type)
+      || /[\[(]\s*(?:cc|sdh)\s*[\])]/i.test(label) ? 'cc' : 'normal';
+  }
+  const validKind = kind => ['auto', 'normal', 'cc'].includes(kind);
+  function pick(items, requested, getCode = item => item?.bcp47 || item?.language, kind = 'auto') {
+    const target = code(requested);
+    if (!target || !Array.isArray(items) || !validKind(kind)) return undefined;
+    const candidates = kind === 'auto' ? items : items.filter(item => trackKind(item) === kind);
+    return candidates.find(item => code(getCode(item)) === target)
+      || candidates.find(item => compatible(target, getCode(item)));
+  }
+  function urls(manifest, requested, kind = 'auto') {
+    if (!validKind(kind)) return [];
+    const grouped = manifest?.tracksByLang || {};
+    const tracks = Array.isArray(manifest?.availableTracks) ? manifest.availableTracks : [];
+    const match = pick(tracks, requested, undefined, kind);
+    if (match) {
+      // Even an empty per-track list is authoritative. A grouped language may
+      // contain another CC/normal track's addresses and must not hydrate this one.
+      if (Array.isArray(match.urls)) return match.urls;
+      if (kind !== 'auto' || tracks.filter(t => compatible(requested, t?.bcp47 || t?.language)).length > 1) return [];
+      const exact = Object.keys(grouped).find(key => code(key) === code(match.bcp47 || match.language));
+      const found = grouped[exact];
+      return Array.isArray(found) ? found : [];
+    }
+    // Legacy/minimal payloads still use exact BCP-47 keys, with the same policy.
+    if (kind !== 'auto' || tracks.some(t => code(t?.bcp47 || t?.language))) return [];
+    const key = pick(Object.keys(grouped), requested, key => key);
+    return Array.isArray(grouped[key]) ? grouped[key] : [];
+  }
+  window.OTTSubTrackLanguages = Object.freeze({ code, chineseScript, compatible, trackKind, validKind, pick, urls });
+})();

@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "OTTSub - Netflix সাবটাইটেল সিঙ্ক ও দ্বৈত সাবটাইটেল",
+    "description": "Extension title"
+  },
+  "extDescription": {
+    "message": "Netflix সাবটাইটেলের সময় মেলান, দুই ভাষা একসঙ্গে দেখুন এবং শর্টকাট দিয়ে সহজে নিয়ন্ত্রণ করুন।",
+    "description": "Extension description"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "file": "screenshot1_dual_es.jpg",
+      "size": [
+        1280,
+        800
+      ],
+      "mode": "RGB",
+      "bytes": 84318,
+      "sha256": "50f3fcfa99580c1ca5d8c94bf18034adb2fda87a5799a24b3a68971cc65520ac"
+    },
+    {
+      "file": "screenshot2_sync_es.jpg",
+      "size": [
+        1280,
+        800
+      ],
+      "mode": "RGB",
+      "bytes": 69136,
+      "sha256": "9da69b38b0cb87b3ee4295414eec004ba8e607182c1875d8d7532a878c17f470"
+    },
+    {
+      "file": "screenshot3_learning_es.jpg",
+      "size": [
+        1280,
+        800
+      ],
+      "mode": "RGB",
+      "bytes": 77153,
+      "sha256": "10bb4efe0afa7c26c1ce2037de4f68c86be63e91443f539744503595088d405e"
+    }
+  ],
+  "locale": "es",
+  "uiVersion": "1.3.1",
+  "syntheticDemo": true,
+  "visualReview": "Three images checked for Spanish text and clipping; sync example -0.1s set through actual slider."
+}

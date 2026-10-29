@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "OTTSub Ad Observer (local diagnostic)",
+  "version": "0.1.0",
+  "description": "Opt-in local playback observations. Does not change subtitles or playback.",
+  "content_scripts": [{
+    "matches": ["https://www.netflix.com/*"],
+    "js": ["observer.js"],
+    "run_at": "document_idle",
+    "world": "MAIN"
+  }]
+}
