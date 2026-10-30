@@ -1,5 +1,7 @@
 # 개발 이력 — 1.3.9 / .70 기준
 
+2026-10-30 사용자 최신 지시의 저장소 운영 기준은 [OTTSub](https://github.com/K2Bact/OTTSub) 공개, [ottsub-dev](https://github.com/K2Bact/ottsub-dev) 비공개·읽기 전용 보관이다. 코드와 과거 이력의 독립 경계를 유지하며 로컬 AI대화/외부참고/계정자료는 Git에서 제외한다. 실제 변경·익명 접근·비공개 차단 결과는 [검증 기록](../artifacts/security/repository-visibility-20261030/result.json)에 기록한다. OTT-80. 아래 비공개 전용 정책과 이전 보관 이름은 각 당시 기록이다.
+
 2026-10-30 사용자가 저장소 이름변경·새비공개저장소 생성·비공개보관을 명시승인해 실행했다. 원래주소 OTTSub는새독립비공개저장소이고, 기존저장소는 OTTSub-private-history-20261030에서 비공개·읽기전용으로6커밋을보존한다. 새저장소에서옛커밋/참고blob404·340파일동일·17언어·179입력/ZIP10보존을확인했다. [실행/검증](../OttsubAiTalk.md#repository-isolation-complete-20261030)·OTT-79. 아래승인대기는당시기록이다.
 
 2026-10-30 저장소의 새 main1커밋·로컬자료2종 Git제외·340파일/17언어·비공개를 확인했다. 제품179입력/ZIP10보존. 옛SHA조회200이 남아 독립 저장소 격리안을 준비했으나 이름변경/새생성/보관은 자동승인 거절로 실행되지 않았다. [범위/현재판정](../OttsubAiTalk.md#repository-cleanup-20261030)·OTT-79.

@@ -1,6 +1,6 @@
 # OTTSub
 
-**작업 상태:** [Dev_Status.xlsx](../Dev_Status.xlsx)의 앱 `OTTSub` / `OTT-1`–`OTT-79`가 정본이다. [TODO](docs/TODO.md)는 ID별 설명·근거, [HANDOFF](docs/HANDOFF.md)는 최신 build와 검사 범위를 안내한다.
+**작업 상태:** [Dev_Status.xlsx](../Dev_Status.xlsx)의 앱 `OTTSub` / `OTT-1`–`OTT-80`가 정본이다. [TODO](docs/TODO.md)는 ID별 설명·근거, [HANDOFF](docs/HANDOFF.md)는 최신 build와 검사 범위를 안내한다.
 
 Netflix 자막 싱크·이중 자막·학습 설정 Chrome 확장 프로그램. 현재 개발본은 **1.3.9-local-french-ui-20261029.70 / 17언어**다. 마지막 제품 전체 QA는 [프랑스어 추가 후 기록](docs/QA.md#french-ui-20261029)의 122/122이며, 이번 Git 정리 검사를 새 제품 전체 QA로 세지 않는다. 기존 스토어 ZIP 1.3.9는 프랑스어 추가 전의 16언어 자료로 로컬에 보존한다.
 
@@ -27,10 +27,10 @@ Netflix 자막 싱크·이중 자막·학습 설정 Chrome 확장 프로그램. 
 
 [작업 규칙](AGENTS.md), [등록 지침](store_assets/STORE_GUIDE.md), [최신 QA](artifacts/qa/latest.md).
 
-GEO용 [한국어 제품 소개](https://k2bact.github.io/ottsub-site/ko/)·[영어 제품 소개](https://k2bact.github.io/ottsub-site/)를 게시했다. [등록 자료·페이지 안내](store_assets/README.md)에서 관리하며, 이 저장소는 비공개 개발 자료로 유지한다. 공개 페이지에는 앱 소스를 포함하지 않는다. [게시·검사 및 실제 검색 효과의 경계](OttsubAiTalk.md#geo-publication-20261020)를 따른다.
-현재 폴더를 실제 작업 원본으로 사용하며 별도 업로드 복사본은 만들지 않는다. GitHub 대상은 비공개 [K2Bact/OTTSub](https://github.com/K2Bact/OTTSub)의 main이다. Mac에서는 이 저장소를 clone한 뒤 manifest.json이 있는 루트 폴더를 Chrome의 '압축해제된 확장 프로그램을 로드합니다'로 선택한다. 자세한 자동 QA와 실기 절차는 [검사 방법](docs/QA.md)을 따른다. 모든 작업 파일은 OTTSub 안에 둔다. ZIP 생성·업로드는 요청 때만 한다.
+GEO용 [한국어 제품 소개](https://k2bact.github.io/ottsub-site/ko/)·[영어 제품 소개](https://k2bact.github.io/ottsub-site/)를 게시했다. [등록 자료·페이지 안내](store_assets/README.md)에서 관리하며, 2026-10-30 사용자 지시에 따라 이 저장소는 정리한 코드의 공개 저장소이며, 기존 이력은 비공개 [ottsub-dev](https://github.com/K2Bact/ottsub-dev)에 보관한다. 공개 페이지에는 앱 소스를 포함하지 않는다. [게시·검사 및 실제 검색 효과의 경계](OttsubAiTalk.md#geo-publication-20261020)를 따른다.
+현재 폴더를 실제 작업 원본으로 사용하며 별도 업로드 복사본은 만들지 않는다. GitHub 대상은 공개 [K2Bact/OTTSub](https://github.com/K2Bact/OTTSub)의 main이다. 기존 과거 이력의 [ottsub-dev](https://github.com/K2Bact/ottsub-dev)는 비공개·읽기 전용으로 유지한다. Mac에서는 이 저장소를 clone한 뒤 manifest.json이 있는 루트 폴더를 Chrome의 '압축해제된 확장 프로그램을 로드합니다'로 선택한다. 자세한 자동 QA와 실기 절차는 [검사 방법](docs/QA.md)을 따른다. 모든 작업 파일은 OTTSub 안에 둔다. ZIP 생성·업로드는 요청 때만 한다.
 
-Git에는 실행 파일, 현재 문서 6개, 테스트/도구, 등록 자료를 포함한다. `.gitignore`가 archive/artifacts/dist와 로그·HAR·배포 ZIP·임시 프로필을 제외한다. 과거 원본/제출 ZIP은 원래 Windows 폴더, 이번 Mac raw QA는 검사한 Mac의 로컬에 보존한다. Git clone에는 이 증거 파일과 최신 QA 링크의 대상이 없을 수 있다. 상세 결과·해시·검증 한계는 Git으로 공유하는 QA 문서 안에 기록했으며, 재개 후 QA를 실행하면 그 기기에 새 로컬 결과가 생성된다. 반복 검사에 필요한 숫자 자료와 공통 언어 gate는 tests/fixtures에 포함한다.
+Git에는 실행 파일, 공유용 현재 문서, 테스트/도구, 등록 자료를 포함한다. `.gitignore`가 archive/artifacts/dist와 로그·HAR·배포 ZIP·임시 프로필을 제외한다. 과거 원본/제출 ZIP은 원래 Windows 폴더, 이번 Mac raw QA는 검사한 Mac의 로컬에 보존한다. Git clone에는 이 증거 파일과 최신 QA 링크의 대상이 없을 수 있다. 상세 결과·해시·검증 한계는 Git으로 공유하는 QA 문서 안에 기록했으며, 재개 후 QA를 실행하면 그 기기에 새 로컬 결과가 생성된다. 반복 검사에 필요한 숫자 자료와 공통 언어 gate는 tests/fixtures에 포함한다.
 
 다른 Windows PC에서도 같은 commit의 소스를 받아 manifest.json이 있는 루트를 개발모드로 로드할 수 있다. 현재 개발 manifest에는 ID 고정용 key가 없으므로 두 PC의 ID 일치는 별도로 확인해야 한다. 오프라인 CDN 검사의 공개 self-signed 인증서/시험 키 2개는 tests/fixtures/cdn-network에 포함하며 실제 서비스나 store ZIP에는 사용하지 않는다.
 
@@ -42,4 +42,4 @@ Git에는 실행 파일, 현재 문서 6개, 테스트/도구, 등록 자료를 
 
 CDN 회귀의 `server-key.pem`과 `server-cert.pem`은 공개하도록 만든 loopback 전용 self-signed 시험 자료다. 서비스 비밀키로 사용하지 않는다. Gitleaks에서는 이 시험 키와 언어 엔진 무결성 SHA-256이 탐지될 수 있으므로, 결과 원문과 정확한 파일/해시를 대조한다. 발견 항목을 숨기기 위해 경로 전체를 허용하지 않는다. 비밀정보 점검은 필요할 때 `gitleaks git --redact=100 --log-opts=--all .`로 수동 실행하며 자동 hook이나 감시 작업을 등록하지 않는다.
 
-저장소 공개 여부와 Alignerr 참여 자격은 별도다. 공식 온보딩에서 공개 저장소 요구·제출 범위·자료 이용 조건을 확인하기 전까지 비공개를 유지한다.
+사용자 지시에 따라 `OTTSub`는 공개하고 `ottsub-dev`는 비공개로 유지한다. 저장소 공개 자체가 Alignerr 참여 자격이나 제출 자료의 이용 조건을 충족했다는 인증은 아니다.

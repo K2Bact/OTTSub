@@ -1,5 +1,12 @@
 # 검사 결과와 실사용 범위 — 1.3.9 / .70
 
+<a id="repository-public-policy-20261030"></a>
+## 2026-10-30 저장소 공개 범위 변경
+
+2026-10-30 사용자 최신 지시의 저장소 운영 기준은 [OTTSub](https://github.com/K2Bact/OTTSub) 공개, [ottsub-dev](https://github.com/K2Bact/ottsub-dev) 비공개·읽기 전용 보관이다. 코드와 과거 이력의 독립 경계를 유지하며 로컬 AI대화/외부참고/계정자료는 Git에서 제외한다. 실제 변경·익명 접근·비공개 차단 결과는 [검증 기록](../artifacts/security/repository-visibility-20261030/result.json)에 기록한다. OTT-80. 아래 비공개 전용 정책과 이전 보관 이름은 각 당시 기록이다.
+
+이번 변경은 GitHub 공개 설정·이름·문서 정책이다. 공개 전 source/tree·비밀정보 검사와 공개 후 익명 API 접근, 개발 보관본 비공개 차단, 옛 commit/blob 격리와 원본/ZIP 보존을 대조한다. 제품 전체 QA를 새로 실행한 수치로 세지 않는다.
+
 <a id="repository-isolation-complete-20261030"></a>
 ## 2026-10-30 독립 비공개 저장소와 옛 객체 격리 검증
 
