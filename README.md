@@ -1,8 +1,10 @@
 # OTTSub
 
-**작업 상태:** [Dev_Status.xlsx](../Dev_Status.xlsx)의 앱 `OTTSub` / `OTT-1`–`OTT-80`가 정본이다. [TODO](docs/TODO.md)는 ID별 설명·근거, [HANDOFF](docs/HANDOFF.md)는 최신 build와 검사 범위를 안내한다.
+© 2026 K2Bact. **All rights reserved.** 공식 배포본을 설치해 일반적으로 사용하는 것은 무료로 허용한다. 소스 재사용·수정본 제작/배포·재배포·상업적 재사용은 법률상 예외, GitHub 약관상 권리 또는 별도 계약이 적용되는 경우를 제외하고 사전 서면 허락이 필요하다. [전체 사용 조건](LICENSE) · [한국어 권리 고지](https://k2bact.github.io/ottsub-site/ko/#terms). 외부 제작 자료에는 각자의 권리와 조건이 유지된다. 이 프로젝트는 일반적인 오픈소스 재사용 라이선스를 제공하지 않는다.
 
-Netflix 자막 싱크·이중 자막·학습 설정 Chrome 확장 프로그램. 현재 개발본은 **1.3.9-local-french-ui-20261029.70 / 17언어**다. 마지막 제품 전체 QA는 [프랑스어 추가 후 기록](docs/QA.md#french-ui-20261029)의 122/122이며, 이번 Git 정리 검사를 새 제품 전체 QA로 세지 않는다. 기존 스토어 ZIP 1.3.9는 프랑스어 추가 전의 16언어 자료로 로컬에 보존한다.
+**작업 상태:** [Dev_Status.xlsx](../Dev_Status.xlsx)의 앱 `OTTSub` / `OTT-1`–`OTT-81`가 정본이다. [TODO](docs/TODO.md)는 ID별 설명·근거, [HANDOFF](docs/HANDOFF.md)는 최신 build와 검사 범위를 안내한다.
+
+Netflix 자막 싱크·이중 자막·학습 설정 Chrome 확장 프로그램. 현재 개발본은 **1.3.9-local-rights-notice-20261030.71 / 17언어**다. 권리 고지 반영 후 직접 실행한 [전체 QA](docs/QA.md#rights-reserved-20261030)는 122/122 PASS·입력180개이며 홈페이지3언어의 공개 반영을 확인했다. 기존 스토어 ZIP 1.3.9는 프랑스어 추가 전의 16언어 자료로 로컬에 보존하며 이번에 새 ZIP은 만들지 않았다.
 
 **Mac 검증은 미완료이며, 2026-10-14 사용자 요청으로 추가 테스트를 보류했다.** 자동 QA 통과와 실제 Chrome 일부 확인을 구분한 상세 보고서는 [QA](docs/QA.md#2026-10-14-mac-중간-보고서--41)에 있다.
 

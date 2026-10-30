@@ -1,0 +1,47 @@
+OTTSub — Copyright and Usage Terms
+Copyright (c) 2026 K2Bact. All rights reserved.
+Notice date: 2026-10-30
+
+1. Scope and ownership
+This notice applies to the OTTSub software, source code, documentation, website
+content and original assets only to the extent K2Bact holds the relevant rights.
+Public access to source code does not grant a general reuse license. This is a
+proprietary, source-available project, not an open-source license grant.
+
+2. Official end-user use
+You may download, install and run official, unmodified releases published by
+K2Bact for their intended end-user purposes without a license fee. Ordinary
+end-user use, including use at work, is covered by this permission. Access to
+Netflix or any other third-party service requires its own authorization.
+This permission does not transfer ownership or authorize the additional uses
+listed below.
+
+3. Additional uses require prior written permission
+Except as expressly permitted in section 2, by applicable law, by the platform
+rights in section 4, or by a separate written agreement with the relevant rights
+holder, no permission is granted to reuse or incorporate the source code,
+modify or create derivative works, distribute modified or unmodified copies,
+rebrand, sublicense, sell, rent, or otherwise commercially exploit OTTSub or
+K2Bact-owned project materials. Commercial reuse includes incorporating source
+code into another paid or revenue-generating product or service, redistributing
+or bundling OTTSub, and selling or licensing copies or derivative works.
+For these additional uses, obtain prior written permission from K2Bact.
+
+4. Legal and platform rights
+Nothing in this notice limits rights or exceptions provided by applicable law,
+or rights granted under GitHub's Terms of Service, including viewing and forking
+the public repository as permitted by those terms. Those platform rights do not
+by themselves grant a general license for additional reuse or redistribution.
+
+5. Third-party materials
+Third-party components, libraries, fonts, trademarks and other third-party
+materials retain their own ownership and license terms. This notice does not
+replace those terms or claim ownership of third-party material. Netflix and
+other third-party service rights are not granted by this notice.
+
+6. Warranty and contact
+To the extent permitted by applicable law, the software and project materials
+are provided as is, without warranties. Mandatory consumer and statutory rights
+are not excluded. Contact K2Bact through the developer contact listed on the
+official Chrome Web Store listing to request additional written permission:
+https://chromewebstore.google.com/detail/ottsub-subtitle-sync-dual/hlcahpgeildbabcchpkhemjjgjapbdkd

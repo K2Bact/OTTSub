@@ -1,4 +1,6 @@
-# 모듈화 현황 — 1.3.9 / .70
+# 모듈화 현황 — 1.3.9 / .71
+
+2026-10-30 .71 권리 고지는 정적 popup anchor/CSS와 웹사이트 rights.json 렌더링으로 연결한다. 새 런타임 모듈·state·API·권한·load 순서 변경 없이 루트 LICENSE를 미래 package-store.py의 명시적 필수 파일로 포함하고 QA 입력 해시에 추가했다. 기존 생성된 사이트 미리보기도 전체 조건 LICENSE.txt를 포함한다. [검증](QA.md#rights-reserved-20261030).
 
 2026-10-29 프랑스어는기존src/i18n.js 사전·fr metadata·메뉴option만추가하고기존UI정규화/Intl라벨formatter를재사용한다. 제품모듈/state/load순서/권한·Netflix트랙identity는그대로다. audit-l10n에는공통Gate10을고정fixture와연결해새문구의조판회귀를막는다. [현재검사](QA.md#french-ui-20261029).
 

@@ -18,6 +18,7 @@ def entries_for(root, manifest=None):
     for group in manifest.get('content_scripts', []):
         group['js'] = [p for p in group.get('js', []) if p not in LOCAL_SCRIPTS]
     entries = {'manifest.json': (json.dumps(manifest, ensure_ascii=False, indent=2) + '\n').encode('utf-8')}
+    entries['LICENSE'] = (root / 'LICENSE').read_bytes()
     for folder in ['src', 'popup', '_locales', 'icons']:
         for path in sorted((root / folder).rglob('*')):
             if path.is_symlink() or not path.resolve().is_relative_to(root):
@@ -31,8 +32,10 @@ def entries_for(root, manifest=None):
 
 
 def validate(entries):
+    if not entries.get('LICENSE') or not entries['LICENSE'].decode('utf-8').strip():
+        raise ValueError('Missing or empty copyright/usage notice')
     for name, data in entries.items():
-        if name != 'manifest.json' and name.split('/')[0] not in {'src', 'popup', '_locales', 'icons'}:
+        if name not in {'manifest.json', 'LICENSE'} and name.split('/')[0] not in {'src', 'popup', '_locales', 'icons'}:
             raise ValueError(f'Non-runtime file forbidden: {name}')
         if '..' in name.split('/') or '\\' in name or name.startswith('/'):
             raise ValueError(f'Invalid path: {name}')

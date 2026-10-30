@@ -26,7 +26,7 @@ const collectFiles = dir => fs.readdirSync(dir, { withFileTypes: true })
 });
 const sources = ['src', 'popup', 'tools/ad-observer', 'tools/local-diagnostics', 'tools/dev-research', 'scripts'].flatMap(dir => collectFiles(path.join(root, dir))).filter(file => /\.(?:c?js)$/.test(file)).sort();
 // Legacy compliance suites read STORE_GUIDE directly, so its edits must invalidate QA inputs.
-const tracked = [...['src', 'popup', '_locales', 'icons', 'tests', 'scripts', 'tools/ad-observer', 'tools/local-diagnostics', 'tools/dev-research'].flatMap(dir => collectFiles(path.join(root, dir))), path.join(root, 'manifest.json'), path.join(root, 'store_assets/STORE_GUIDE.md')];
+const tracked = [...['src', 'popup', '_locales', 'icons', 'tests', 'scripts', 'tools/ad-observer', 'tools/local-diagnostics', 'tools/dev-research'].flatMap(dir => collectFiles(path.join(root, dir))), path.join(root, 'manifest.json'), path.join(root, 'store_assets/STORE_GUIDE.md'), path.join(root, 'LICENSE')];
 const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const initialHashes = Object.fromEntries(tracked.map(file => [path.relative(root, file).replaceAll('\\', '/'), hash(file)]));
 const env = { ...process.env, NO_COLOR: '1', OTTSUB_QA_ARTIFACT_DIR: out, CHROME_LOG_FILE: path.join(out, 'chromium-debug.log') };

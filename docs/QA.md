@@ -1,4 +1,19 @@
-# 검사 결과와 실사용 범위 — 1.3.9 / .70
+# 검사 결과와 실사용 범위 — 1.3.9 / .71
+
+<a id="rights-reserved-20261030"></a>
+## 2026-10-30 권리 유보 고지 — .71
+
+현재 개발본은 **1.3.9-local-rights-notice-20261030.71**이며 17개 UI 언어×192키를 유지한다. K2Bact 권리를 보유한 부분에만 전체 조건을 적용하고 공식 배포본의 일반 최종 사용자 이용(직장 포함)은 무료로 허용한다. 추가 소스 재사용·수정/재배포·판매 등은 사전 서면 허락이 필요하되 법률상 예외·GitHub 열람/포크 권리·제3자 고유 조건을 보존한다. 정본은 [LICENSE](../LICENSE)다.
+
+- **직접 실행한 전체 QA: 122/122 PASS**, 290.384초. syntax46/runtime31/legacy15/browser30. [summary](../artifacts/qa/2026-10-30T00-28-14-618Z-23572/summary.json)의 180개 입력이 현재 파일과 일치하고 실행 중 변경은 없다. 프로세스가 없는 JSON 구문 검사는 status, 실행 검사는 status와 exitCode를 함께 확인했다.
+- 패키지 경계 테스트는 **8실행·7 PASS·1 SKIP**이다. 기존 ZIP이 현재 개발 입력보다 이전 버전인 비교 1개를 건너뛰었고, 신규 LICENSE 원문 포함/빈 조건 거부/기존 README 제외 경계를 검증했다. 새 ZIP은 만들지 않았다.
+- 새 권리 고지 검증은 **23그룹 PASS**(실제 팝업17언어, 홈페이지3언어, 기타 경계3그룹)다. 320px 실제 팝업 copyright 표시/키보드 포커스, 새 탭 #terms 연결, 홈페이지320/360/430/768/1280px 넘침 및 전체 조건 링크를 확인했다. 스토어 기존 설명16개에 고지1회·기존 도움말 보존을 확인했다.
+- 기존 사이트 검사 **41그룹**, GEO/주간 비교 회귀 **28그룹** PASS. 모두 별도 오프라인 Chromium 151.0.7922.34, 외부 리소스 요청/AI호출 없이 실행했다. 그룹을 제품 case 수로 합산하지 않는다.
+- 공개 사이트 commit `7ec19b6d67914f582ec358bf87d2f27ae14109fc`: GitHub Pages built와 HTML3/CSS/전체조건/README의 실제 HTTP200·검토본 SHA256 일치, 나머지 파일 보존을 확인했다. [한국어 고지](https://k2bact.github.io/ottsub-site/ko/#terms)·[영문 전체 조건](https://k2bact.github.io/ottsub-site/LICENSE.txt).
+
+**검사기 보정과 실패 보존:** 신규 검사 첫 실행은 CRLF/LF 비교와 smooth-scroll 중 요소 캡처로 5그룹 실패했다. 줄바꿈을 정규화하고 reduced-motion을 컨텍스트 시작부터 적용해 전체 페이지를 캡처한 세 번째 실행은23그룹 PASS다. 두 번째 실행의 영어 캡처 타임아웃1개도 보존했다. 기존 사이트 검사는 10-29 승인으로 삭제한 키보드 문구/광고 설명 추가와 새 개발자 연락처 링크를 옛 기준으로 실패 처리했다. 정확히 그 문구와 링크 계약만 보정해 41/28그룹 통과했다. 실패 보고·stdout/stderr·실행명령·시각·수정 전 검사기를 각각 고유 폴더에 보존했으며 통과 기록으로 덮어쓰지 않았다.
+
+[작업 근거 폴더](../artifacts/qa/rights-notice-20261030/): `full-qa-command.json`, `rights-check-latest.json`, `site-check-commands-attempt4.json`, `preservation-and-results.json`, `site-publication.json`, `site-live-verification.json`. 기존17 metadata·10ZIP·로컬 외부참고 원본 SHA256은 보존했다. 문구 번역의 원어민/전문 법률 감수, 실제 Netflix/DRM·물리 OS·장시간 검사는 실행하지 않았다. Google 계정/스토어 콘솔은 변경하지 않았고 자동화/추가 AI왕복도 없다. OTT-81.
 
 <a id="repository-public-policy-20261030"></a>
 ## 2026-10-30 저장소 공개 범위 변경

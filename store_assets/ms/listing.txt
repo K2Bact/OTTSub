@@ -68,4 +68,7 @@ Versi Chrome Web Store tidak menyertakan perakam diagnostik setempat, analitik a
 
 Kebenaran akses kepada Netflix diperlukan. OTTSub ialah sambungan bebas yang tidak mempunyai hubungan dengan Netflix dan tidak disokong olehnya.
 
+HAK CIPTA DAN PENGGUNAAN
+© 2026 K2Bact. Hak cipta terpelihara. Penggunaan biasa keluaran rasmi dibenarkan. Penggunaan semula kod sumber, pengedaran versi diubah suai dan penggunaan semula komersial memerlukan kebenaran bertulis terlebih dahulu, tertakluk pada hak undang-undang serta hak GitHub dan pihak ketiga. Syarat penuh: https://k2bact.github.io/ottsub-site/#terms
+
 Laman produk dan bantuan (bahasa Inggeris): https://k2bact.github.io/ottsub-site/

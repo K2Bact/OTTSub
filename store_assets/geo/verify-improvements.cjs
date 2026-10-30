@@ -10,7 +10,7 @@ const build=spawnSync(process.execPath,[path.join(__dirname,'build.cjs'),'--base
 const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>{assert(!e.isSymbolicLink());return e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)];});
 for(const f of walk(candidate))result.candidateHashes[path.relative(candidate,f).replaceAll('\\','/')]=crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
 (async()=>{
- await check('Only the allowlisted public assets are candidates; tracking tools and CSV stay local',()=>assert.deepEqual(Object.keys(result.candidateHashes).sort(),['.nojekyll','assets/icon.png','assets/site.css','index.html','ko/index.html','es/index.html','sitemap.xml'].sort()));
+ await check('Only the allowlisted public assets are candidates; tracking tools and CSV stay local',()=>assert.deepEqual(Object.keys(result.candidateHashes).sort(),['.nojekyll','LICENSE.txt','assets/icon.png','assets/site.css','index.html','ko/index.html','es/index.html','sitemap.xml'].sort()));
  const browser=await chromium.launch({headless:true});
  try{
   const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();const outside=[];
@@ -32,7 +32,12 @@ for(const f of walk(candidate))result.candidateHashes[path.relative(candidate,f)
     const schema=JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());assert(!JSON.stringify(schema).includes('utm_'));
    });
    await check(lang+': all store links use fixed campaign values and a distinct content label',async()=>{
-    const links=await page.locator('a[href^="https://chromewebstore.google.com/"]').evaluateAll(els=>els.map(e=>e.href));assert.equal(links.length,3);
+    const allLinks=await page.locator('a[href^="https://chromewebstore.google.com/"]').evaluateAll(els=>els.map(e=>e.href));
+    assert.equal(allLinks.length,4);
+    const links=allLinks.filter(href=>new URL(href).searchParams.has('utm_source'));
+    assert.equal(links.length,3);
+    assert.deepEqual(allLinks.filter(href=>!new URL(href).searchParams.has('utm_source')),[content.product.storeUrl]);
+    assert.equal(await page.locator('#terms a[href="'+content.product.storeUrl+'"]').count(),1);
     const positions=[];for(const href of links){const u=new URL(href);assert.equal(u.origin+u.pathname,content.product.storeUrl);assert.equal(u.searchParams.get('utm_source'),campaign.source);assert.equal(u.searchParams.get('utm_medium'),campaign.medium);assert.equal(u.searchParams.get('utm_campaign'),campaign.campaign+'_'+u.searchParams.get('utm_content'));positions.push(u.searchParams.get('utm_content'));assert.deepEqual([...u.searchParams.keys()].sort(),['utm_source','utm_medium','utm_campaign','utm_content'].sort());}
     assert.deepEqual(positions.sort(),['hero','footer','privacy'].map(x=>lang+'_'+x).sort());
     assert.equal(await page.locator('script:not([type="application/ld+json"]),iframe,form').count(),0);

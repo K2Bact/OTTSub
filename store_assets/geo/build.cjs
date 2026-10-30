@@ -3,6 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
 const data=JSON.parse(fs.readFileSync(path.join(__dirname,'content.json'),'utf8'));
 const campaign=JSON.parse(fs.readFileSync(path.join(__dirname,'campaigns.json'),'utf8'));
 const privacy=JSON.parse(fs.readFileSync(path.join(__dirname,'privacy.json'),'utf8'));
+const rights=JSON.parse(fs.readFileSync(path.join(__dirname,'rights.json'),'utf8'));
 const args=process.argv.slice(2);let baseUrl=null,out=path.join(__dirname,'site');
 for(let i=0;i<args.length;i++){
   if(args[i]==='--base-url')baseUrl=args[++i];
@@ -30,8 +31,9 @@ fs.mkdirSync(path.join(out,'assets'),{recursive:true});
 fs.copyFileSync(path.join(__dirname,'site.css'),path.join(out,'assets/site.css'));
 fs.copyFileSync(path.join(projectRoot,'icons/icon128.png'),path.join(out,'assets/icon.png'));
 fs.writeFileSync(path.join(out,'.nojekyll'),'');
+fs.writeFileSync(path.join(out,'LICENSE.txt'),fs.readFileSync(path.join(projectRoot,'LICENSE'),'utf8').replace(/\r\n/g,'\n'));
 for(const [lang,c] of Object.entries(pages)){
-  const policy=privacy[lang];
+  const policy=privacy[lang], legal=rights[lang];
   const prefix=lang==='en'?'':'../';
   const languages=Object.entries(pages).filter(([locale])=>locale!==lang).map(([locale,target])=>{
     const relative=path.posix.relative(path.posix.dirname(c.path),target.path).replace(/index\.html$/,'')||'./';
@@ -39,6 +41,8 @@ for(const [lang,c] of Object.entries(pages)){
   }).join('');
   const canonical=link(lang);
   const schema={'@context':'https://schema.org','@type':'SoftwareApplication','name':p.name,'alternateName':p.storeName,'identifier':p.storeId,'url':canonical||p.storeUrl,'sameAs':[p.storeUrl],'applicationCategory':'BrowserApplication','description':c.intro,'inLanguage':lang,'softwareRequirements':c.cost,'isAccessibleForFree':true,'offers':{'@type':'Offer','price':p.price,'priceCurrency':p.priceCurrency,'url':p.storeUrl},'featureList':c.features.map(x=>x[1])};
+  schema.copyrightNotice=rights.notice;schema.copyrightYear=rights.year;
+  if(baseUrl)schema.license=new URL('LICENSE.txt',baseUrl).href;
   const urls=canonical?`<link rel="canonical" href="${esc(canonical)}">\n${Object.keys(pages).map(l=>`<link rel="alternate" hreflang="${l}" href="${esc(link(l))}">`).join('\n')}\n<link rel="alternate" hreflang="x-default" href="${esc(link('en'))}">\n<meta property="og:url" content="${esc(canonical)}">`:'';
   const markup=`<!doctype html>
 <html lang="${lang}">
@@ -63,7 +67,8 @@ ${baseUrl?'':`<p class="preview">${esc(c.preview)}</p>`}
 <section id="timing" class="example" aria-labelledby="timing-title"><div><h2 id="timing-title">${esc(c.exampleTitle)}</h2><p>${esc(c.exampleIntro)}</p></div><div><div class="offsets">${c.exampleRows.map(([h,n,t])=>`<div class="offset-row"><span>${esc(h)}</span><strong>${esc(n)}</strong><small>${esc(t)}</small></div>`).join('')}</div><p class="fine-print">${esc(c.exampleNote)}</p></div></section>
 <section id="questions" aria-labelledby="faq-title"><h2 id="faq-title">${esc(c.faqTitle)}</h2><div class="faq">${c.faqs.map(([q,a])=>`<article><h3>${esc(q)}</h3><p>${esc(a)}</p></article>`).join('')}</div></section>
 <section id="privacy" class="privacy" aria-labelledby="privacy-title"><h2 id="privacy-title">${esc(policy.title)}</h2><div class="policy-body"><p>${esc(policy.intro)}</p>${policy.sections.map(([h,t])=>`<article><h3>${esc(h)}</h3><p>${esc(t)}</p></article>`).join('')}<p><a href="${esc(storeLink(lang,'privacy'))}">${esc(policy.contact)}</a></p><ul>${policy.sources.map(([label,url])=>`<li><a href="${esc(url)}">${esc(label)}</a></li>`).join('')}</ul><p class="reviewed">${esc(policy.reviewed)} <time datetime="${privacy.reviewedDate}">${privacy.reviewedDate}</time></p></div></section>
-</main><footer><div class="wrap closing"><div><p>${esc(c.footer)}</p><p><a href="#privacy">${esc(policy.title)}</a></p><span class="reviewed">${esc(c.reviewed)} <time datetime="${p.reviewedDate}">${p.reviewedDate}</time></span></div><a class="button" href="${esc(storeLink(lang,'footer'))}">${esc(c.install)} ↗</a></div></footer>
+<section id="terms" class="rights" aria-labelledby="rights-title"><h2 id="rights-title">${esc(legal.title)}</h2><div class="policy-body"><p class="copyright">${esc(legal.copyright)}</p><p>${esc(legal.intro)}</p>${legal.sections.map(([h,t])=>`<article><h3>${esc(h)}</h3><p>${esc(t)}</p></article>`).join('')}<p><a href="${prefix}LICENSE.txt">${esc(legal.licenseLink)}</a></p><p><a href="${esc(p.storeUrl)}">${esc(legal.contactLabel)}</a></p><p class="reviewed">${esc(legal.reviewed)} <time datetime="${rights.reviewedDate}">${rights.reviewedDate}</time></p></div></section>
+</main><footer><div class="wrap closing"><div><p>${esc(c.footer)}</p><p><a href="#privacy">${esc(policy.title)}</a></p><p><a href="#terms">${esc(legal.title)}</a></p><p class="copyright">${esc(legal.copyright)}</p><span class="reviewed">${esc(c.reviewed)} <time datetime="${p.reviewedDate}">${p.reviewedDate}</time></span></div><a class="button" href="${esc(storeLink(lang,'footer'))}">${esc(c.install)} ↗</a></div></footer>
 </body></html>\n`;
   const f=path.join(out,c.path);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,markup);
 }

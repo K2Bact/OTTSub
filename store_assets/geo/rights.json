@@ -1,0 +1,72 @@
+{
+  "holder": "K2Bact",
+  "year": 2026,
+  "reviewedDate": "2026-10-30",
+  "notice": "Copyright (c) 2026 K2Bact. All rights reserved.",
+  "en": {
+    "title": "Copyright and permitted use",
+    "copyright": "© 2026 K2Bact. All rights reserved.",
+    "intro": "OTTSub code, documentation and original website materials are rights-reserved to the extent K2Bact holds the relevant rights. Public source availability is not a general open-source reuse license.",
+    "sections": [
+      [
+        "Official end-user use",
+        "You may download, install and run official, unmodified releases for their intended end-user purposes without a license fee. Ordinary use at work is also permitted. Netflix or other service access requires its own authorization."
+      ],
+      [
+        "Additional uses require permission",
+        "Source-code reuse, modification or derivative works, redistribution, rebranding and commercial reuse require prior written permission unless a legal exception, GitHub platform rights or a separate written agreement applies. Commercial reuse includes selling or bundling copies and incorporating source into another revenue-generating product or service."
+      ],
+      [
+        "Legal, GitHub and third-party rights",
+        "Applicable legal exceptions and rights under GitHub’s Terms of Service, including permitted viewing and forking, are preserved. Third-party components, libraries, fonts and trademarks retain their own ownership and terms. No ownership of Netflix materials is claimed."
+      ]
+    ],
+    "licenseLink": "Read the full copyright and usage terms",
+    "contactLabel": "Developer contact in the official Chrome Web Store listing",
+    "reviewed": "Notice date:"
+  },
+  "ko": {
+    "title": "저작권과 허용된 사용 범위",
+    "copyright": "© 2026 K2Bact. 모든 권리 유보.",
+    "intro": "OTTSub 코드·문서·홈페이지 원본 자료 중 K2Bact가 관련 권리를 보유한 부분은 권리를 유보합니다. 소스가 공개되어 있다는 사실만으로 일반적인 오픈소스 재사용 허락을 부여하지 않습니다.",
+    "sections": [
+      [
+        "공식 배포본의 일반 이용",
+        "공식적으로 제공된 수정하지 않은 배포본을 내려받아 설치하고 본래 목적의 최종 사용자로 이용하는 것은 무료로 허용합니다. 직장에서 일반적으로 이용하는 것도 포함됩니다. Netflix 등 외부 서비스의 이용 권한은 별도로 필요합니다."
+      ],
+      [
+        "추가 이용은 사전 허락 필요",
+        "소스 재사용, 수정·파생물 제작, 재배포, 이름을 바꾼 배포, 상업적 재사용은 법률상 예외·GitHub 약관상 권리·별도 서면 계약이 적용되는 경우를 제외하고 사전 서면 허락이 필요합니다. 복사본의 판매·번들 배포와 다른 수익성 제품/서비스에 소스를 포함하는 행위도 상업적 재사용에 해당합니다."
+      ],
+      [
+        "법률·GitHub·제3자의 권리",
+        "법률상 인정되는 예외와 GitHub 약관상 허용된 열람·포크 권리는 유지됩니다. 제3자 구성요소·라이브러리·폰트·상표에는 각자의 권리와 조건이 적용됩니다. Netflix 자료에 대한 소유권을 주장하지 않습니다."
+      ]
+    ],
+    "licenseLink": "전체 저작권·사용 조건 보기",
+    "contactLabel": "공식 Chrome 웹스토어의 개발자 연락처",
+    "reviewed": "고지일:"
+  },
+  "es": {
+    "title": "Derechos de autor y usos permitidos",
+    "copyright": "© 2026 K2Bact. Todos los derechos reservados.",
+    "intro": "K2Bact se reserva los derechos sobre el código, la documentación y los materiales originales del sitio en la medida en que sea titular de esos derechos. El acceso público al código no concede una licencia general de reutilización de código abierto.",
+    "sections": [
+      [
+        "Uso de las versiones oficiales",
+        "Puedes descargar, instalar y ejecutar versiones oficiales sin modificar para su uso previsto como usuario final, sin pagar una licencia. También se permite el uso habitual en el trabajo. El acceso a Netflix u otros servicios requiere su propia autorización."
+      ],
+      [
+        "Otros usos requieren autorización",
+        "La reutilización del código, las modificaciones u obras derivadas, la redistribución, el cambio de marca y la reutilización comercial requieren autorización previa por escrito, salvo que se aplique una excepción legal, los derechos de la plataforma GitHub o un acuerdo escrito independiente. Esto incluye vender o distribuir copias junto con otros productos e incorporar código a otro producto o servicio que genere ingresos."
+      ],
+      [
+        "Derechos legales, de GitHub y de terceros",
+        "Se respetan las excepciones legales y los derechos previstos en las condiciones de GitHub, incluida la consulta y creación de forks permitidas. Los componentes, bibliotecas, fuentes y marcas de terceros conservan sus propios derechos y condiciones. No se reclama la propiedad de materiales de Netflix."
+      ]
+    ],
+    "licenseLink": "Leer las condiciones completas de derechos de autor y uso",
+    "contactLabel": "Contacto del desarrollador en la ficha oficial de Chrome Web Store",
+    "reviewed": "Fecha del aviso:"
+  }
+}

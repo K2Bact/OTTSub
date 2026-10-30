@@ -6,3 +6,5 @@
 
 /* Multiple language links wrap as a group on narrow screens. */
 .nav,.nav-links{flex-wrap:wrap}.nav-links{row-gap:10px}
+
+.copyright{font-size:12px;font-weight:600;overflow-wrap:anywhere}.rights .policy-body>p:first-child{color:var(--ink)}

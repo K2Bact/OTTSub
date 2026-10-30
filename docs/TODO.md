@@ -1,6 +1,6 @@
 # OTTSub 할 일 설명과 근거 — 상태는 Dev_Status.xlsx
 
-2026-10-20 사용자 요청으로 OTTSub 항목을 [공통 상태표](../../Dev_Status.xlsx)의 「할 일」 시트에 전부 이관했다. **상태·담당·갱신일의 정본은 표의 앱 `OTTSub`, ID `OTT-1`–`OTT-80`다.** 이 문서는 ID별 범위·판단 조건·근거만 설명하며 별도 체크리스트를 운영하지 않는다.
+2026-10-20 사용자 요청으로 OTTSub 항목을 [공통 상태표](../../Dev_Status.xlsx)의 「할 일」 시트에 전부 이관했다. **상태·담당·갱신일의 정본은 표의 앱 `OTTSub`, ID `OTT-1`–`OTT-81`다.** 이 문서는 ID별 범위·판단 조건·근거만 설명하며 별도 체크리스트를 운영하지 않는다.
 
 작업 시작 시 상태표의 OTTSub 줄을 먼저 읽고 [HANDOFF](HANDOFF.md)·[QA](QA.md)·[AI 대화](../OttsubAiTalk.md)와 대조한다. 서로 다르면 현재 코드·검사 증거·사용자 말로 확인한다. 표 쓰기는 `app_common/AGENTS.md` §5.1의 Excel 열림 확인·백업·openpyxl·추가/재열람 규칙을 따른다.
 
@@ -346,3 +346,8 @@ OTT-79 후속 검증 근거: 사용자가 구체적인 재구성안을 “그렇
 ## OTT-80 공개 OTTSub·비공개 ottsub-dev 정책 적용
 
 사용자가 OTTSub 공개와 과거 보관본의 ottsub-dev 이름·비공개를 명시했다. 공개 준비가 끝난 독립 코드 저장소에만 공개 설정을 적용하고, 보관본은 비공개·읽기 전용으로 유지한다. 로컬 AI기록/원본참고/계정자료 제외와 과거 이력 분리를 보존한다. 실제 결과는 [검증 JSON](../artifacts/security/repository-visibility-20261030/result.json)에 기록한다.
+
+<a id="ott-81"></a>
+### OTT-81 K2Bact 권리 유보 고지 적용
+
+사용자의 10-30 “홈페이지 쪽 그런거에도 … 일단 싹 걸어” 지시 범위다. 루트 LICENSE/README·앱 하단·스토어 설명16종·홈페이지 한영서3언어와 전체 조건을 연결하고, 미래 패키지에서 LICENSE를 필수로 검증한다. 공식 배포본의 일반 이용과 추가 소스/수정/판매 허가를 구분하며 법률/GitHub/제3자 권리 예외를 유지한다. [검사 및 실제 공개 확인](QA.md#rights-reserved-20261030)과 [AI 기록](../OttsubAiTalk.md#rights-reserved-20261030)을 따른다. 기존10ZIP/17metadata/로컬 참고 원본은 보존하고 새 ZIP·스토어 콘솔 변경은 이 범위에 없다.

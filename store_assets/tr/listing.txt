@@ -68,4 +68,7 @@ Chrome Web Mağazası sürümü yerel tanılama kaydedicisi, analiz veya izleme 
 
 Netflix'e erişim yetkisi gerekir. OTTSub bağımsız bir uzantıdır; Netflix ile bağlantılı değildir ve Netflix tarafından desteklenmez.
 
+TELİF HAKKI VE KULLANIM
+© 2026 K2Bact. Tüm hakları saklıdır. Resmî sürümlerin normal kullanımına izin verilir. Kaynak kodun yeniden kullanımı, değiştirilmiş sürümlerin dağıtımı ve ticari yeniden kullanım için önceden yazılı izin gerekir; yasal haklar ile GitHub ve üçüncü tarafların hakları saklıdır. Koşullar: https://k2bact.github.io/ottsub-site/#terms
+
 Ürün sitesi ve yardım (İngilizce): https://k2bact.github.io/ottsub-site/

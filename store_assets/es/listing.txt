@@ -68,4 +68,7 @@ La versión de Chrome Web Store no incluye el registrador de diagnóstico local,
 
 Requiere acceso a Netflix. OTTSub es una extensión independiente y no está afiliada a Netflix ni respaldada por Netflix.
 
+DERECHOS DE AUTOR Y USO
+© 2026 K2Bact. Todos los derechos reservados. Se permite el uso habitual de las versiones oficiales. La reutilización del código, la distribución de versiones modificadas y la reutilización comercial requieren autorización previa por escrito, sin limitar los derechos legales, de GitHub y de terceros. Condiciones: https://k2bact.github.io/ottsub-site/es/#terms
+
 Sitio del producto y ayuda (en inglés): https://k2bact.github.io/ottsub-site/

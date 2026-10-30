@@ -51,4 +51,7 @@ Netflixistä saadut tekstitysraidat käsitellään selaimessa, ja asetukset tall
 
 OTTSub on itsenäinen laajennus. Se ei ole Netflixin virallinen tuote eikä Netflixin hyväksymä tai sen kanssa yhteistyössä toteutettu.
 
+TEKIJÄNOIKEUDET JA KÄYTTÖ
+© 2026 K2Bact. Kaikki oikeudet pidätetään. Virallisten versioiden tavanomainen käyttö on sallittu. Lähdekoodin uudelleenkäyttö, muokattujen versioiden jakelu ja kaupallinen uudelleenkäyttö edellyttävät etukäteen annettua kirjallista lupaa. Lakisääteiset oikeudet sekä GitHubin ja kolmansien osapuolten oikeudet säilyvät. Ehdot: https://k2bact.github.io/ottsub-site/#terms
+
 Tuotteen esittely ja ohjeet englanniksi: https://k2bact.github.io/ottsub-site/

@@ -68,4 +68,7 @@ The Chrome Web Store build does not include the local diagnostic recorder, analy
 
 Netflix access is required. OTTSub is an independent extension and is not affiliated with or endorsed by Netflix.
 
+COPYRIGHT AND USE
+© 2026 K2Bact. All rights reserved. Ordinary use of official releases is permitted. Source reuse, modified distribution and commercial reuse require prior written permission, subject to legal, GitHub and third-party rights. Full terms: https://k2bact.github.io/ottsub-site/#terms
+
 Product website and help: https://k2bact.github.io/ottsub-site/

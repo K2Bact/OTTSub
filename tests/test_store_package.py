@@ -44,6 +44,23 @@ class PackageBoundary(unittest.TestCase):
         scripts = [script for group in json.loads(entries['manifest.json'])['content_scripts'] for script in group['js']]
         self.assertFalse(any('local-diagnostics' in script for script in scripts))
 
+    def test_copyright_notice_is_packaged_without_allowing_other_root_documents(self):
+        entries = package.entries_for(ROOT)
+        self.assertEqual(entries['LICENSE'], (ROOT / 'LICENSE').read_bytes())
+        entries['README.md'] = b'not a runtime or license asset'
+        with self.assertRaises(ValueError):
+            package.validate(entries)
+
+    def test_missing_or_empty_license_blocks_packaging(self):
+        for value in [None, b'', b'   ']:
+            entries = package.entries_for(ROOT)
+            if value is None:
+                entries.pop('LICENSE')
+            else:
+                entries['LICENSE'] = value
+            with self.assertRaises(ValueError):
+                package.validate(entries)
+
     def test_extra_host_permissions_block_packaging(self):
         m = json.loads((ROOT / 'manifest.json').read_text(encoding='utf-8'))
         m['host_permissions'].append('https://*.nflxvideo.net/*')

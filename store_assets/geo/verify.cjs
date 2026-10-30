@@ -70,10 +70,19 @@ function build(args,ok=true){const r=spawnSync(process.execPath,[path.join(__dir
     const paragraphs=s.split('\n\n');assert(paragraphs[1].includes('OTTSub')&&paragraphs[1].includes('Netflix'));
     const lines=s.split('\n'),i=lines.findIndex(l=>l.includes('FAQ'));
     assert(lines.slice(i+1).join('\n').split('\n\n').slice(0,5).every(b=>b.split('\n').length===2));
-    const oldCore=before.slice(before.indexOf('\n\n')+2,before.indexOf('FAQ')).trim();
+    // Approved 2026-10-29 listing edits: remove the old US-keyboard note and add
+    // the precise ad-blocking disclaimer. Preserve every other original paragraph.
+    const approved={
+      'en-us':{removed:'• Key labels refer to physical key positions on a US keyboard layout; printed symbols may differ on other layouts.',added:'• OTTSub does not block or remove Netflix ads.'},
+      'ko-kr':{removed:'• 표시된 키는 미국(US) 키보드 물리적 위치 기준이며, 키보드 배열에 따라 키캡에 인쇄된 기호는 다를 수 있습니다.',added:'• OTTSub는 Netflix 광고를 차단하거나 제거하지 않습니다.'}
+    }[locale];
+    if(approved){assert(!s.includes(approved.removed));assert.equal(s.split(approved.added).length-1,1);}
+    const preservedText=approved?s.replace(approved.added+'\n',''):s;
+    let oldCore=before.slice(before.indexOf('\n\n')+2,before.indexOf('FAQ')).trim();
+    if(approved)oldCore=oldCore.split('\n').filter(line=>line!==approved.removed).join('\n');
     for(const paragraph of oldCore.split('\n\n')){
       const lines=paragraph.split('\n'),inventory=/(?:^|\D)14(?:\D|$)|১৪/.test(lines[0])&&(lines[1]?.match(/[,،、]/g)||[]).length>=8;
-      if(!inventory){assert(s.includes(paragraph),'Existing feature and shortcut paragraphs must survive');continue;}
+      if(!inventory){assert(preservedText.includes(paragraph),'Existing feature and shortcut paragraphs, except explicitly approved edits, must survive');continue;}
       const heading=lines[0].replace('14','16').replace('১৪','১৬'),current=s.split('\n\n').find(p=>p.startsWith(heading+'\n'));
       assert(current,'Current sixteen-language listing section must exist');
       const language=locale==='zh-tw'?'zh-Hant':locale==='en-us'?'en':locale==='ko-kr'?'ko':locale;
@@ -84,7 +93,7 @@ function build(args,ok=true){const r=spawnSync(process.execPath,[path.join(__dir
   await check('Public files are an allowlisted static surface, with no private source or fabricated proof',()=>{
     const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>{assert(!e.isSymbolicLink(),'No external asset links');const p=path.join(d,e.name);return e.isDirectory()?walk(p):[p];});
     const rel=walk(path.join(__dirname,'site')).map(f=>path.relative(path.join(__dirname,'site'),f).replaceAll('\\','/')).sort();
-    assert.deepEqual(rel,['.nojekyll','assets/icon.png','assets/site.css','index.html','ko/index.html','es/index.html','robots.txt'].sort());
+    assert.deepEqual(rel,['.nojekyll','LICENSE.txt','assets/icon.png','assets/site.css','index.html','ko/index.html','es/index.html','robots.txt'].sort());
     for(const f of Object.values(content.pages).map(p=>p.path)){
       const s=fs.readFileSync(path.join(__dirname,'site',f),'utf8');
       assert(!/aggregateRating|reviewCount|softwareVersion|sourceCode|github\.com\/K2Bact\/OTTSub|D:\\|C:\\|artifacts\/qa|__ottsub/i.test(s));

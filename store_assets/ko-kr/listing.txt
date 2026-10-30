@@ -68,4 +68,7 @@ Chrome 웹 스토어 배포판에는 로컬 진단 기록 도구, 사용 통계 
 
 넷플릭스(Netflix) 이용 권한이 필요합니다. OTTSub는 독립적으로 개발된 확장 프로그램이며 Netflix와 제휴하거나 승인받은 제품이 아닙니다.
 
+저작권과 사용 범위
+© 2026 K2Bact. 모든 권리 유보. 공식 배포본의 일반 이용은 허용합니다. 소스 재사용·수정본 배포·상업적 재사용은 법률·GitHub·제3자의 권리를 전제로 사전 서면 허락이 필요합니다. 전체 조건: https://k2bact.github.io/ottsub-site/ko/#terms
+
 제품 소개·도움말: https://k2bact.github.io/ottsub-site/ko/

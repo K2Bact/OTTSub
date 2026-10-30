@@ -26,3 +26,7 @@ node store_assets/geo/measure.cjs --input artifacts/analytics/weekly.csv --out a
 AI 추천 여부는 evaluation.json의 질문·실제 답변·인용 URL·증거로 별도 기록한다. chatgpt.com에서 온 방문만으로 추천 성공 처리하지 않는다. 실제 관찰값이 없으면 not_measured를 유지한다. 예약 실행·자동 AI/API 호출은 하지 않는다.
 
 근거: [Chrome 웹스토어 GA4 이벤트·UTM](https://developer.chrome.com/docs/webstore/google-analytics), [GA4 참여율·반송률](https://support.google.com/analytics/answer/12195621?hl=en). 등록·수집·색인·노출·클릭·설치는 서로 다른 단계다. 이번 작업의 판정·검사·게시 기록은 [AI 대화](../../OttsubAiTalk.md#geo-improvements-20261022)를 따른다.
+
+## 저작권·사용 조건
+
+권리 고지 요약의 원본은 `rights.json`이며 전체 조건은 프로젝트 루트 `LICENSE`다. 빌드 시 영어·한국어·스페인어의 `#terms`와 하단 링크/고지, 동일한 `LICENSE` 파일을 생성한다. 공식 배포본의 일반적인 최종 사용자 이용 허락과 소스 재사용·수정본/재배포·상업적 재사용의 별도 허락을 구분한다. 법률/GitHub/제3자 권리 예외를 유지한다.

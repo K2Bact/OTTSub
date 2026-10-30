@@ -68,4 +68,7 @@ Chrome 線上應用程式商店版本不包含本機診斷記錄器、分析工�
 
 需具備 Netflix 使用權限。OTTSub 為獨立開發的擴充功能，與 Netflix 無關，亦未獲 Netflix 背書或贊助。
 
+著作權與使用範圍
+© 2026 K2Bact. 保留所有權利。允許一般使用官方發行版本。原始碼重用、修改版本的散布及商業重用，除法律、GitHub條款或第三方權利另有規定外，須事先取得書面許可。完整條件：https://k2bact.github.io/ottsub-site/#terms
+
 產品網站與說明（英文）： https://k2bact.github.io/ottsub-site/
